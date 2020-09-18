@@ -1,19 +1,26 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Pl_Movement : MonoBehaviour
 {
-    private Rigidbody rb;
-    // Start is called before the first frame update
-    void Start()
-    {
-        rb = GetComponent<Rigidbody>();
+    private InputMaster controls;
+
+    private void Awake() {
+        controls = new InputMaster();
+        controls.Player.Movement.performed += context => Move(context.ReadValue<Vector2>());
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    void Move(Vector2 direction) {
+        Debug.Log("Player wants to move " + direction);
+    }
+
+    private void OnEnable() {
+        controls.Enable();
+    }
+
+    private void OnDisable() {
+        controls.Disable();
     }
 }
