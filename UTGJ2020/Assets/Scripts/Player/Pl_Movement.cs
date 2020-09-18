@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,6 +19,7 @@ public class Pl_Movement : MonoBehaviour
         controller = GetComponent<CharacterController>();
     }
 
+
     private void FixedUpdate() {
         if (controller.isGrounded) {
             verticalVelocity = Physics.gravity.y * gravityScale;
@@ -27,7 +29,10 @@ public class Pl_Movement : MonoBehaviour
                 Debug.Log(verticalVelocity);
             }
         } else {
-            verticalVelocity += Physics.gravity.y * gravityScale * Time.deltaTime;
+            float terminalVel = Physics.gravity.y * gravityScale;
+            // Gradually accelerates a falling player to terminal velocity
+            verticalVelocity += terminalVel * Time.deltaTime;
+            Mathf.Clamp(verticalVelocity, 0, terminalVel);
         }
                 
         
