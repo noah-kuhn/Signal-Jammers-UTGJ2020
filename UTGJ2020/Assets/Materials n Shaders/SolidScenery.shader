@@ -1,8 +1,9 @@
-﻿Shader "Unlit/NewUnlitShader"
+﻿Shader "Custom/SolidScenery"
 {
     Properties
     {
         _MainTex ("Texture", 2D) = "white" {}
+        _AlphaCutoff("Alpha Cutoff", Range(0.0, 1.0)) = 0.5
     }
     SubShader
     {
@@ -15,7 +16,7 @@
             #pragma vertex vert
             #pragma fragment frag
             // make fog work
-            #pragma multi_compile_fog
+            //#pragma multi_compile_fog
 
             #include "UnityCG.cginc"
 
@@ -33,6 +34,7 @@
             };
 
             sampler2D _MainTex;
+            float _AlphaCutoff;
             float4 _MainTex_ST;
 
             v2f vert (appdata v)
@@ -47,9 +49,16 @@
             fixed4 frag (v2f i) : SV_Target
             {
                 // sample the texture
-                fixed4 col = tex2D(_MainTex, i.uv);
+                float4 col = tex2D(_MainTex, i.uv);
+
+                if (col.a < _AlphaCutoff) {
+                    discard;
+                }
+
+                //col = col + float4((1.0-col.r)*i.uv.x, (1-col.g)*i.uv.y, 0.0, 0.0);
+                
                 // apply fog
-                UNITY_APPLY_FOG(i.fogCoord, col);
+                //UNITY_APPLY_FOG(i.fogCoord, col);
                 return col;
             }
             ENDCG
