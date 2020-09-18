@@ -6,14 +6,14 @@ public class MouseOrbit : MonoBehaviour {
  
     public Transform target;
     public float distance = 5.0f;
-    public float xSpeed = 120.0f;
-    public float ySpeed = 120.0f;
+    public float xSpeed = 60.0f;
+    public float ySpeed = 60.0f;
  
-    public float yMinLimit = 30f;
-    public float yMaxLimit = 50f;
+    public float yMinLimit = -10f;
+    public float yMaxLimit = 25f;
  
     public float distanceMin = .5f;
-    public float distanceMax = 15f;
+    public float distanceMax = 7.5f;
  
     private Rigidbody rigidbody;
  
@@ -34,6 +34,8 @@ public class MouseOrbit : MonoBehaviour {
         {
             rigidbody.freezeRotation = true;
         }
+
+        Cursor.lockState = CursorLockMode.Locked;
     }
  
     void LateUpdate () 
