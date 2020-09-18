@@ -18,6 +18,7 @@ public class Pl_Movement : MonoBehaviour
         
         moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical")) * moveSpeed;
         moveDirection.y += Physics.gravity.y * gravityScale;
+        moveDirection = transform.TransformDirection(moveDirection);
         controller.Move(moveDirection * Time.deltaTime);
     }
 

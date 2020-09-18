@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class BillBoard : MonoBehaviour
 {
-    private void LateUpdate()
+
+    public Camera cam;
+
+    private void Update()
     {
-        transform.forward = new Vector3(Camera.main.transform.forward.x, transform.forward.y, Camera.main.transform.forward.z);
+        transform.forward = new Vector3(cam.transform.forward.x, transform.forward.y, cam.transform.forward.z);
     }
 }
