@@ -15,7 +15,7 @@ public class MouseOrbit : MonoBehaviour {
     public float distanceMin = .5f;
     public float distanceMax = 7.5f;
  
-    private Rigidbody rigidbody;
+    private Rigidbody rb;
  
     float x = 0.0f;
     float y = 0.0f;
@@ -27,12 +27,12 @@ public class MouseOrbit : MonoBehaviour {
         x = angles.y;
         y = angles.x;
  
-        rigidbody = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>();
  
         // Make the rigid body not change rotation
-        if (rigidbody != null)
+        if (rb != null)
         {
-            rigidbody.freezeRotation = true;
+            rb.freezeRotation = true;
         }
 
         Cursor.lockState = CursorLockMode.Locked;
@@ -50,12 +50,16 @@ public class MouseOrbit : MonoBehaviour {
             Quaternion rotation = Quaternion.Euler(y, x, 0);
  
             distance = Mathf.Clamp(distance - Input.GetAxis("Mouse ScrollWheel")*5, distanceMin, distanceMax);
- 
+            Vector3 playerToCamVect = (transform.position - target.position).normalized * distanceMax;
+
             RaycastHit hit;
             if (Physics.Linecast (target.position, transform.position, out hit)) 
             {
-                distance -=  hit.distance;
+                distance = hit.distance * 0.75f;
+            }else if(Physics.Linecast (target.position, target.position + playerToCamVect, out hit)){
+                distance = hit.distance * 0.8f;
             }
+
             Vector3 negDistance = new Vector3(0.0f, 0.0f, -distance);
             Vector3 position = rotation * negDistance + target.position;
  
