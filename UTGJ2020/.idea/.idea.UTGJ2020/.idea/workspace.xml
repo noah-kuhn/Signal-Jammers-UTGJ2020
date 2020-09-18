@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9bb072cd-8936-4cef-a522-2b1ac8f3aa19" name="Default Changelist" comment="" />
+    <list default="true" id="9bb072cd-8936-4cef-a522-2b1ac8f3aa19" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UTGJ2020/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UTGJ2020/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UTGJ2020/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UTGJ2020/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,15 +13,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/Pl_Movement.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="240">
+              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
               <folding>
-                <marker date="1600459269927" expanded="false" signature="6:78" ph="..." />
-                <marker date="1600459269927" expanded="true" signature="120:846" ph="{...}" />
-                <marker date="1600459269927" expanded="true" signature="422:487" ph="{...}" />
-                <marker date="1600459269927" expanded="true" signature="520:843" ph="{...}" />
+                <marker date="1600469740924" expanded="false" signature="6:78" ph="..." />
+                <marker date="1600469740924" expanded="true" signature="120:1349" ph="{...}" />
+                <marker date="1600469740924" expanded="true" signature="519:584" ph="{...}" />
+                <marker date="1600469740924" expanded="true" signature="617:1347" ph="{...}" />
+                <marker date="1600469740924" expanded="true" signature="654:924" ph="{...}" />
+                <marker date="1600469740924" expanded="true" signature="808:914" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Platform.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+              <folding>
+                <marker date="1600472942462" expanded="false" signature="6:78" ph="..." />
+                <marker date="1600472942462" expanded="true" signature="117:827" ph="{...}" />
+                <marker date="1600472942462" expanded="true" signature="378:493" ph="{...}" />
+                <marker date="1600472942462" expanded="true" signature="581:825" ph="{...}" />
+                <marker date="1600472942462" expanded="true" signature="667:819" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/ColorIDs.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+              <folding>
+                <marker date="1600472311536" expanded="true" signature="6:92" ph="..." />
+                <marker date="1600472311536" expanded="true" signature="131:198" ph="{...}" />
+                <marker date="1600472311536" expanded="true" signature="156:196" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -30,9 +66,20 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ColorIDs.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Platform.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Pl_Movement.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Pl_Movement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ColorIDs.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Platform.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-12" />
     <option name="y" value="-12" />
     <option name="width" value="2800" />
@@ -98,15 +145,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600460291983</updated>
-      <workItem from="1600460303637" duration="246000" />
+      <workItem from="1600460303637" duration="4220000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="246000" />
+    <option name="totallyTimeSpent" value="4220000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1513" height="973" extended-state="7" />
+    <frame x="-6" y="-6" width="1513" height="973" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Image Layers" />
@@ -115,6 +172,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="NuGet" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unity" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Unit Tests" />
       <window_info anchor="bottom" id="Terminal" />
@@ -155,12 +213,41 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/Pl_Movement.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="240">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
           <folding>
-            <marker date="1600459269927" expanded="false" signature="6:78" ph="..." />
-            <marker date="1600459269927" expanded="true" signature="120:846" ph="{...}" />
-            <marker date="1600459269927" expanded="true" signature="422:487" ph="{...}" />
-            <marker date="1600459269927" expanded="true" signature="520:843" ph="{...}" />
+            <marker date="1600469740924" expanded="false" signature="6:78" ph="..." />
+            <marker date="1600469740924" expanded="true" signature="120:1349" ph="{...}" />
+            <marker date="1600469740924" expanded="true" signature="519:584" ph="{...}" />
+            <marker date="1600469740924" expanded="true" signature="617:1347" ph="{...}" />
+            <marker date="1600469740924" expanded="true" signature="654:924" ph="{...}" />
+            <marker date="1600469740924" expanded="true" signature="808:914" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ColorIDs.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding>
+            <marker date="1600472311536" expanded="true" signature="6:92" ph="..." />
+            <marker date="1600472311536" expanded="true" signature="131:198" ph="{...}" />
+            <marker date="1600472311536" expanded="true" signature="156:196" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Platform.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+          <folding>
+            <marker date="1600472942462" expanded="false" signature="6:78" ph="..." />
+            <marker date="1600472942462" expanded="true" signature="117:827" ph="{...}" />
+            <marker date="1600472942462" expanded="true" signature="378:493" ph="{...}" />
+            <marker date="1600472942462" expanded="true" signature="581:825" ph="{...}" />
+            <marker date="1600472942462" expanded="true" signature="667:819" ph="{...}" />
           </folding>
         </state>
       </provider>

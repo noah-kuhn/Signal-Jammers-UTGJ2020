@@ -6,12 +6,17 @@
     <e p="C:\Users\Grant\Documents\GitHub\Signal-Jammers-UTGJ2020\UTGJ2020" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Materials n Shaders" t="Include">
+          <e p="SolidScenery.shader" t="Include" />
+        </e>
         <e p="Scripts" t="Include">
           <e p="BillBoard.cs" t="Include" />
+          <e p="ColorIDs.cs" t="Include" />
           <e p="Managers" t="Include">
             <e p="GeneralManager.cs" t="Include" />
             <e p="PlayerManager.cs" t="Include" />
           </e>
+          <e p="Platform.cs" t="Include" />
           <e p="Player" t="Include">
             <e p="MouseOrbit.cs" t="Include" />
             <e p="Pl_Movement.cs" t="Include" />
