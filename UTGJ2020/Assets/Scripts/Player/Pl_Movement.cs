@@ -22,7 +22,7 @@ public class Pl_Movement : MonoBehaviour
         if (controller.isGrounded) {
             verticalVelocity = Physics.gravity.y * gravityScale;
             Debug.Log(controller.isGrounded);
-            if (Input.GetKeyDown(KeyCode.Space)) {
+            if (Input.GetButton("Jump")) {
                 verticalVelocity = jumpForce;
                 Debug.Log(verticalVelocity);
             }
@@ -35,11 +35,5 @@ public class Pl_Movement : MonoBehaviour
         moveDirection.y += verticalVelocity;
         moveDirection = transform.TransformDirection(moveDirection);
         controller.Move(moveDirection * Time.deltaTime);
-    }
-
-    private void OnCollisionEnter(Collision collision) {
-        if (collision.gameObject.tag == "Ground") {
-
-        }
     }
 }
