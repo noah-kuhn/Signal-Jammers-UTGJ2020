@@ -4,26 +4,21 @@ using UnityEngine;
 
 public class Pl_Movement : MonoBehaviour
 {
-    private InputMaster controls;
-    private Rigidbody rb;
-    [Tooltip("Player speed")]
     public float moveSpeed = 50f;
+    [Tooltip("Changes the speed at which the player falls. Consequence of using CharacterController and not Rigidbody")]
+    public float gravityScale = 3;
+    private CharacterController controller;
+    private Vector3 moveDirection;
+    
     private void Awake() {
-        controls = new InputMaster();
-        rb = GetComponent<Rigidbody>();
-        controls.Player.Movement.performed += context => Move(context.ReadValue<Vector2>());
+        controller = GetComponent<CharacterController>();
     }
 
-    void Move(Vector2 direction) {
-        Debug.Log("Player wants to move " + direction);
-        rb.AddForce(direction * moveSpeed);
+    private void FixedUpdate() {
+        
+        moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical")) * moveSpeed;
+        moveDirection.y += Physics.gravity.y * gravityScale;
+        controller.Move(moveDirection * Time.deltaTime);
     }
 
-    private void OnEnable() {
-        controls.Enable();
-    }
-
-    private void OnDisable() {
-        controls.Disable();
-    }
 }
