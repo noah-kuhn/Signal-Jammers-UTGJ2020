@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Grant\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Grant\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_UTGJ2020.1349685817.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Grant\Documents\GitHub\Signal-Jammers-UTGJ2020\UTGJ2020" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="BillBoard.cs" t="Include" />
+          <e p="Managers" t="Include">
+            <e p="GeneralManager.cs" t="Include" />
+            <e p="PlayerManager.cs" t="Include" />
+          </e>
+          <e p="Player" t="Include">
+            <e p="MouseOrbit.cs" t="Include" />
+            <e p="Pl_Movement.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+      <e p="UTGJ2020.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>
