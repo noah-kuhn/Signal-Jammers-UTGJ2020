@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9bb072cd-8936-4cef-a522-2b1ac8f3aa19" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UTGJ2020/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UTGJ2020/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Colorer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Colorer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Platform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Platform.cs" afterDir="false" />
-    </list>
+    <list default="true" id="9bb072cd-8936-4cef-a522-2b1ac8f3aa19" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,24 +72,23 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Colorer.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="48" column="29" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
+            <state relative-caret-position="232">
+              <caret line="44" column="34" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
               <folding>
-                <marker date="1600553190303" expanded="false" signature="6:78" ph="..." />
-                <marker date="1600553190303" expanded="true" signature="116:4469" ph="{...}" />
-                <marker date="1600553190303" expanded="true" signature="462:1147" ph="{...}" />
-                <marker date="1600553190303" expanded="true" signature="1253:2243" ph="{...}" />
-                <marker date="1600553190303" expanded="true" signature="1563:2011" ph="{...}" />
-                <marker date="1600553190303" expanded="true" signature="2110:2237" ph="{...}" />
-                <marker date="1600553190303" expanded="true" signature="2262:3024" ph="{...}" />
-                <marker date="1600553190303" expanded="true" signature="2652:2730" ph="{...}" />
-                <marker date="1600553190303" expanded="true" signature="2739:2921" ph="/* finally, if our particle system is ready (again, that just means our system is not already ... */" />
-                <marker date="1600553190303" expanded="true" signature="2962:3018" ph="{...}" />
-                <marker date="1600553190303" expanded="true" signature="3030:3289" ph="/* take the passed ColorIDs.Colors value, make it an actual Color, generate a godforsaken Gradient ... */" />
-                <marker date="1600553190303" expanded="true" signature="3329:4106" ph="{...}" />
-                <marker date="1600553190303" expanded="true" signature="3554:3666" ph="{...}" />
-                <marker date="1600553190303" expanded="true" signature="3735:3839" ph="{...}" />
-                <marker date="1600553190303" expanded="true" signature="4225:4467" ph="{...}" />
+                <marker date="1600553405936" expanded="false" signature="6:78" ph="..." />
+                <marker date="1600553405936" expanded="true" signature="116:4313" ph="{...}" />
+                <marker date="1600553405936" expanded="true" signature="462:1147" ph="{...}" />
+                <marker date="1600553405936" expanded="true" signature="1253:2087" ph="{...}" />
+                <marker date="1600553405936" expanded="true" signature="1563:2011" ph="{...}" />
+                <marker date="1600553405936" expanded="true" signature="2106:2868" ph="{...}" />
+                <marker date="1600553405936" expanded="true" signature="2496:2574" ph="{...}" />
+                <marker date="1600553405936" expanded="true" signature="2583:2765" ph="/* finally, if our particle system is ready (again, that just means our system is not already ... */" />
+                <marker date="1600553405936" expanded="true" signature="2806:2862" ph="{...}" />
+                <marker date="1600553405936" expanded="true" signature="2874:3133" ph="/* take the passed ColorIDs.Colors value, make it an actual Color, generate a godforsaken Gradient ... */" />
+                <marker date="1600553405936" expanded="true" signature="3173:3950" ph="{...}" />
+                <marker date="1600553405936" expanded="true" signature="3398:3510" ph="{...}" />
+                <marker date="1600553405936" expanded="true" signature="3579:3683" ph="{...}" />
+                <marker date="1600553405936" expanded="true" signature="4069:4311" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -235,7 +229,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20668000" />
+    <option name="totallyTimeSpent" value="21206000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -248,7 +242,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1513" height="973" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Image Layers" />
@@ -424,24 +417,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Colorer.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="48" column="29" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
+        <state relative-caret-position="232">
+          <caret line="44" column="34" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
           <folding>
-            <marker date="1600553190303" expanded="false" signature="6:78" ph="..." />
-            <marker date="1600553190303" expanded="true" signature="116:4469" ph="{...}" />
-            <marker date="1600553190303" expanded="true" signature="462:1147" ph="{...}" />
-            <marker date="1600553190303" expanded="true" signature="1253:2243" ph="{...}" />
-            <marker date="1600553190303" expanded="true" signature="1563:2011" ph="{...}" />
-            <marker date="1600553190303" expanded="true" signature="2110:2237" ph="{...}" />
-            <marker date="1600553190303" expanded="true" signature="2262:3024" ph="{...}" />
-            <marker date="1600553190303" expanded="true" signature="2652:2730" ph="{...}" />
-            <marker date="1600553190303" expanded="true" signature="2739:2921" ph="/* finally, if our particle system is ready (again, that just means our system is not already ... */" />
-            <marker date="1600553190303" expanded="true" signature="2962:3018" ph="{...}" />
-            <marker date="1600553190303" expanded="true" signature="3030:3289" ph="/* take the passed ColorIDs.Colors value, make it an actual Color, generate a godforsaken Gradient ... */" />
-            <marker date="1600553190303" expanded="true" signature="3329:4106" ph="{...}" />
-            <marker date="1600553190303" expanded="true" signature="3554:3666" ph="{...}" />
-            <marker date="1600553190303" expanded="true" signature="3735:3839" ph="{...}" />
-            <marker date="1600553190303" expanded="true" signature="4225:4467" ph="{...}" />
+            <marker date="1600553405936" expanded="false" signature="6:78" ph="..." />
+            <marker date="1600553405936" expanded="true" signature="116:4313" ph="{...}" />
+            <marker date="1600553405936" expanded="true" signature="462:1147" ph="{...}" />
+            <marker date="1600553405936" expanded="true" signature="1253:2087" ph="{...}" />
+            <marker date="1600553405936" expanded="true" signature="1563:2011" ph="{...}" />
+            <marker date="1600553405936" expanded="true" signature="2106:2868" ph="{...}" />
+            <marker date="1600553405936" expanded="true" signature="2496:2574" ph="{...}" />
+            <marker date="1600553405936" expanded="true" signature="2583:2765" ph="/* finally, if our particle system is ready (again, that just means our system is not already ... */" />
+            <marker date="1600553405936" expanded="true" signature="2806:2862" ph="{...}" />
+            <marker date="1600553405936" expanded="true" signature="2874:3133" ph="/* take the passed ColorIDs.Colors value, make it an actual Color, generate a godforsaken Gradient ... */" />
+            <marker date="1600553405936" expanded="true" signature="3173:3950" ph="{...}" />
+            <marker date="1600553405936" expanded="true" signature="3398:3510" ph="{...}" />
+            <marker date="1600553405936" expanded="true" signature="3579:3683" ph="{...}" />
+            <marker date="1600553405936" expanded="true" signature="4069:4311" ph="{...}" />
           </folding>
         </state>
       </provider>
