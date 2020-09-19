@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeOutSpeed: 1.5
-  fadeImage: {fileID: 0}
+  fadeImage: {fileID: 1273128304}
 --- !u!4 &93271189
 Transform:
   m_ObjectHideFlags: 0
