@@ -17,6 +17,8 @@ public class Pl_Movement : MonoBehaviour
     private Vector3 moveDirection;
     private float terminalVel;
     private Animator _anim;
+    [SerializeField] private float _coyoteTime;
+    private float timeLeftPlatform;
     
     private void Awake() {
         controller = GetComponent<CharacterController>();
@@ -34,14 +36,19 @@ public class Pl_Movement : MonoBehaviour
     private void FixedUpdate()
     {
         if (controller.isGrounded) {
+            timeLeftPlatform = 0;
             verticalVelocity = Physics.gravity.y * gravityScale;
             if (Input.GetButton("Jump")) {
                 verticalVelocity = jumpForce;
             }
         } else {
             // Gradually accelerates a falling player to terminal velocity
+            timeLeftPlatform += Time.deltaTime;
             verticalVelocity += terminalVel * Time.deltaTime;
             Mathf.Clamp(verticalVelocity, 0, terminalVel);
+            if(timeLeftPlatform < _coyoteTime && Input.GetButton("Jump")){
+                verticalVelocity = jumpForce;
+            }
         }
 
         moveVector = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
