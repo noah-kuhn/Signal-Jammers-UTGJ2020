@@ -25,8 +25,6 @@ public class Colorer : MonoBehaviour
         UpdateColor(PlayerManager.CurrentColor); //set to whatever the manager says it should be
     }
 
-    
-
     void Update(){
         //if our particle system is not active and we're not paused, then our particle system is ready
         partSysReady = !partSys.IsAlive() && !PlayerManager.isPaused && !_renderer.enabled;
@@ -82,6 +80,7 @@ public class Colorer : MonoBehaviour
     //from it with full opacity to full transparency, and set that Gradient to the particle system's
     //official "color over lifetime" value for the particles
     public void UpdateColor(ColorIDs.Colors c){
+        Debug.Log($"UpdateColor called with {c}!");
         Color newColor = PlayerManager.MakeColor(c);
         Gradient grad = new Gradient();
         //what's with this indenting, you ask? yeah, it's weird, but there's a reason

@@ -22,9 +22,9 @@ public class PlayerManager : MonoBehaviour
             AvailableColors.Add(ColorIDs.Colors.NONE);
             CurrentColor = AvailableColors[index];
             //for testing color switching: give us all colors
-            AddColor(ColorIDs.Colors.Green);
-            AddColor(ColorIDs.Colors.Blue);
-            AddColor(ColorIDs.Colors.Red);
+            // AddColor(ColorIDs.Colors.Green);
+            // AddColor(ColorIDs.Colors.Blue);
+            // AddColor(ColorIDs.Colors.Red);
         } else {
             Destroy(gameObject); //ok there's already a PlayerManager. so die
         }
@@ -39,7 +39,10 @@ public class PlayerManager : MonoBehaviour
             //so we must be reloading this scene-- let's set all this data back
             //to where it was when we started this scene!
             CurrentColor = lsd.saved_CurrentColor;
-            AvailableColors = lsd.saved_AvailableColors;
+            AvailableColors.Clear();
+            foreach(ColorIDs.Colors c in lsd.saved_AvailableColors){
+                AvailableColors.Add(c);
+            }
             index = lsd.saved_index;
         }else{
             //ok either we have no LoadSceneData or its sceneName is different
@@ -121,7 +124,10 @@ public class PlayerManager : MonoBehaviour
         public LoadSceneData(string _s, ColorIDs.Colors _currC, List<ColorIDs.Colors> _avC, int _i){
             sceneName = _s;
             saved_CurrentColor = _currC;
-            saved_AvailableColors = _avC;
+            saved_AvailableColors = new List<ColorIDs.Colors>();
+            foreach(ColorIDs.Colors c in _avC){
+                saved_AvailableColors.Add(c);
+            }
             saved_index = _i;
         }
         
