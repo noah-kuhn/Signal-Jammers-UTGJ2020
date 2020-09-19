@@ -66,7 +66,7 @@ public class PlayerManager : MonoBehaviour
     private static int index;
 
     //here's the player! very important
-    public GameObject player{ get; set; }
+    public static GameObject player{ get; set; }
 
     //and this LSD is not for tripping, but rather for loading in the data from the beginning
     //of the scene in the event our player dies and needs to reset the scene and themself

@@ -5,7 +5,7 @@ using UnityEngine;
 public class BillBoard : MonoBehaviour
 {
 
-    public Camera cam;
+    private Camera cam;
     public bool hasRotation;
     private SpriteRenderer _spriteRenderer;
     public Sprite frontSprite;
@@ -17,6 +17,7 @@ public class BillBoard : MonoBehaviour
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _baseRotation = transform.eulerAngles.y;
+        cam = PlayerManager.player.GetComponentInChildren<Camera>();
     }
 
     private void Update()

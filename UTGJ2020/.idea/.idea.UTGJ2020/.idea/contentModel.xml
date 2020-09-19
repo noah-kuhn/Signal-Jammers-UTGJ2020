@@ -13,6 +13,7 @@
           <e p="BillBoard.cs" t="Include" />
           <e p="Colorer.cs" t="Include" />
           <e p="ColorIDs.cs" t="Include" />
+          <e p="ColorObtainer.cs" t="Include" />
           <e p="Managers" t="Include">
             <e p="PlayerManager.cs" t="Include" />
           </e>
