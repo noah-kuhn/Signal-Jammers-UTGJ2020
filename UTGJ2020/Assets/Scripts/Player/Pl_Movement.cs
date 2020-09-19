@@ -17,7 +17,7 @@ public class Pl_Movement : MonoBehaviour
     private Vector3 moveDirection;
     private float terminalVel;
     private Animator _anim;
-    [SerializeField] private float _coyoteTime;
+    [SerializeField] private float _coyoteTime = 0.1f;
     private float timeLeftPlatform;
     
     private void Awake() {
@@ -37,7 +37,6 @@ public class Pl_Movement : MonoBehaviour
     {
         if (controller.isGrounded) {
             timeLeftPlatform = 0;
-            verticalVelocity = Physics.gravity.y * gravityScale;
             if (Input.GetButton("Jump")) {
                 verticalVelocity = jumpForce;
             }
