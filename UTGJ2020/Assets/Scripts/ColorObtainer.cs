@@ -10,7 +10,7 @@ public class ColorObtainer : MonoBehaviour
     private void OnTriggerEnter(Collider other) {
         if (other.transform.CompareTag("Player")) 
         {
-            PlayerManager.AvailableColors.Add(color);
+            PlayerManager.AddColor(color);
         }
     }
 
