@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -13,7 +14,7 @@ public class PauseMenu : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        if (Input.GetKeyDown(KeyCode.Escape)) {
+        if (Input.GetKeyDown(KeyCode.T)) {
             if (paused) {
                 Resume();
             }
@@ -33,7 +34,7 @@ public class PauseMenu : MonoBehaviour {
 
     void Pause() {
         Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.None;
         pauseMenu.enabled = true;
         Time.timeScale = 0;
         paused = true;
@@ -41,7 +42,8 @@ public class PauseMenu : MonoBehaviour {
 
     public void QuitToMenu() {
         // SHOULD boot to menu
-        SceneManager.LoadScene("Main menu");
+        Resume();
+        SceneManager.LoadScene("Main menu", LoadSceneMode.Single);
     }
     public void QuitGame() {
         Application.Quit();
