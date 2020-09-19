@@ -51,13 +51,21 @@ public class MouseOrbit : MonoBehaviour {
             Quaternion rotation = Quaternion.Euler(y, x, 0);
  
             distance = Mathf.Clamp(distance - Input.GetAxis("Mouse ScrollWheel")*5, distanceMin, distanceMax);
+            
+            //this Vector3 is the line used in the next else block
             Vector3 playerToCamVect = (transform.position - target.position).normalized * distanceMax;
 
             RaycastHit hit;
             if (Physics.Linecast (target.position, transform.position, out hit)) 
             {
+                //something is in between where the camera wants to be and the player.
+                //simply move in the camera so it's 75% of the way to whatever horrible
+                //thing is trying to get between it and the player
                 distance = hit.distance * 0.75f;
             }else if(Physics.Linecast (target.position, target.position + playerToCamVect, out hit)){
+                //okay so this time we extend the line from player to camera an extra length
+                //(to be precise, it extends distanceMax length) and use that to find if the
+                //camera could be further out without clipping into something else.
                 distance = hit.distance * 0.8f;
             }
 

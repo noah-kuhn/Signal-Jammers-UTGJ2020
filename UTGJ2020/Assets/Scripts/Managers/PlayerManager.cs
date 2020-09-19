@@ -6,11 +6,13 @@ using UnityEngine.SceneManagement;
 public class PlayerManager : MonoBehaviour
 {
     //here's our property: now we can say PlayerManager.Instance to get the instance
-    //without worrying about making multiple PlayerManagers
+    //without worrying about making multiple PlayerManagers. Note that most of the methods
+    //and stuff inside of this script are also static, so PlayerManager.<func name> is
+    //typically also valid.
     public static PlayerManager Instance { get; private set; }
 
-    //make this the instance
     void Awake() {
+        //basic singleton stuff-- make sure there's only one instance, and it's this one!
         if (Instance == null)
         {
             Instance = this; //there is no PlayerManager-- so this can be it
@@ -26,37 +28,66 @@ public class PlayerManager : MonoBehaviour
         } else {
             Destroy(gameObject); //ok there's already a PlayerManager. so die
         }
-        if()
+
+        //The following block is for loading a scene's data when restarting it
+
+        //we have a LoadSceneData and its scene number is the same as our scene
+        if(lsd && lsd.sceneNumber == SceneManager.GetActiveScene().buildIndex){
+            //so we must be reloading this scene-- let's set all this data back
+            //to where it was when we started this scene!
+            CurrentColor = lsd.saved_CurrentColor;
+            AvailableColors = lsd.saved_AvailableColors;
+            index = lsd.saved_index;
+        }else{
+            //ok either we have no LoadSceneData or its sceneNumber is different
+            //from our last one-- save current info as our new LoadSceneData
+            lsd = new LoadSceneData(SceneManager.GetActiveScene().buildIndex,
+                        CurrentColor, AvailableColors, index);
+        }
+        //a quick note on the else block: we could add an UpdateData() function to the
+        //LoadSceneData class if so desired (would maybe save some space)
     }
 
     //okay let's list the data we need to transfer between scenes!
 
     //here is the current color
     public static ColorIDs.Colors CurrentColor{ get; set; }
+
     //here is a list of colors we've unlocked
     public static List<ColorIDs.Colors> AvailableColors{ get; set; }
 
     // Communicates to MouseOrbit and Colorer to lock them when the game is paused
     public static bool isPaused;
 
+    //indicates which element of our available colors list is the current one (useful for switching)
     private static int index;
 
+    //and this LSD is not for tripping, but rather for loading in the data from the beginning
+    //of the scene in the event our player dies and needs to reset the scene and themself
+    private static LoadSceneData lsd;
+
+    //adds the color specified, switches to it, special case for first color added
     public static void AddColor(ColorIDs.Colors c){
         AvailableColors.Add(c);
         SwitchColor();
         if(AvailableColors.Contains(ColorIDs.Colors.NONE)){
+            //special case: for the first color added, remove NONE from the available colors
+            //list and force the index back down to the first element (which is now our color)
             AvailableColors.Remove(ColorIDs.Colors.NONE);
             index = 0;
         }
     }
 
+    //this one is easy: if we have multiple colors, switch to the next one in the list, wrapping
+    //back to the beginning of it if necessary
     public static void SwitchColor(){
-        if(AvailableColors.Count > 1){
-            index = (index + 1) % AvailableColors.Count;
+        if(AvailableColors.Count > 1){ //C# uses .Count??? is this some kind of sick joke?? what???
+            index = (index + 1) % AvailableColors.Count; //this is the increment/wrap-around logic
             CurrentColor = AvailableColors[index];
         }
     }
 
+    //this is just a switch statement. return the right Color for the right ColorIDs.Colors value
     public static Color MakeColor(ColorIDs.Colors c){
         switch(c){
             case ColorIDs.Colors.Green:
@@ -66,21 +97,24 @@ public class PlayerManager : MonoBehaviour
             case ColorIDs.Colors.Red:
                 return Color.red;
             default:
-                return Color.clear;
+                Debug.Log("bad color argument-- commence panic");
+                return Color.gray;
         }
     }
 
+    //this is a private class because we really only need it inside the PlayerManager
     private class LoadSceneData{
         int sceneNumber;
-        ColorIDs.Colors load_CurrentColor;
-        List<ColorIDs.Colors> load_AvailableColors;
-        int load_index;
+        ColorIDs.Colors saved_CurrentColor;
+        List<ColorIDs.Colors> saved_AvailableColors;
+        int saved_index;
 
+        //in most cases we should pass in our scene number, current color, available colors, and index
         private LoadSceneData(int _s, ColorIDs.Colors _currC, List<ColorIDs.Colors> _avC, int _i){
             sceneNumber = _s;
-            load_CurrentColor = _currC;
-            load_AvailableColors = _avC;
-            load_index = _i;
+            saved_CurrentColor = _currC;
+            saved_AvailableColors = _avC;
+            saved_index = _i;
         }
         
     }
