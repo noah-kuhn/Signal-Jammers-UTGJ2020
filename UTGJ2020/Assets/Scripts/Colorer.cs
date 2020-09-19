@@ -8,7 +8,7 @@ public class Colorer : MonoBehaviour
     public bool partSysReady; //is our particle system ready to burst?
     private SphereCollider _collider; //the actual trigger for the burst
     public float burstSize;
-    
+
     void Start(){
         partSys = GetComponent<ParticleSystem>();
         _collider = GetComponentInChildren<SphereCollider>();
@@ -26,7 +26,8 @@ public class Colorer : MonoBehaviour
         _collider.enabled = true;
         while (_collider.radius < burstSize)
         {
-            _collider.radius += .2f;
+
+            _collider.radius += burstSize / 10;
             yield return new WaitForSeconds(.05f);
             //tweaked these two numbers until they more or less lined up with the particles
         }
