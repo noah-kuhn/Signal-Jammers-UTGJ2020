@@ -44,9 +44,8 @@ public class Colorer : MonoBehaviour
         }
         //finally, if our particle system is ready (again, that just means our system is not already
         //active and we aren't paused) and we push the other button, switch our color out
-        if(partSysReady && Input.GetButtonDown("Fire2")){
-            PlayerManager.SwitchColor();
-            UpdateColor(PlayerManager.CurrentColor);
+        if(Input.GetButtonDown("Fire2")){
+            StartCoroutine(UpdatePartSys());
         }
     }
 
@@ -63,5 +62,14 @@ public class Colorer : MonoBehaviour
                 new GradientAlphaKey(0.0f, 1.0f)}); //completed second-argument array
         var col = partSys.colorOverLifetime; //"We CaN't ChAnGe ThE cOlOr UnLeSs YoU mAkE tHiS a VaR" -Unity
         col.color = grad;
+    }
+
+    // Updates the color of the particle system once the particles disappear
+    private IEnumerator UpdatePartSys() {
+        // Honestly I don't know why a lambda operator works here but unity says I need one
+        yield return new WaitUntil(() => partSysReady);
+        PlayerManager.SwitchColor();
+        UpdateColor(PlayerManager.CurrentColor);
+
     }
 }
