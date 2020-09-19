@@ -13,7 +13,7 @@ public class BillBoard : MonoBehaviour
     public Sprite rightSprite;
     public Sprite backSprite;
     private float _baseRotation;
-    private void Awake()
+    private void Start()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _baseRotation = transform.eulerAngles.y;
