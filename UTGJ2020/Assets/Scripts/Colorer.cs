@@ -14,5 +14,8 @@ public class Colorer : MonoBehaviour
 
     void Update(){
         canBurst = !partSys.IsAlive();
+        if(canBurst && Input.GetButtonDown("Fire1")){
+            partSys.Play();
+        }
     }
 }

@@ -48,7 +48,6 @@ public class Pl_Movement : MonoBehaviour
             verticalVelocity = Physics.gravity.y * gravityScale;
             if (Input.GetButton("Jump")) {
                 verticalVelocity = jumpForce;
-                Debug.Log(verticalVelocity);
             }
         } else {
             // Gradually accelerates a falling player to terminal velocity
