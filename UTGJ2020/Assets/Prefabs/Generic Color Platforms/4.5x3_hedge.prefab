@@ -104,9 +104,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6385752936961026857}
   - component: {fileID: 5656322469266985253}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 4.5x3_hedge
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
