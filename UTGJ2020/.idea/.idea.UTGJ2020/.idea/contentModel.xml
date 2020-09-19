@@ -11,6 +11,7 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="BillBoard.cs" t="Include" />
+          <e p="Colorer.cs" t="Include" />
           <e p="ColorIDs.cs" t="Include" />
           <e p="Managers" t="Include">
             <e p="GeneralManager.cs" t="Include" />
