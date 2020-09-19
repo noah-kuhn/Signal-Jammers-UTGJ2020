@@ -14,6 +14,8 @@ public class Colorer : MonoBehaviour
         _collider = GetComponentInChildren<SphereCollider>();
         _collider.enabled = false;
         canBurst = false;
+        var pSMain = partSys.main;
+        pSMain.startColor = new Color(145, 145, 145, 255);
         UpdateColor(PlayerManager.CurrentColor);
     }
 
@@ -38,7 +40,7 @@ public class Colorer : MonoBehaviour
             partSys.Play();
             StartCoroutine(DoBurst());
         }
-        if(Input.GetButtonDown("Fire2")){
+        if(canBurst && Input.GetButtonDown("Fire2")){
             PlayerManager.SwitchColor();
             UpdateColor(PlayerManager.CurrentColor);
         }

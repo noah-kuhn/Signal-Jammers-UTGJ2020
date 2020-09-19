@@ -456,21 +456,6 @@ PrefabInstance:
       propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.scalar
       value: 200
       objectReference: {fileID: 0}
-    - target: {fileID: 4401918215135068086, guid: 285de20193e0eda4596abbdc67d7aca0,
-        type: 3}
-      propertyPath: InitialModule.startColor.maxColor.r
-      value: 0.5019608
-      objectReference: {fileID: 0}
-    - target: {fileID: 4401918215135068086, guid: 285de20193e0eda4596abbdc67d7aca0,
-        type: 3}
-      propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.5019608
-      objectReference: {fileID: 0}
-    - target: {fileID: 4401918215135068086, guid: 285de20193e0eda4596abbdc67d7aca0,
-        type: 3}
-      propertyPath: InitialModule.startColor.maxColor.b
-      value: 0.5019608
-      objectReference: {fileID: 0}
     - target: {fileID: 6721741928448524835, guid: 285de20193e0eda4596abbdc67d7aca0,
         type: 3}
       propertyPath: m_LocalPosition.x
