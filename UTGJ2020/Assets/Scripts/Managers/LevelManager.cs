@@ -26,7 +26,7 @@ public class LevelManager : MonoBehaviour
     public static string CurrentSceneName{ get; set; }
 
     public static void RestartScene(){
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        ProgressToScene(SceneManager.GetActiveScene().name);
     }
 
     public static void ProgressToScene(string name){
