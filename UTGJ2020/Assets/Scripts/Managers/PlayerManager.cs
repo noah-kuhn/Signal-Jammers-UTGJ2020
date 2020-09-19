@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -25,6 +26,7 @@ public class PlayerManager : MonoBehaviour
         } else {
             Destroy(gameObject); //ok there's already a PlayerManager. so die
         }
+        if()
     }
 
     //okay let's list the data we need to transfer between scenes!
@@ -66,6 +68,21 @@ public class PlayerManager : MonoBehaviour
             default:
                 return Color.clear;
         }
+    }
+
+    private class LoadSceneData{
+        int sceneNumber;
+        ColorIDs.Colors load_CurrentColor;
+        List<ColorIDs.Colors> load_AvailableColors;
+        int load_index;
+
+        private LoadSceneData(int _s, ColorIDs.Colors _currC, List<ColorIDs.Colors> _avC, int _i){
+            sceneNumber = _s;
+            load_CurrentColor = _currC;
+            load_AvailableColors = _avC;
+            load_index = _i;
+        }
+        
     }
 
 }
