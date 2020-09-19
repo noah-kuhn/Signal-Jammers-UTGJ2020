@@ -6,13 +6,19 @@ public class Colorer : MonoBehaviour
 {
     public ParticleSystem partSys;
     public bool partSysReady; //is our particle system ready to burst?
+    [Range(0, 1)] public float sphereTransparency = 0.5f;
     private SphereCollider _collider; //the actual trigger for the burst
+    private MeshRenderer _renderer;
+    private Material _material;
     public float burstSize;
 
     void Start(){
         partSys = GetComponent<ParticleSystem>();
         _collider = GetComponentInChildren<SphereCollider>();
+        _renderer = GetComponentInChildren<MeshRenderer>();
+        _material = _renderer.material;
         _collider.enabled = false;
+        _renderer.enabled = false;
         partSysReady = false; //this *could* be true, but it fixes itself in Update so let's just not
         var pSMain = partSys.main; //"We CaN't ChAnGe ThE cOlOr UnLeSs YoU mAkE tHiS a VaR" -Unity
         pSMain.startColor = new Color(145, 145, 145, 255); //set start color to a middle-ish gray
@@ -22,16 +28,21 @@ public class Colorer : MonoBehaviour
     //this coroutine brought to you by Grant Ross. Thanks Grant! -Noah
     private IEnumerator DoBurst()
     {
-        _collider.radius = 0.1f;
+        const float START_DIAM = 0.1f;
+        //_collider.radius = START_DIAM / 2;
+        _renderer.transform.localScale = new Vector3(START_DIAM, START_DIAM, START_DIAM);
         _collider.enabled = true;
-        while (_collider.radius < burstSize)
+        _renderer.enabled = true;
+        while (_renderer.transform.localScale.x <= burstSize)
         {
-
-            _collider.radius += burstSize / 10;
-            yield return new WaitForSeconds(.05f);
+            float expansionRate = (burstSize / 30); // This number is ~arbitrary based on the particle speed
+            _renderer.transform.localScale += new Vector3(expansionRate, expansionRate, expansionRate);
+            // _collider.radius = _renderer.transform.localScale.x / 2;
+            yield return new WaitForSeconds(.01f);
             //tweaked these two numbers until they more or less lined up with the particles
         }
         _collider.enabled = false;
+        _renderer.enabled = false;
     }
 
     void Update(){
@@ -62,6 +73,9 @@ public class Colorer : MonoBehaviour
                 new GradientAlphaKey(0.0f, 1.0f)}); //completed second-argument array
         var col = partSys.colorOverLifetime; //"We CaN't ChAnGe ThE cOlOr UnLeSs YoU mAkE tHiS a VaR" -Unity
         col.color = grad;
+
+        newColor.a = sphereTransparency;
+        _material.SetColor("_Color", newColor);
     }
 
     // Updates the color of the particle system once the particles disappear
