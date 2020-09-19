@@ -6,9 +6,12 @@ public class Platform : MonoBehaviour
 {
     public Mesh onMesh;
     public Mesh offMesh;
+    public Material onMaterial;
+    public Material offMaterial;
     public ColorIDs.Colors platformColor;
     private MeshFilter _meshFilter;
     private MeshCollider _meshCollider;
+    private Material _material;
     public bool active;
     
     // Start is called before the first frame update
@@ -24,6 +27,8 @@ public class Platform : MonoBehaviour
         _meshFilter.mesh = onMesh;
         _meshCollider.isTrigger = !active;
         _meshFilter.mesh = active ? onMesh : offMesh;
+        _material = GetComponent<Renderer>().material;
+        _material = onMaterial;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -33,6 +38,7 @@ public class Platform : MonoBehaviour
             active = !active;
             _meshCollider.isTrigger = !active;
             _meshFilter.mesh = active ? onMesh : offMesh;
+            _material = active ? onMaterial : offMaterial;
         }
     }
 
