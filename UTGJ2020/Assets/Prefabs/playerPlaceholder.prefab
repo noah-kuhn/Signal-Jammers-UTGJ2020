@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 4401918215135068086}
   - component: {fileID: 4401918215135068087}
   - component: {fileID: 4401918215135068088}
-  m_Layer: 0
+  - component: {fileID: 3571912086657354153}
+  m_Layer: 8
   m_Name: Particle System
-  m_TagString: Untagged
+  m_TagString: Burst
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4827,6 +4828,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   partSys: {fileID: 4401918215135068086}
   canBurst: 0
+  burstSize: 0
+--- !u!135 &3571912086657354153
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4401918215135068084}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6721741928448524838
 GameObject:
   m_ObjectHideFlags: 0
