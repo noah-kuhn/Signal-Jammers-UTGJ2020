@@ -74,8 +74,10 @@ public class PlayerManager : MonoBehaviour
 
     //adds the color specified, switches to it, special case for first color added
     public static void AddColor(ColorIDs.Colors c){
-        AvailableColors.Add(c);
-        SwitchColor();
+        if(!AvailableColors.Contains(c)){
+            AvailableColors.Add(c);
+            SwitchColor();
+        }
         if(AvailableColors.Contains(ColorIDs.Colors.NONE)){
             //special case: for the first color added, remove NONE from the available colors
             //list and force the index back down to the first element (which is now our color)
