@@ -5,7 +5,7 @@ using UnityEngine;
 public class Colorer : MonoBehaviour
 {
     public ParticleSystem partSys;
-    public bool canBurst; //can we do the explosion thing?
+    public bool partSysReady; //is our particle system ready to burst?
     private SphereCollider _collider; //the actual trigger for the burst
     public float burstSize;
     
@@ -13,7 +13,7 @@ public class Colorer : MonoBehaviour
         partSys = GetComponent<ParticleSystem>();
         _collider = GetComponentInChildren<SphereCollider>();
         _collider.enabled = false;
-        canBurst = false; //this *could* be true, but it fixes itself in Update so let's just not
+        partSysReady = false; //this *could* be true, but it fixes itself in Update so let's just not
         var pSMain = partSys.main; //"We CaN't ChAnGe ThE cOlOr UnLeSs YoU mAkE tHiS a VaR" -Unity
         pSMain.startColor = new Color(145, 145, 145, 255); //set start color to a middle-ish gray
         UpdateColor(PlayerManager.CurrentColor); //set to whatever the manager says it should be

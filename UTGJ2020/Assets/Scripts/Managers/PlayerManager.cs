@@ -32,7 +32,7 @@ public class PlayerManager : MonoBehaviour
         //The following block is for loading a scene's data when restarting it
 
         //we have a LoadSceneData and its scene number is the same as our scene
-        if(lsd && lsd.sceneNumber == SceneManager.GetActiveScene().buildIndex){
+        if(lsd != null && lsd.sceneNumber == SceneManager.GetActiveScene().buildIndex){
             //so we must be reloading this scene-- let's set all this data back
             //to where it was when we started this scene!
             CurrentColor = lsd.saved_CurrentColor;
@@ -104,13 +104,13 @@ public class PlayerManager : MonoBehaviour
 
     //this is a private class because we really only need it inside the PlayerManager
     private class LoadSceneData{
-        int sceneNumber;
-        ColorIDs.Colors saved_CurrentColor;
-        List<ColorIDs.Colors> saved_AvailableColors;
-        int saved_index;
+        public int sceneNumber;
+        public ColorIDs.Colors saved_CurrentColor;
+        public List<ColorIDs.Colors> saved_AvailableColors;
+        public int saved_index;
 
         //in most cases we should pass in our scene number, current color, available colors, and index
-        private LoadSceneData(int _s, ColorIDs.Colors _currC, List<ColorIDs.Colors> _avC, int _i){
+        public LoadSceneData(int _s, ColorIDs.Colors _currC, List<ColorIDs.Colors> _avC, int _i){
             sceneNumber = _s;
             saved_CurrentColor = _currC;
             saved_AvailableColors = _avC;
