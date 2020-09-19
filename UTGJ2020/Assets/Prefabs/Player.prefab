@@ -5010,6 +5010,7 @@ MonoBehaviour:
   moveSpeed: 4
   gravityScale: 2
   jumpForce: 8
+  _coyoteTime: 0
 --- !u!143 &6721741928448524833
 CharacterController:
   m_ObjectHideFlags: 0
@@ -5021,7 +5022,7 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 0.8
+  m_Height: 0.75
   m_Radius: 0.3
   m_SlopeLimit: 39.4
   m_StepOffset: 0.1
