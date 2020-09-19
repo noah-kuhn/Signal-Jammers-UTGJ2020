@@ -33,7 +33,7 @@ public class Platform : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.transform.CompareTag("Burst") && PlayerManager.CurrentColor == platformColor) // add && Player color == platform color
+        if (other.transform.CompareTag("Burst") && PlayerManager.CurrentColor == platformColor) 
         {
             active = !active;
             _meshCollider.isTrigger = !active;

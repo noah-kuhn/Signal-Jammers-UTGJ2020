@@ -6,7 +6,7 @@ public class Colorer : MonoBehaviour
 {
     public ParticleSystem partSys;
     public bool partSysReady; //is our particle system ready to burst?
-    [Range(0, 1)] public float sphereTransparency = 0.5f;
+    [Range(0, 1)] public float sphereTransparency;
     private SphereCollider _collider; //the actual trigger for the burst
     private MeshRenderer _renderer;
     private Material _material;
