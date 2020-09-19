@@ -4828,7 +4828,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   partSys: {fileID: 4401918215135068086}
   partSysReady: 0
-  burstSize: 0
+  burstSize: 7.5
 --- !u!135 &3571912086657354153
 SphereCollider:
   m_ObjectHideFlags: 0
