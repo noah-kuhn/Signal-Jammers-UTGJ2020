@@ -23,6 +23,8 @@ public class Platform : MonoBehaviour
         _meshCollider = GetComponent<MeshCollider>();
         _meshFilter.mesh = onMesh;
         active = false;
+        _meshCollider.isTrigger = !active;
+        _meshFilter.mesh = active ? onMesh : offMesh;
     }
 
     private void OnTriggerEnter(Collider other)
