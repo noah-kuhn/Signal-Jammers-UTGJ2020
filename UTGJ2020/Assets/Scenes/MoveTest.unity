@@ -506,7 +506,7 @@ GameObject:
   - component: {fileID: 883293431}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -794,8 +794,8 @@ GameObject:
   - component: {fileID: 1406819251}
   - component: {fileID: 1406819250}
   - component: {fileID: 1406819253}
-  - component: {fileID: 1406819254}
   - component: {fileID: 1406819255}
+  - component: {fileID: 1406819256}
   m_Layer: 0
   m_Name: playerPlaceholder
   m_TagString: Untagged
@@ -897,24 +897,6 @@ MonoBehaviour:
   moveSpeed: 10
   gravityScale: 2
   jumpForce: 8
---- !u!143 &1406819254
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1406819249}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Height: 0.2
-  m_Radius: 0.1
-  m_SlopeLimit: 39.4
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1406819255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -928,6 +910,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 1205364915}
+--- !u!143 &1406819256
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406819249}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 0.2
+  m_Radius: 0.1
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1511431023
 GameObject:
   m_ObjectHideFlags: 0
