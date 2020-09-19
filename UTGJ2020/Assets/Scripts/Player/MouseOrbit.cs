@@ -35,7 +35,7 @@ public class MouseOrbit : MonoBehaviour {
             rb.freezeRotation = true;
         }
 
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
  
