@@ -29,6 +29,9 @@ public class PlayerManager : MonoBehaviour
             Destroy(gameObject); //ok there's already a PlayerManager. so die
         }
 
+        //on Awake, find the player
+        player = GameObject.FindWithTag("Player");
+
         //The following block is for loading a scene's data when restarting it
 
         //we have a LoadSceneData and its scene number is the same as our scene
@@ -61,6 +64,9 @@ public class PlayerManager : MonoBehaviour
 
     //indicates which element of our available colors list is the current one (useful for switching)
     private static int index;
+
+    //here's the player! very important
+    public GameObject player{ get; set; }
 
     //and this LSD is not for tripping, but rather for loading in the data from the beginning
     //of the scene in the event our player dies and needs to reset the scene and themself
