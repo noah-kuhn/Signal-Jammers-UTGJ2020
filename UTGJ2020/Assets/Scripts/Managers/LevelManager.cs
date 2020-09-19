@@ -18,7 +18,7 @@ public class LevelManager : MonoBehaviour
         } else {
             Destroy(gameObject); //ok there's already a LevelManager. so die
         }
-        //store our current scene's name
+        //store our current scene's name every time we load a scene
         CurrentSceneName = SceneManager.GetActiveScene().name;
     }
 
@@ -27,5 +27,9 @@ public class LevelManager : MonoBehaviour
 
     public static void RestartScene(){
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public static void ProgressToScene(string name){
+        SceneManager.LoadScene(name);
     }
 }
