@@ -4,6 +4,8 @@
     {
         _MainTex ("Texture", 2D) = "white" {}
         _AlphaCutoff("Alpha Cutoff", Range(0.0, 1.0)) = 0.5
+        _LightColor("Light Color", Color) = (1.0,1.0,1.0,1.0)
+        _DarkColor("Dark Color", Color) = (0.5,0.5,0.5,1.0)
     }
     SubShader
     {
@@ -36,6 +38,8 @@
             sampler2D _MainTex;
             float _AlphaCutoff;
             float4 _MainTex_ST;
+            float3 _LightColor;
+            float3 _DarkColor;
 
             v2f vert (appdata v)
             {
@@ -54,6 +58,8 @@
                 if (col.a < _AlphaCutoff) {
                     discard;
                 }
+
+
 
                 //col = col + float4((1.0-col.r)*i.uv.x, (1-col.g)*i.uv.y, 0.0, 0.0);
                 
