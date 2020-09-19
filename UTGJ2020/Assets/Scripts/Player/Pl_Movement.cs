@@ -29,6 +29,7 @@ public class Pl_Movement : MonoBehaviour
     private void Update()
     {
         _anim.SetBool("walk", !(moveDirection.x + moveDirection.z).Equals(0));
+        _anim.SetBool("vertical", !Input.GetAxis("Vertical").Equals(0));
         _anim.SetBool("left", moveVector.x < 0);
         _anim.SetBool("up", moveVector.z > 0);
     }
