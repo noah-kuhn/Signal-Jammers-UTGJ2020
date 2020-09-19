@@ -15,12 +15,14 @@
           <e p="ColorIDs.cs" t="Include" />
           <e p="ColorObtainer.cs" t="Include" />
           <e p="Managers" t="Include">
+            <e p="LevelManager.cs" t="Include" />
             <e p="PlayerManager.cs" t="Include" />
           </e>
           <e p="Platform.cs" t="Include" />
           <e p="Player" t="Include">
             <e p="MouseOrbit.cs" t="Include" />
             <e p="Pl_Movement.cs" t="Include" />
+            <e p="Player.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
             <e p="Fade.cs" t="Include" />
