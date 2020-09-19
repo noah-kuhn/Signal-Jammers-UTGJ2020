@@ -25,25 +25,7 @@ public class Colorer : MonoBehaviour
         UpdateColor(PlayerManager.CurrentColor); //set to whatever the manager says it should be
     }
 
-    //this coroutine brought to you by Grant Ross. Thanks Grant! -Noah
-    private IEnumerator DoBurst()
-    {
-        const float START_DIAM = 0.1f;
-        //_collider.radius = START_DIAM / 2;
-        _renderer.transform.localScale = new Vector3(START_DIAM, START_DIAM, START_DIAM);
-        _collider.enabled = true;
-        _renderer.enabled = true;
-        while (_renderer.transform.localScale.x <= burstSize)
-        {
-            float expansionRate = (burstSize / 30); // This number is ~arbitrary based on the particle speed
-            _renderer.transform.localScale += new Vector3(expansionRate, expansionRate, expansionRate);
-            // _collider.radius = _renderer.transform.localScale.x / 2;
-            yield return new WaitForSeconds(.01f);
-            //tweaked these two numbers until they more or less lined up with the particles
-        }
-        _collider.enabled = false;
-        _renderer.enabled = false;
-    }
+    
 
     void Update(){
         //if our particle system is not active and we're not paused, then our particle system is ready
@@ -59,11 +41,47 @@ public class Colorer : MonoBehaviour
             StartCoroutine(UpdatePartSys());
         }
     }
+    
+    //this coroutine brought to you by Grant Ross. Thanks Grant! -Noah
+    private IEnumerator DoBurst()
+    {
+        const float START_DIAM = 0.1f;
+        Color originalSphereColor = _material.color;
+        //_collider.radius = START_DIAM / 2;
+        _renderer.transform.localScale = new Vector3(START_DIAM, START_DIAM, START_DIAM);
+        _collider.enabled = true;
+        _renderer.enabled = true;
+
+        while (_renderer.transform.localScale.x <= burstSize || _material.color.a > 0)
+        {
+            // Steadily grows the sphere's diameter until it reaches the correct size
+            float expansionRate = (burstSize / 30); // This number is ~arbitrary based on the particle speed
+            _renderer.transform.localScale += new Vector3(expansionRate, expansionRate, expansionRate);
+            
+            // Steadily decreases the sphere's opacity
+            float alphaChange = sphereTransparency / 29;
+            _material.color -= new Color(0f, 0f, 0f, alphaChange);
+            
+            yield return new WaitForSeconds(.01f);
+        }
+        _collider.enabled = false;
+        _renderer.enabled = false;
+        _material.color = originalSphereColor;
+    }
+
+    // Updates the color of the particle system once the particles disappear
+    private IEnumerator UpdatePartSys() {
+        // Honestly I don't know why a lambda operator works here but unity says I need one
+        yield return new WaitUntil(() => partSysReady);
+        PlayerManager.SwitchColor();
+        UpdateColor(PlayerManager.CurrentColor);
+
+    }
 
     //take the passed ColorIDs.Colors value, make it an actual Color, generate a godforsaken Gradient
     //from it with full opacity to full transparency, and set that Gradient to the particle system's
     //official "color over lifetime" value for the particles
-    void UpdateColor(ColorIDs.Colors c){
+    public void UpdateColor(ColorIDs.Colors c){
         Color newColor = PlayerManager.MakeColor(c);
         Gradient grad = new Gradient();
         //what's with this indenting, you ask? yeah, it's weird, but there's a reason
@@ -78,12 +96,5 @@ public class Colorer : MonoBehaviour
         _material.SetColor("_Color", newColor);
     }
 
-    // Updates the color of the particle system once the particles disappear
-    private IEnumerator UpdatePartSys() {
-        // Honestly I don't know why a lambda operator works here but unity says I need one
-        yield return new WaitUntil(() => partSysReady);
-        PlayerManager.SwitchColor();
-        UpdateColor(PlayerManager.CurrentColor);
-
-    }
+    
 }
