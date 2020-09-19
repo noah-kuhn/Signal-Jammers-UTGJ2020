@@ -13,12 +13,22 @@ public class Pl_Movement : MonoBehaviour
     private float verticalVelocity;
     private bool jumping;
     private CharacterController controller;
+    private Vector3 moveVector;
     private Vector3 moveDirection;
     private float terminalVel;
+    private Animator _anim;
     
     private void Awake() {
         controller = GetComponent<CharacterController>();
         terminalVel = Physics.gravity.y * gravityScale;
+        _anim = GetComponentInChildren<Animator>();
+    }
+
+    private void Update()
+    {
+        _anim.SetBool("walk", !(moveDirection.x + moveDirection.z).Equals(0));
+        _anim.SetBool("left", moveVector.x < 0);
+        _anim.SetBool("up", moveVector.z > 0);
     }
 
     private void FixedUpdate()
@@ -33,7 +43,9 @@ public class Pl_Movement : MonoBehaviour
             verticalVelocity += terminalVel * Time.deltaTime;
             Mathf.Clamp(verticalVelocity, 0, terminalVel);
         }
-        moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical")).normalized * moveSpeed;
+
+        moveVector = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
+        moveDirection = moveVector.normalized * moveSpeed;
         moveDirection.y += verticalVelocity;
         moveDirection = transform.TransformDirection(moveDirection);
         controller.Move(moveDirection * Time.deltaTime);
