@@ -7,7 +7,9 @@ public class ColorIDs : MonoBehaviour
 {
     public enum Colors
     {
+        NONE,
         Green,
-        Blue
+        Blue,
+        Red
     }
 }
