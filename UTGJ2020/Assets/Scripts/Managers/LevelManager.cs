@@ -29,7 +29,9 @@ public class LevelManager : MonoBehaviour
         ProgressToScene(SceneManager.GetActiveScene().name);
     }
 
+    //uncomment when UIManager is ready to be used
     public static void ProgressToScene(string name){
+        UIManager.Instance.FadeOut();
         SceneManager.LoadScene(name);
     }
 }

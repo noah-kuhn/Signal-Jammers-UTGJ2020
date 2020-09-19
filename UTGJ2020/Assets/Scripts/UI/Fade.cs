@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Fade : MonoBehaviour {
     [Tooltip("")]
-    public int fadeInSpeed = 1;
+    [Range(0,3)]public float fadeInSpeed = 1.0f;
     private Animator anim;
     
     private void Awake() {
