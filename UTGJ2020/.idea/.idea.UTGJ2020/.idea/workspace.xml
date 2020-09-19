@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bb072cd-8936-4cef-a522-2b1ac8f3aa19" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/MouseOrbit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/MouseOrbit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Dresser.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Dresser.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1 Whiteboxing.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1 Whiteboxing.unity" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,22 +17,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/Pl_Movement.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
+            <state relative-caret-position="420">
+              <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
               <folding>
-                <marker date="1600492535559" expanded="true" signature="6:92" ph="..." />
-                <marker date="1600492535559" expanded="true" signature="134:1810" ph="{...}" />
-                <marker date="1600492535559" expanded="true" signature="624:797" ph="{...}" />
-                <marker date="1600492535559" expanded="true" signature="824:1011" ph="{...}" />
-                <marker date="1600492535559" expanded="true" signature="1043:1808" ph="{...}" />
-                <marker date="1600492535559" expanded="true" signature="1085:1264" ph="{...}" />
-                <marker date="1600492535559" expanded="true" signature="1193:1254" ph="{...}" />
+                <marker date="1600541071022" expanded="true" signature="6:92" ph="..." />
+                <marker date="1600541071022" expanded="true" signature="134:2111" ph="{...}" />
+                <marker date="1600541071022" expanded="true" signature="1768:2109" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/BillBoard.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -42,45 +39,6 @@
                 <marker date="1600539061029" expanded="true" signature="398:586" ph="{...}" />
                 <marker date="1600539061029" expanded="true" signature="613:1175" ph="{...}" />
                 <marker date="1600539061029" expanded="true" signature="766:1169" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/MouseOrbit.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="65" column="18" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
-              <folding>
-                <marker date="1600540547092" expanded="false" signature="6:78" ph="..." />
-                <marker date="1600540547092" expanded="true" signature="555:919" ph="{...}" />
-                <marker date="1600540547092" expanded="true" signature="772:830" ph="{...}" />
-                <marker date="1600540547092" expanded="true" signature="944:2953" ph="{...}" />
-                <marker date="1600540547092" expanded="true" signature="998:2715" ph="{...}" />
-                <marker date="1600540547092" expanded="true" signature="1697:1993" ph="/* something is in between where the camera wants to be and the player. ... */" />
-                <marker date="1600540547092" expanded="true" signature="2088:2421" ph="{...}" />
-                <marker date="1600540547092" expanded="true" signature="2106:2359" ph="/* okay so this time we extend the line from player to camera an extra length ... */" />
-                <marker date="1600540547092" expanded="true" signature="2787:2951" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/PlayerManager.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="67" column="39" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
-              <folding>
-                <marker date="1600539061067" expanded="false" signature="6:113" ph="..." />
-                <marker date="1600539061067" expanded="true" signature="157:5408" ph="{...}" />
-                <marker date="1600539061067" expanded="true" signature="164:450" ph="/* here's our property: now we can say PlayerManager.Instance to get the instance ... */" />
-                <marker date="1600539061067" expanded="true" signature="532:1583" ph="{...}" />
-                <marker date="1600539061067" expanded="true" signature="653:1202" ph="{...}" />
-                <marker date="1600539061067" expanded="true" signature="1395:1546" ph="/* The following block is for loading a scene's data when restarting it ... */" />
-                <marker date="1600539061067" expanded="true" signature="5261:5390" ph="{...}" />
-                <marker date="1600539061067" expanded="true" signature="5261:5405" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -172,7 +130,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-12" />
     <option name="y" value="-12" />
     <option name="width" value="2800" />
@@ -243,7 +201,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16161000" />
+    <option name="totallyTimeSpent" value="16994000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -357,16 +315,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/Pl_Movement.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
+        <state relative-caret-position="420">
+          <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
           <folding>
-            <marker date="1600492535559" expanded="true" signature="6:92" ph="..." />
-            <marker date="1600492535559" expanded="true" signature="134:1810" ph="{...}" />
-            <marker date="1600492535559" expanded="true" signature="624:797" ph="{...}" />
-            <marker date="1600492535559" expanded="true" signature="824:1011" ph="{...}" />
-            <marker date="1600492535559" expanded="true" signature="1043:1808" ph="{...}" />
-            <marker date="1600492535559" expanded="true" signature="1085:1264" ph="{...}" />
-            <marker date="1600492535559" expanded="true" signature="1193:1254" ph="{...}" />
+            <marker date="1600541071022" expanded="true" signature="6:92" ph="..." />
+            <marker date="1600541071022" expanded="true" signature="134:2111" ph="{...}" />
+            <marker date="1600541071022" expanded="true" signature="1768:2109" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/MouseOrbit.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="71" column="15" selection-start-line="71" selection-start-column="15" selection-end-line="71" selection-end-column="15" />
+          <folding>
+            <marker date="1600540781792" expanded="false" signature="6:78" ph="..." />
+            <marker date="1600540781792" expanded="true" signature="121:2940" ph="{...}" />
+            <marker date="1600540781792" expanded="true" signature="555:919" ph="{...}" />
+            <marker date="1600540781792" expanded="true" signature="772:830" ph="{...}" />
+            <marker date="1600540781792" expanded="true" signature="944:2702" ph="{...}" />
+            <marker date="1600540781792" expanded="true" signature="998:2696" ph="{...}" />
+            <marker date="1600540781792" expanded="true" signature="1595:2408" ph="/* if (Physics.Linecast (target.position, transform.position, out hit)){ ... */" />
+            <marker date="1600540781792" expanded="true" signature="2774:2938" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/PlayerManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="67" column="39" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
+          <folding>
+            <marker date="1600539061067" expanded="false" signature="6:113" ph="..." />
+            <marker date="1600539061067" expanded="true" signature="157:5408" ph="{...}" />
+            <marker date="1600539061067" expanded="true" signature="164:450" ph="/* here's our property: now we can say PlayerManager.Instance to get the instance ... */" />
+            <marker date="1600539061067" expanded="true" signature="532:2382" ph="{...}" />
+            <marker date="1600539061067" expanded="true" signature="653:1202" ph="{...}" />
+            <marker date="1600539061067" expanded="true" signature="1395:1546" ph="/* The following block is for loading a scene's data when restarting it ... */" />
+            <marker date="1600539061067" expanded="true" signature="1620:1914" ph="{...}" />
+            <marker date="1600539061067" expanded="true" signature="1634:1759" ph="/* so we must be reloading this scene-- let's set all this data back ... */" />
+            <marker date="1600539061067" expanded="true" signature="1932:2075" ph="/* ok either we have no LoadSceneData or its sceneName is different ... */" />
+            <marker date="1600539061067" expanded="true" signature="2224:2376" ph="/* a quick note on the else block: we could add an UpdateData() function to the ... */" />
+            <marker date="1600539061067" expanded="true" signature="2388:2483" ph="/* okay let's list the data we need to transfer between scenes! ... */" />
+            <marker date="1600539061067" expanded="true" signature="3004:3183" ph="/* and this LSD is not for tripping, but rather for loading in the data from the beginning ... */" />
+            <marker date="1600539061067" expanded="true" signature="3356:3757" ph="{...}" />
+            <marker date="1600539061067" expanded="true" signature="3471:3751" ph="{...}" />
+            <marker date="1600539061067" expanded="true" signature="3485:3660" ph="/* special case: for the first color added, remove NONE from the available colors ... */" />
+            <marker date="1600539061067" expanded="true" signature="3763:3902" ph="/* this one is easy: if we have multiple colors, switch to the next one in the list, wrapping ... */" />
+            <marker date="1600539061067" expanded="true" signature="3939:4206" ph="{...}" />
+            <marker date="1600539061067" expanded="true" signature="3978:4200" ph="{...}" />
+            <marker date="1600539061067" expanded="true" signature="4358:4738" ph="{...}" />
+            <marker date="1600539061067" expanded="true" signature="4377:4732" ph="{...}" />
+            <marker date="1600539061067" expanded="true" signature="4857:5405" ph="{...}" />
+            <marker date="1600539061067" expanded="true" signature="5238:5390" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -381,24 +383,6 @@
             <marker date="1600539061029" expanded="true" signature="398:586" ph="{...}" />
             <marker date="1600539061029" expanded="true" signature="613:1175" ph="{...}" />
             <marker date="1600539061029" expanded="true" signature="766:1169" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/MouseOrbit.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="65" column="18" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
-          <folding>
-            <marker date="1600540547092" expanded="false" signature="6:78" ph="..." />
-            <marker date="1600540547092" expanded="true" signature="555:919" ph="{...}" />
-            <marker date="1600540547092" expanded="true" signature="772:830" ph="{...}" />
-            <marker date="1600540547092" expanded="true" signature="944:2953" ph="{...}" />
-            <marker date="1600540547092" expanded="true" signature="998:2715" ph="{...}" />
-            <marker date="1600540547092" expanded="true" signature="1697:1993" ph="/* something is in between where the camera wants to be and the player. ... */" />
-            <marker date="1600540547092" expanded="true" signature="2088:2421" ph="{...}" />
-            <marker date="1600540547092" expanded="true" signature="2106:2359" ph="/* okay so this time we extend the line from player to camera an extra length ... */" />
-            <marker date="1600540547092" expanded="true" signature="2787:2951" ph="{...}" />
           </folding>
         </state>
       </provider>
