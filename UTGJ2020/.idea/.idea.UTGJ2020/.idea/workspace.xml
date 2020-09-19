@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bb072cd-8936-4cef-a522-2b1ac8f3aa19" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BillBoard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BillBoard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/MouseOrbit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/MouseOrbit.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,17 +31,56 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/BillBoard.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+            <state relative-caret-position="255">
+              <caret line="19" column="68" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
               <folding>
-                <marker date="1600534024970" expanded="false" signature="6:78" ph="..." />
-                <marker date="1600534024970" expanded="true" signature="118:1166" ph="{...}" />
-                <marker date="1600534024970" expanded="true" signature="398:575" ph="{...}" />
-                <marker date="1600534024970" expanded="true" signature="602:1164" ph="{...}" />
-                <marker date="1600534024970" expanded="true" signature="755:1158" ph="{...}" />
+                <marker date="1600539061029" expanded="false" signature="6:78" ph="..." />
+                <marker date="1600539061029" expanded="true" signature="118:1177" ph="{...}" />
+                <marker date="1600539061029" expanded="true" signature="398:586" ph="{...}" />
+                <marker date="1600539061029" expanded="true" signature="613:1175" ph="{...}" />
+                <marker date="1600539061029" expanded="true" signature="766:1169" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/MouseOrbit.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="367">
+              <caret line="65" column="18" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
+              <folding>
+                <marker date="1600540547092" expanded="false" signature="6:78" ph="..." />
+                <marker date="1600540547092" expanded="true" signature="555:919" ph="{...}" />
+                <marker date="1600540547092" expanded="true" signature="772:830" ph="{...}" />
+                <marker date="1600540547092" expanded="true" signature="944:2953" ph="{...}" />
+                <marker date="1600540547092" expanded="true" signature="998:2715" ph="{...}" />
+                <marker date="1600540547092" expanded="true" signature="1697:1993" ph="/* something is in between where the camera wants to be and the player. ... */" />
+                <marker date="1600540547092" expanded="true" signature="2088:2421" ph="{...}" />
+                <marker date="1600540547092" expanded="true" signature="2106:2359" ph="/* okay so this time we extend the line from player to camera an extra length ... */" />
+                <marker date="1600540547092" expanded="true" signature="2787:2951" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/PlayerManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="67" column="39" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
+              <folding>
+                <marker date="1600539061067" expanded="false" signature="6:113" ph="..." />
+                <marker date="1600539061067" expanded="true" signature="157:5408" ph="{...}" />
+                <marker date="1600539061067" expanded="true" signature="164:450" ph="/* here's our property: now we can say PlayerManager.Instance to get the instance ... */" />
+                <marker date="1600539061067" expanded="true" signature="532:1583" ph="{...}" />
+                <marker date="1600539061067" expanded="true" signature="653:1202" ph="{...}" />
+                <marker date="1600539061067" expanded="true" signature="1395:1546" ph="/* The following block is for loading a scene's data when restarting it ... */" />
+                <marker date="1600539061067" expanded="true" signature="5261:5390" ph="{...}" />
+                <marker date="1600539061067" expanded="true" signature="5261:5405" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -113,8 +153,10 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ColorIDs.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Colorer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/PlayerManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Platform.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/PauseMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/MouseOrbit.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BillBoard.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Pl_Movement.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -126,6 +168,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Platform.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Pl_Movement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BillBoard.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/MouseOrbit.cs" />
       </list>
     </option>
   </component>
@@ -200,7 +243,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15582000" />
+    <option name="totallyTimeSpent" value="16161000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -212,7 +255,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1513" height="973" extended-state="6" />
+    <frame x="-6" y="-6" width="1513" height="973" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
@@ -330,14 +373,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/BillBoard.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        <state relative-caret-position="255">
+          <caret line="19" column="68" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
           <folding>
-            <marker date="1600534024970" expanded="false" signature="6:78" ph="..." />
-            <marker date="1600534024970" expanded="true" signature="118:1166" ph="{...}" />
-            <marker date="1600534024970" expanded="true" signature="398:575" ph="{...}" />
-            <marker date="1600534024970" expanded="true" signature="602:1164" ph="{...}" />
-            <marker date="1600534024970" expanded="true" signature="755:1158" ph="{...}" />
+            <marker date="1600539061029" expanded="false" signature="6:78" ph="..." />
+            <marker date="1600539061029" expanded="true" signature="118:1177" ph="{...}" />
+            <marker date="1600539061029" expanded="true" signature="398:586" ph="{...}" />
+            <marker date="1600539061029" expanded="true" signature="613:1175" ph="{...}" />
+            <marker date="1600539061029" expanded="true" signature="766:1169" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/MouseOrbit.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="65" column="18" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
+          <folding>
+            <marker date="1600540547092" expanded="false" signature="6:78" ph="..." />
+            <marker date="1600540547092" expanded="true" signature="555:919" ph="{...}" />
+            <marker date="1600540547092" expanded="true" signature="772:830" ph="{...}" />
+            <marker date="1600540547092" expanded="true" signature="944:2953" ph="{...}" />
+            <marker date="1600540547092" expanded="true" signature="998:2715" ph="{...}" />
+            <marker date="1600540547092" expanded="true" signature="1697:1993" ph="/* something is in between where the camera wants to be and the player. ... */" />
+            <marker date="1600540547092" expanded="true" signature="2088:2421" ph="{...}" />
+            <marker date="1600540547092" expanded="true" signature="2106:2359" ph="/* okay so this time we extend the line from player to camera an extra length ... */" />
+            <marker date="1600540547092" expanded="true" signature="2787:2951" ph="{...}" />
           </folding>
         </state>
       </provider>

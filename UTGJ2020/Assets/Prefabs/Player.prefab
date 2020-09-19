@@ -4828,7 +4828,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   partSys: {fileID: 4401918215135068086}
   partSysReady: 0
-  burstSize: 0
+  burstSize: 7.5
 --- !u!135 &3571912086657354153
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4840,7 +4840,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.1
+  m_Radius: 7.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5874240326234763115
 GameObject:
@@ -4932,16 +4932,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7081678701033474938, guid: 6921909ce090cac48b0ea4d8f2aef528,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9dd0d2415b7f1b0418968d3c0a890ad0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.54, y: 5.05}
+  m_Size: {x: 0.59375, y: 1.8671875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &6721741928448524838
@@ -5162,3 +5161,4 @@ MonoBehaviour:
   yMaxLimit: 25
   distanceMin: 0.5
   distanceMax: 7.5
+  yOffset: 1
