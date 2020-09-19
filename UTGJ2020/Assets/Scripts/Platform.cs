@@ -19,14 +19,18 @@ public class Platform : MonoBehaviour
         _meshFilter.mesh = onMesh;
     }
 
-    // Update is called once per frame
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Burst")) // add && Player color == platform color
+        if (other.transform.CompareTag("Burst")) // add && Player color == platform color
         {
             active = !active;
-            _meshCollider.enabled = active;
+            _meshCollider.isTrigger = !active;
             _meshFilter.mesh = active ? onMesh : offMesh;
         }
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+
     }
 }
