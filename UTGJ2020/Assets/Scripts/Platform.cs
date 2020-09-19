@@ -9,7 +9,7 @@ public class Platform : MonoBehaviour
     public ColorIDs.Colors platformColor;
     private MeshFilter _meshFilter;
     private MeshCollider _meshCollider;
-    public bool active = false;
+    public bool active;
     
     // Start is called before the first frame update
     private void Awake()
@@ -22,7 +22,7 @@ public class Platform : MonoBehaviour
         _meshFilter= GetComponent<MeshFilter>();
         _meshCollider = GetComponent<MeshCollider>();
         _meshFilter.mesh = onMesh;
-        
+        active = false;
     }
 
     private void OnTriggerEnter(Collider other)

@@ -28,7 +28,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/BillBoard.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -39,6 +39,21 @@
                 <marker date="1600539061029" expanded="true" signature="398:586" ph="{...}" />
                 <marker date="1600539061029" expanded="true" signature="613:1175" ph="{...}" />
                 <marker date="1600539061029" expanded="true" signature="766:1169" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/ColorObtainer.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <marker date="1600529852197" expanded="false" signature="6:78" ph="..." />
+                <marker date="1600529852197" expanded="true" signature="122:572" ph="{...}" />
+                <marker date="1600529852197" expanded="true" signature="274:406" ph="{...}" />
+                <marker date="1600529852197" expanded="true" signature="326:400" ph="{...}" />
+                <marker date="1600529852197" expanded="true" signature="412:569" ph="/* TODO: When color is obtained, add color UI element to pallete UI. ... */" />
               </folding>
             </state>
           </provider>
@@ -72,18 +87,19 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Platform.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="26" column="46" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
+            <state relative-caret-position="450">
+              <caret line="32" column="46" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
               <folding>
-                <marker date="1600479841284" expanded="false" signature="6:78" ph="..." />
-                <marker date="1600479841284" expanded="true" signature="117:909" ph="{...}" />
-                <marker date="1600479841284" expanded="true" signature="386:536" ph="{...}" />
-                <marker date="1600479841284" expanded="true" signature="585:842" ph="{...}" />
-                <marker date="1600479841284" expanded="true" signature="681:836" ph="{...}" />
-                <marker date="1600479841284" expanded="true" signature="894:907" ph="{...}" />
+                <marker date="1600542151767" expanded="false" signature="6:78" ph="..." />
+                <marker date="1600542151767" expanded="true" signature="117:1155" ph="{...}" />
+                <marker date="1600542151767" expanded="true" signature="401:735" ph="{...}" />
+                <marker date="1600542151767" expanded="true" signature="507:581" ph="{...}" />
+                <marker date="1600542151767" expanded="true" signature="784:1088" ph="{...}" />
+                <marker date="1600542151767" expanded="true" signature="927:1082" ph="{...}" />
+                <marker date="1600542151767" expanded="true" signature="1140:1153" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -105,11 +121,17 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>target</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ColorIDs.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ColorObtainer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Colorer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/PlayerManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Platform.cs" root0="FORCE_HIGHLIGHTING" />
@@ -201,7 +223,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16994000" />
+    <option name="totallyTimeSpent" value="17325000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -282,21 +304,6 @@
             <marker date="1600529852221" expanded="false" signature="6:78" ph="..." />
             <marker date="1600529852221" expanded="true" signature="116:3202" ph="{...}" />
             <marker date="1600529852221" expanded="true" signature="3194:3200" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Platform.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="26" column="46" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
-          <folding>
-            <marker date="1600479841284" expanded="false" signature="6:78" ph="..." />
-            <marker date="1600479841284" expanded="true" signature="117:909" ph="{...}" />
-            <marker date="1600479841284" expanded="true" signature="386:536" ph="{...}" />
-            <marker date="1600479841284" expanded="true" signature="585:842" ph="{...}" />
-            <marker date="1600479841284" expanded="true" signature="681:836" ph="{...}" />
-            <marker date="1600479841284" expanded="true" signature="894:907" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -383,6 +390,35 @@
             <marker date="1600539061029" expanded="true" signature="398:586" ph="{...}" />
             <marker date="1600539061029" expanded="true" signature="613:1175" ph="{...}" />
             <marker date="1600539061029" expanded="true" signature="766:1169" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ColorObtainer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1600529852197" expanded="false" signature="6:78" ph="..." />
+            <marker date="1600529852197" expanded="true" signature="122:572" ph="{...}" />
+            <marker date="1600529852197" expanded="true" signature="274:406" ph="{...}" />
+            <marker date="1600529852197" expanded="true" signature="326:400" ph="{...}" />
+            <marker date="1600529852197" expanded="true" signature="412:569" ph="/* TODO: When color is obtained, add color UI element to pallete UI. ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Platform.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="32" column="46" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
+          <folding>
+            <marker date="1600542151767" expanded="false" signature="6:78" ph="..." />
+            <marker date="1600542151767" expanded="true" signature="117:1155" ph="{...}" />
+            <marker date="1600542151767" expanded="true" signature="401:735" ph="{...}" />
+            <marker date="1600542151767" expanded="true" signature="507:581" ph="{...}" />
+            <marker date="1600542151767" expanded="true" signature="784:1088" ph="{...}" />
+            <marker date="1600542151767" expanded="true" signature="927:1082" ph="{...}" />
+            <marker date="1600542151767" expanded="true" signature="1140:1153" ph="{...}" />
           </folding>
         </state>
       </provider>
