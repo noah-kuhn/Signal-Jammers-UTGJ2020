@@ -33,6 +33,10 @@ public class PlayerManager : MonoBehaviour
     public static ColorIDs.Colors CurrentColor{ get; set; }
     //here is a list of colors we've unlocked
     public static List<ColorIDs.Colors> AvailableColors{ get; set; }
+
+    // Communicates to MouseOrbit and Colorer to lock them when the game is paused
+    public static bool isPaused;
+
     private static int index;
 
     public static void AddColor(ColorIDs.Colors c){

@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour {
     public static bool paused = false;
     public Canvas pauseMenu;
-
+    public PlayerManager pm;
     void Start() {
         pauseMenu.enabled = false;
     }
@@ -25,19 +25,37 @@ public class PauseMenu : MonoBehaviour {
     }
 
     public void Resume() {
+        // locks cursor control
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+        
+        // Disables menu UI
         pauseMenu.enabled = false;
+
+        // Resumes time
         Time.timeScale = 1;
+
         paused = false;
+        
+        // Helps unlock camera and colorer controls
+        PlayerManager.isPaused = false;
     }
 
     void Pause() {
+        // Unlocks cursor control
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
+        
+        // Enables menu UI
         pauseMenu.enabled = true;
+        
+        // Pauses time
         Time.timeScale = 0;
+
         paused = true;
+
+        // Helps lock camera and colorer controls
+        PlayerManager.isPaused = true;
     }
 
     public void QuitToMenu() {

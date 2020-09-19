@@ -31,7 +31,8 @@ public class Colorer : MonoBehaviour
 
     void Update(){
         //if our particle system is not active and we have an actual color selected, then we can burst
-        canBurst = !partSys.IsAlive() && PlayerManager.CurrentColor != ColorIDs.Colors.NONE;
+        canBurst = !partSys.IsAlive() && PlayerManager.CurrentColor != ColorIDs.Colors.NONE
+            && !PlayerManager.isPaused;
         //if we can burst and push the right button, play the burst and do the burst coroutine
         if(canBurst && Input.GetButtonDown("Fire1")){
             partSys.Play();
