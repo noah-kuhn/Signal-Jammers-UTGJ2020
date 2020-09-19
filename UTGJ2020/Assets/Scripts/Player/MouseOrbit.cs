@@ -36,6 +36,7 @@ public class MouseOrbit : MonoBehaviour {
         }
 
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
  
     void LateUpdate () 
