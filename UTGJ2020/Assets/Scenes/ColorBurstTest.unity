@@ -282,8 +282,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5656322469266985253, guid: 7b493f33156d10646be1cd321610c5b2, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b493f33156d10646be1cd321610c5b2, type: 3}
 --- !u!1001 &708971490
 PrefabInstance:
@@ -619,42 +618,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97b80b3b66a62184daaf3673c01c770d, type: 3}
---- !u!1 &1421575119 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3339660167287081290, guid: 7b493f33156d10646be1cd321610c5b2,
-    type: 3}
-  m_PrefabInstance: {fileID: 363182067}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1421575123
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1421575119}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 979e7b354e4f24840b0a8b0fdade2c6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onMesh: {fileID: -2432090755550338912, guid: 06a48c4ba1163d144ab9977f8785831a, type: 3}
-  offMesh: {fileID: -2432090755550338912, guid: 06a48c4ba1163d144ab9977f8785831a,
-    type: 3}
-  onMaterial: {fileID: 2100000, guid: 74e186bf2a8668a48a7bd95e4e9d13f8, type: 2}
-  offMaterial: {fileID: 2100000, guid: 71ebbc7e1e79fe24dac2b5ce3fcf06e1, type: 2}
-  platformColor: 1
-  active: 0
---- !u!64 &1421575124
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1421575119}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2432090755550338912, guid: 06a48c4ba1163d144ab9977f8785831a, type: 3}
