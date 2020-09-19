@@ -26,9 +26,9 @@ public class Colorer : MonoBehaviour
         _collider.enabled = true;
         while (_collider.radius < burstSize)
         {
-            _collider.radius += .2f;
-            yield return new WaitForSeconds(.05f);
-            //tweaked these two numbers until they more or less lined up with the particles
+            _collider.radius += .05f;
+            yield return new WaitForSeconds(.01f);
+            //tweaks needed!
         }
         _collider.enabled = false;
     }

@@ -222,6 +222,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4401918215135068088, guid: 285de20193e0eda4596abbdc67d7aca0,
+        type: 3}
+      propertyPath: burstSize
+      value: 7.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6721741928448524834, guid: 285de20193e0eda4596abbdc67d7aca0,
         type: 3}
       propertyPath: _coyoteTime
