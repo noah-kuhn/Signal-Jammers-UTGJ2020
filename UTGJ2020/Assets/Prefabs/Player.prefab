@@ -4941,7 +4941,7 @@ SpriteRenderer:
   m_Size: {x: 1.54, y: 5.05}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &6721741928448524838
@@ -4957,7 +4957,7 @@ GameObject:
   - component: {fileID: 6721741928448524834}
   - component: {fileID: 6721741928448524833}
   - component: {fileID: 6721741928448524832}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5007,7 +5007,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03969fced16ae444e93d2023d4a2c0bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
+  moveSpeed: 4
   gravityScale: 2
   jumpForce: 8
 --- !u!143 &6721741928448524833
@@ -5021,10 +5021,10 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 1
+  m_Height: 0.8
   m_Radius: 0.3
   m_SlopeLimit: 39.4
-  m_StepOffset: 0.3
+  m_StepOffset: 0.1
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}

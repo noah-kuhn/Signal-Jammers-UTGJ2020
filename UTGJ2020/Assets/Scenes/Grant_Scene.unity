@@ -267,21 +267,6 @@ PrefabInstance:
       propertyPath: m_Height
       value: 0.8
       objectReference: {fileID: 0}
-    - target: {fileID: 6721741928448524833, guid: 285de20193e0eda4596abbdc67d7aca0,
-        type: 3}
-      propertyPath: m_StepOffset
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6721741928448524834, guid: 285de20193e0eda4596abbdc67d7aca0,
-        type: 3}
-      propertyPath: gravityScale
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6721741928448524834, guid: 285de20193e0eda4596abbdc67d7aca0,
-        type: 3}
-      propertyPath: moveSpeed
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 6721741928448524835, guid: 285de20193e0eda4596abbdc67d7aca0,
         type: 3}
       propertyPath: m_LocalPosition.x

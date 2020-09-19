@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bb072cd-8936-4cef-a522-2b1ac8f3aa19" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UTGJ2020/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UTGJ2020/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UTGJ2020/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UTGJ2020/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprites/Environment/back-box.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprites/Environment/back-box.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprites/Environment/front-box.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprites/Environment/front-box.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprites/Environment/left-box.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprites/Environment/left-box.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprites/Environment/right-box.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprites/Environment/right-box.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/playerPlaceholder.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/playerPlaceholder.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Pl_Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Pl_Movement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprites/Environment/pole-back.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprites/Environment/pole-back.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprites/Environment/pole-front.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprites/Environment/pole-front.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprites/Environment/pole-left.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprites/Environment/pole-left.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprites/Environment/pole-right.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprites/Environment/pole-right.png.meta" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,10 +54,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <folding>
-                <marker date="1600495449823" expanded="false" signature="6:12" ph="..." />
-                <marker date="1600495449823" expanded="true" signature="1080:1088" ph="{...}" />
-                <marker date="1600495449823" expanded="true" signature="1080:1154" ph="{...}" />
-                <marker date="1600495449823" expanded="true" signature="1116:1151" ph="{...}" />
+                <marker date="1600495488504" expanded="false" signature="6:12" ph="..." />
+                <marker date="1600495488504" expanded="true" signature="1497:1505" ph="{...}" />
+                <marker date="1600495488504" expanded="true" signature="1497:1571" ph="{...}" />
+                <marker date="1600495488504" expanded="true" signature="1533:1568" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -76,9 +69,9 @@
             <state relative-caret-position="375">
               <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
               <folding>
-                <marker date="1600495449731" expanded="false" signature="6:78" ph="..." />
-                <marker date="1600495449731" expanded="true" signature="116:1868" ph="{...}" />
-                <marker date="1600495449731" expanded="true" signature="1860:1866" ph="{...}" />
+                <marker date="1600495488447" expanded="false" signature="6:78" ph="..." />
+                <marker date="1600495488447" expanded="true" signature="116:1907" ph="{...}" />
+                <marker date="1600495488447" expanded="true" signature="1899:1905" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -288,9 +281,9 @@
         <state relative-caret-position="375">
           <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
           <folding>
-            <marker date="1600495449731" expanded="false" signature="6:78" ph="..." />
-            <marker date="1600495449731" expanded="true" signature="116:1868" ph="{...}" />
-            <marker date="1600495449731" expanded="true" signature="1860:1866" ph="{...}" />
+            <marker date="1600495488447" expanded="false" signature="6:78" ph="..." />
+            <marker date="1600495488447" expanded="true" signature="116:1907" ph="{...}" />
+            <marker date="1600495488447" expanded="true" signature="1899:1905" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -314,10 +307,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <marker date="1600495449823" expanded="false" signature="6:12" ph="..." />
-            <marker date="1600495449823" expanded="true" signature="1080:1088" ph="{...}" />
-            <marker date="1600495449823" expanded="true" signature="1080:1154" ph="{...}" />
-            <marker date="1600495449823" expanded="true" signature="1116:1151" ph="{...}" />
+            <marker date="1600495488504" expanded="false" signature="6:12" ph="..." />
+            <marker date="1600495488504" expanded="true" signature="1497:1505" ph="{...}" />
+            <marker date="1600495488504" expanded="true" signature="1497:1571" ph="{...}" />
+            <marker date="1600495488504" expanded="true" signature="1533:1568" ph="{...}" />
           </folding>
         </state>
       </provider>
