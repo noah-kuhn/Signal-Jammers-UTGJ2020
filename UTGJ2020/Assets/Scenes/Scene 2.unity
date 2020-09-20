@@ -3315,6 +3315,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e0ff6e23b6f5bd40a99ffef3101d603, type: 3}
+--- !u!1 &1174158007 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9105215566197424371, guid: 7e0ff6e23b6f5bd40a99ffef3101d603,
+    type: 3}
+  m_PrefabInstance: {fileID: 1174158006}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1174158008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174158007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ba351375117deb4db8865f0c0803792, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextSceneName: Ending
+--- !u!135 &1174158009
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174158007}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 3
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1179262742
 GameObject:
   m_ObjectHideFlags: 0
