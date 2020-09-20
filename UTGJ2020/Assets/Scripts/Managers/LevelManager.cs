@@ -25,13 +25,12 @@ public class LevelManager : MonoBehaviour
     //this is the name of our current scene
     public static string CurrentSceneName{ get; set; }
 
-    public static void RestartScene(){
+    public void RestartScene(){
         ProgressToScene(SceneManager.GetActiveScene().name);
     }
 
     //uncomment when UIManager is ready to be used
-    public static void ProgressToScene(string name){
-        //UIManager.Instance.FadeOut();
-        SceneManager.LoadScene(name);
+    public void ProgressToScene(string name){
+        UIManager.Instance.FadeOutToScene(name);
     }
 }

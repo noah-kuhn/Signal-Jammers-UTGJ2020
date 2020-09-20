@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
 {
     void OnTriggerEnter(Collider c){
         if(c.gameObject.tag == "Death"){
-            LevelManager.RestartScene();
+            LevelManager.Instance.RestartScene();
         }
     }
 }
