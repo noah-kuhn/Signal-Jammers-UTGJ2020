@@ -52,21 +52,25 @@ MonoBehaviour:
     Loop: 1
     Id: 0
     Source: {fileID: 0}
+    fading: 0
   - Clip: {fileID: 8300000, guid: a0693d16c2509ec4dbb164a2f17ca1f2, type: 3}
     Volume: 1
     Loop: 0
     Id: 1
     Source: {fileID: 0}
+    fading: 0
   - Clip: {fileID: 8300000, guid: 214b5774bc9e3d749831055a4196bdd1, type: 3}
-    Volume: 1
+    Volume: 0.261
     Loop: 1
     Id: 2
     Source: {fileID: 0}
+    fading: 0
   - Clip: {fileID: 8300000, guid: cf91d28e3c8778542805ca3a6c6338dc, type: 3}
     Volume: 1
     Loop: 0
     Id: 3
     Source: {fileID: 0}
+    fading: 0
   musicSource: {fileID: 4163414078156961919}
 --- !u!82 &4163414078156961919
 AudioSource:

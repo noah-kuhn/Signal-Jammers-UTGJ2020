@@ -17,7 +17,7 @@ public class AudioManager : MonoBehaviour
     public float masterVolume;
     public Sound[] sounds;
     public AudioSource musicSource;
-
+    private bool fading;
     
 
     private void Awake()
@@ -33,6 +33,7 @@ public class AudioManager : MonoBehaviour
             }
         }
         musicSource.loop = true;
+        
     }
 
     public void PlayMusic(SoundIDs id)
@@ -49,6 +50,13 @@ public class AudioManager : MonoBehaviour
     
     public void PlaySound(SoundIDs id)
     {
+        Sound sound = FindS(id);
+        if (sound.fading)
+        {
+            StopCoroutine(DoFade(sound));
+            sound.Source.Stop();
+            sound.Source.volume = sound.Volume;
+        }
         foreach (var s in sounds)
         {
             if (s.Id == id)
@@ -61,14 +69,50 @@ public class AudioManager : MonoBehaviour
 
     public void StopSound(SoundIDs id)
     {
+        FindSound(id).Stop();
+    }
+
+    public void FadeSound(SoundIDs id)
+    {
+        Sound s = FindS(id);
+        if(s.Source.isPlaying && !s.fading) StartCoroutine(DoFade(s));
+    }
+
+    private IEnumerator DoFade(Sound s)
+    {
+        s.fading = true;
+        while (s.Source.volume > .01)
+        {
+            s.Source.volume -= .02f;
+            yield return null;
+        }
+        s.Source.Stop();
+        s.Source.volume = s.Volume;
+        s.fading = false;
+    }
+
+    private Sound FindS(SoundIDs id)
+    {
         foreach (var s in sounds)
         {
             if (s.Id == id)
             {
-                s.Source.Stop();
-                break;
+                return s;
             }
         }
+        return null;
+    }
+
+    private AudioSource FindSound(SoundIDs id)
+    {
+        foreach (var s in sounds)
+        {
+            if (s.Id == id)
+            {
+                return s.Source;
+            }
+        }
+        return null;
     }
     
     

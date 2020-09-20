@@ -13,4 +13,6 @@ public class Sound
     public AudioManager.SoundIDs Id;
     [HideInInspector]
     public AudioSource Source;
+    [HideInInspector]
+    public bool fading;
 }

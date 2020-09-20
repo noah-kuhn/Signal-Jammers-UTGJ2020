@@ -18,6 +18,7 @@ public class Pl_Movement : MonoBehaviour
     private Animator _anim;
     [SerializeField] private float _coyoteTime = 0.1f;
     private float timeLeftPlatform;
+    private AudioManager _audioManager;
 
     private enum State
     {
@@ -34,13 +35,18 @@ public class Pl_Movement : MonoBehaviour
         terminalVel = Physics.gravity.y * gravityScale;
         _anim = GetComponentInChildren<Animator>();
         _state = State.Idle;
+        _audioManager = FindObjectOfType<AudioManager>();
     }
 
     private void Update()
     {
+        var lastState = _state;
         if (controller.isGrounded)
         {
-            _state = (moveDirection.x + moveDirection.z).Equals(0) ? State.Idle : State.Walk;
+            _state = moveDirection.x.Equals(0) && moveDirection.z.Equals(0) ? State.Idle : State.Walk;
+            if (lastState == State.Idle && _state == State.Walk) _audioManager.PlaySound(AudioManager.SoundIDs.WALK);
+            else if (_state != State.Walk) _audioManager.FadeSound(AudioManager.SoundIDs.WALK);
+            
         }
         else _state = moveDirection.y > 0 ? State.Jump : State.Fall;
         
