@@ -10,7 +10,8 @@
           <e p="3D art" t="Include">
             <e p="Good Models" t="Include">
               <e p="Evan's testing modles" t="Include">
-                <e p="FallingWater.shader" t="Include" />
+                <e p="MovingWater.shader" t="Include" />
+                <e p="NewSurfaceShader.shader" t="Include" />
               </e>
             </e>
           </e>
