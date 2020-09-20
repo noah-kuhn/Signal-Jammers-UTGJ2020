@@ -18,11 +18,11 @@ public class Puddle : Platform
     }
 
     void OnTriggerExit(Collider c){
-        if(c.CompareTag("Player")
-        ){
+        if(c.gameObject.tag == "Player"){
             StopCoroutine(SinkThroughTimer());
-            var meshColor = gameObject.GetComponent<MeshRenderer>().material.color;
-            meshColor.a = 1.0f;
+            var meshColor = gameObject.GetComponent<MeshRenderer>().material/*.color*/;
+            meshColor = this.active ? onMaterial : offMaterial;
+            //meshColor.a = 1.0f;
             gameObject.GetComponent<MeshCollider>().enabled = true;
         }
     }
@@ -32,8 +32,9 @@ public class Puddle : Platform
         float timeElapsed = 0;
         while(timeElapsed <= duration){
             timeElapsed += Time.deltaTime;
-            var meshColor = gameObject.GetComponent<MeshRenderer>().material.color;
-            meshColor.a -= timeElapsed/2.99f;
+            var meshColor = gameObject.GetComponent<MeshRenderer>().material/*.color*/;
+            meshColor.Lerp(onMaterial, offMaterial, timeElapsed/duration);
+            //meshColor.a -= timeElapsed/2.99f;
             yield return null;
         }
         gameObject.GetComponent<MeshCollider>().enabled = false;
