@@ -37,6 +37,7 @@
             <e p="Player.cs" t="Include" />
             <e p="Sound.cs" t="Include" />
           </e>
+          <e p="Teleporter.cs" t="Include" />
           <e p="UI" t="Include">
             <e p="Fade.cs" t="Include" />
             <e p="MainMenu.cs" t="Include" />
