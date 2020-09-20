@@ -47,6 +47,9 @@ public class PlayerManager : MonoBehaviour
                 AvailableColors.Add(c);
             }
             index = lsd.saved_index;
+            player.SetActive(false);
+            UpdatePlayerPos();
+            player.SetActive(true);
         }else{
             //ok either we have no LoadSceneData or its sceneName is different
             //from our last one-- save current info as our new LoadSceneData
@@ -110,7 +113,6 @@ public class PlayerManager : MonoBehaviour
             case ColorIDs.Colors.Red:
                 return Color.red;
             default:
-                Debug.Log("bad color argument-- commence panic");
                 return Color.gray;
         }
     }
@@ -138,7 +140,7 @@ public class PlayerManager : MonoBehaviour
             sceneName = _s;
             saved_CurrentColor = _currC;
             saved_AvailableColors = new List<ColorIDs.Colors>();
-            saved_StartPos = pos;
+            saved_StartPos = new Vector3(pos.x, pos.y, pos.z);
             foreach(ColorIDs.Colors c in _avC){
                 saved_AvailableColors.Add(c);
             }
