@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9bb072cd-8936-4cef-a522-2b1ac8f3aa19" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Ending.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Ending.unity" afterDir="false" />
-    </list>
+    <list default="true" id="9bb072cd-8936-4cef-a522-2b1ac8f3aa19" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,7 +10,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/Pl_Movement.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="480">
@@ -32,6 +30,38 @@
                 <marker date="1600620066714" expanded="true" signature="2940:3088" ph="{...}" />
                 <marker date="1600620066714" expanded="true" signature="3017:3078" ph="{...}" />
                 <marker date="1600620066714" expanded="true" signature="3413:3474" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Teleporter.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+              <folding>
+                <marker date="1600572975841" expanded="false" signature="6:78" ph="..." />
+                <marker date="1600572975841" expanded="true" signature="119:324" ph="{...}" />
+                <marker date="1600572975841" expanded="true" signature="196:321" ph="{...}" />
+                <marker date="1600572975841" expanded="true" signature="238:315" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/LevelManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <marker date="1600583982422" expanded="false" signature="6:113" ph="..." />
+                <marker date="1600583982422" expanded="true" signature="156:1238" ph="{...}" />
+                <marker date="1600583982422" expanded="true" signature="163:302" ph="/* here's our property: now we can say LevelManager.Instance to get the instance ... */" />
+                <marker date="1600583982422" expanded="true" signature="383:901" ph="{...}" />
+                <marker date="1600583982422" expanded="true" signature="504:670" ph="{...}" />
+                <marker date="1600583982422" expanded="true" signature="1033:1083" ph="{...}" />
+                <marker date="1600583982422" expanded="true" signature="1180:1236" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -86,31 +116,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Colorer.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="45" column="67" selection-start-line="45" selection-start-column="67" selection-end-line="45" selection-end-column="67" />
-              <folding>
-                <marker date="1600594848024" expanded="false" signature="6:78" ph="..." />
-                <marker date="1600594848024" expanded="true" signature="116:4675" ph="{...}" />
-                <marker date="1600594848024" expanded="true" signature="462:1147" ph="{...}" />
-                <marker date="1600594848024" expanded="true" signature="1166:1950" ph="{...}" />
-                <marker date="1600594848024" expanded="true" signature="1578:1656" ph="{...}" />
-                <marker date="1600594848024" expanded="true" signature="1665:1847" ph="/* finally, if our particle system is ready (again, that just means our system is not already ... */" />
-                <marker date="1600594848024" expanded="true" signature="1888:1944" ph="{...}" />
-                <marker date="1600594848024" expanded="true" signature="2060:3217" ph="{...}" />
-                <marker date="1600594848024" expanded="true" signature="2519:3094" ph="{...}" />
-                <marker date="1600594848024" expanded="true" signature="3336:3578" ph="{...}" />
-                <marker date="1600594848024" expanded="true" signature="3584:3843" ph="/* take the passed ColorIDs.Colors value, make it an actual Color, generate a godforsaken Gradient ... */" />
-                <marker date="1600594848024" expanded="true" signature="3890:4667" ph="{...}" />
-                <marker date="1600594848024" expanded="true" signature="4115:4227" ph="{...}" />
-                <marker date="1600594848024" expanded="true" signature="4296:4400" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/PlayerManager.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
@@ -149,21 +154,21 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/UIManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="623">
-              <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
+            <state relative-caret-position="578">
+              <caret line="48" column="92" selection-start-line="48" selection-start-column="92" selection-end-line="48" selection-end-column="92" />
               <folding>
-                <marker date="1600619351349" expanded="false" signature="6:135" ph="..." />
-                <marker date="1600619351349" expanded="true" signature="175:1474" ph="{...}" />
-                <marker date="1600619351349" expanded="true" signature="182:315" ph="/* here's our property: now we can say UIManager.Instance to get the instance ... */" />
-                <marker date="1600619351349" expanded="true" signature="435:843" ph="{...}" />
-                <marker date="1600619351349" expanded="true" signature="556:719" ph="{...}" />
-                <marker date="1600619351349" expanded="true" signature="952:1068" ph="{...}" />
-                <marker date="1600619351349" expanded="true" signature="1114:1170" ph="{...}" />
-                <marker date="1600619351349" expanded="true" signature="1215:1471" ph="{...}" />
-                <marker date="1600619351349" expanded="true" signature="1243:1276" ph="{...}" />
+                <marker date="1600620345481" expanded="false" signature="6:135" ph="..." />
+                <marker date="1600620345481" expanded="true" signature="175:1558" ph="{...}" />
+                <marker date="1600620345481" expanded="true" signature="182:315" ph="/* here's our property: now we can say UIManager.Instance to get the instance ... */" />
+                <marker date="1600620345481" expanded="true" signature="435:843" ph="{...}" />
+                <marker date="1600620345481" expanded="true" signature="556:719" ph="{...}" />
+                <marker date="1600620345481" expanded="true" signature="952:1068" ph="{...}" />
+                <marker date="1600620345481" expanded="true" signature="1114:1170" ph="{...}" />
+                <marker date="1600620345481" expanded="true" signature="1215:1555" ph="{...}" />
+                <marker date="1600620345481" expanded="true" signature="1243:1276" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -242,6 +247,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/MainMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Fade.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Teleporter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ColorObtainer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Colorer.cs" root0="FORCE_HIGHLIGHTING" />
@@ -270,9 +276,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Colorer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Fire.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/AudioManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/UIManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/MainMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Pl_Movement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/UIManager.cs" />
       </list>
     </option>
   </component>
@@ -343,12 +349,12 @@
       <option name="presentableId" value="Default" />
       <updated>1600460291983</updated>
       <workItem from="1600460303637" duration="13657000" />
-      <workItem from="1600613758324" duration="4351000" />
+      <workItem from="1600613758324" duration="5022000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45482000" />
+    <option name="totallyTimeSpent" value="46153000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -513,21 +519,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/LevelManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <marker date="1600583982422" expanded="false" signature="6:113" ph="..." />
-            <marker date="1600583982422" expanded="true" signature="156:1238" ph="{...}" />
-            <marker date="1600583982422" expanded="true" signature="163:302" ph="/* here's our property: now we can say LevelManager.Instance to get the instance ... */" />
-            <marker date="1600583982422" expanded="true" signature="383:901" ph="{...}" />
-            <marker date="1600583982422" expanded="true" signature="504:670" ph="{...}" />
-            <marker date="1600583982422" expanded="true" signature="1033:1083" ph="{...}" />
-            <marker date="1600583982422" expanded="true" signature="1180:1236" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/FadeCanvas.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/Fade.cs">
       <provider selected="true" editor-type-id="text-editor">
@@ -644,24 +635,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/UIManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
-          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
-          <folding>
-            <marker date="1600619351349" expanded="false" signature="6:135" ph="..." />
-            <marker date="1600619351349" expanded="true" signature="175:1474" ph="{...}" />
-            <marker date="1600619351349" expanded="true" signature="182:315" ph="/* here's our property: now we can say UIManager.Instance to get the instance ... */" />
-            <marker date="1600619351349" expanded="true" signature="435:843" ph="{...}" />
-            <marker date="1600619351349" expanded="true" signature="556:719" ph="{...}" />
-            <marker date="1600619351349" expanded="true" signature="952:1068" ph="{...}" />
-            <marker date="1600619351349" expanded="true" signature="1114:1170" ph="{...}" />
-            <marker date="1600619351349" expanded="true" signature="1215:1471" ph="{...}" />
-            <marker date="1600619351349" expanded="true" signature="1243:1276" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/AudioManager.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-112">
@@ -728,6 +701,52 @@
             <marker date="1600620066714" expanded="true" signature="2940:3088" ph="{...}" />
             <marker date="1600620066714" expanded="true" signature="3017:3078" ph="{...}" />
             <marker date="1600620066714" expanded="true" signature="3413:3474" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Teleporter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+          <folding>
+            <marker date="1600572975841" expanded="false" signature="6:78" ph="..." />
+            <marker date="1600572975841" expanded="true" signature="119:324" ph="{...}" />
+            <marker date="1600572975841" expanded="true" signature="196:321" ph="{...}" />
+            <marker date="1600572975841" expanded="true" signature="238:315" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/LevelManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1600583982422" expanded="false" signature="6:113" ph="..." />
+            <marker date="1600583982422" expanded="true" signature="156:1238" ph="{...}" />
+            <marker date="1600583982422" expanded="true" signature="163:302" ph="/* here's our property: now we can say LevelManager.Instance to get the instance ... */" />
+            <marker date="1600583982422" expanded="true" signature="383:901" ph="{...}" />
+            <marker date="1600583982422" expanded="true" signature="504:670" ph="{...}" />
+            <marker date="1600583982422" expanded="true" signature="1033:1083" ph="{...}" />
+            <marker date="1600583982422" expanded="true" signature="1180:1236" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/UIManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="48" column="92" selection-start-line="48" selection-start-column="92" selection-end-line="48" selection-end-column="92" />
+          <folding>
+            <marker date="1600620345481" expanded="false" signature="6:135" ph="..." />
+            <marker date="1600620345481" expanded="true" signature="175:1558" ph="{...}" />
+            <marker date="1600620345481" expanded="true" signature="182:315" ph="/* here's our property: now we can say UIManager.Instance to get the instance ... */" />
+            <marker date="1600620345481" expanded="true" signature="435:843" ph="{...}" />
+            <marker date="1600620345481" expanded="true" signature="556:719" ph="{...}" />
+            <marker date="1600620345481" expanded="true" signature="952:1068" ph="{...}" />
+            <marker date="1600620345481" expanded="true" signature="1114:1170" ph="{...}" />
+            <marker date="1600620345481" expanded="true" signature="1215:1555" ph="{...}" />
+            <marker date="1600620345481" expanded="true" signature="1243:1276" ph="{...}" />
           </folding>
         </state>
       </provider>
