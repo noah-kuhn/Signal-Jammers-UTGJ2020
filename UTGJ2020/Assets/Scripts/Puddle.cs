@@ -23,7 +23,6 @@ public class Puddle : Platform
             timerRunning = false;
             StopCoroutine(SinkThroughTimer());
             _renderer.material = active ? onMaterial : offMaterial;
-            //meshColor.a = 1.0f;
             gameObject.GetComponent<MeshCollider>().enabled = true;
         }
     }
@@ -53,7 +52,8 @@ public class Puddle : Platform
             yield return null;
         }
         yield return new WaitUntil(() => timeElapsed >= duration);
-        gameObject.GetComponent<MeshCollider>().enabled = false;
+        _meshCollider.enabled = false;
+        _renderer.material = offMaterial;
         this.active = false;
     }
 }
