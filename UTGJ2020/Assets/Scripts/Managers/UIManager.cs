@@ -46,7 +46,7 @@ public class UIManager : MonoBehaviour
         yield return new WaitUntil(() => fadeImage.color.a == 1);
         SceneManager.LoadScene(s);
         PlayerManager.UpdatePlayerPos();
-        
+        if(s == "Ending") AudioManager.Instance.StopSound(AudioManager.SoundIDs.MAIN_MUSIC);
     }
 
 }
