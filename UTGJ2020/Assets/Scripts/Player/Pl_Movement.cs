@@ -20,12 +20,23 @@ public class Pl_Movement : MonoBehaviour
     private float timeLeftPlatform;
     private AudioManager _audioManager;
 
+    private enum Direction
+    {
+        Up,
+        Down,
+        Left,
+        Right
+    }
+
+    private Direction dir;
+
     private enum State
     {
         Idle,
         Walk,
         Jump,
-        Fall
+        Fall,
+        Landed
     }
 
     private State _state;
@@ -36,10 +47,22 @@ public class Pl_Movement : MonoBehaviour
         _anim = GetComponentInChildren<Animator>();
         _state = State.Idle;
         _audioManager = FindObjectOfType<AudioManager>();
+        dir = Direction.Up;
     }
 
     private void Update()
     {
+        if (!Input.GetAxis("Vertical").Equals(0))
+        {
+            if (Input.GetAxis("Vertical") > 0) dir = Direction.Up;
+            else dir = Direction.Down;
+        }
+        else if (!Input.GetAxis("Horizontal").Equals(0))
+        {
+            if (Input.GetAxis("Horizontal") > 0) dir = Direction.Right;
+            else dir = Direction.Left;
+        }
+
         var lastState = _state;
         if (controller.isGrounded)
         {
@@ -52,10 +75,22 @@ public class Pl_Movement : MonoBehaviour
         
         _anim.SetBool("walk", _state == State.Walk);
         _anim.SetBool("jump", _state == State.Jump);
-        _anim.SetBool("vertical", !Input.GetAxis("Vertical").Equals(0));
-        _anim.SetBool("left", moveVector.x < 0);
-        _anim.SetBool("up", moveVector.z > 0);
-        if (lastState == State.Fall && controller.isGrounded) _anim.SetTrigger("landed");
+        _anim.SetBool("fall", _state == State.Fall);
+        _anim.SetBool("vertical", dir == Direction.Up || dir == Direction.Down);
+        _anim.SetBool("left", dir == Direction.Left);
+        _anim.SetBool("up", dir == Direction.Up);
+/*        if (lastState == State.Fall && controller.isGrounded)
+        {
+            _anim.SetTrigger("landed");
+            _state = State.Landed;
+            StartCoroutine(LandTime());
+        }*/
+    }
+
+    private IEnumerator LandTime()
+    {
+        yield return new WaitForSeconds(.25f);
+        _state = State.Idle;
     }
 
     private void FixedUpdate()
@@ -79,6 +114,6 @@ public class Pl_Movement : MonoBehaviour
         moveDirection = moveVector.normalized * moveSpeed;
         moveDirection.y += verticalVelocity;
         moveDirection = transform.TransformDirection(moveDirection);
-        controller.Move(moveDirection * Time.deltaTime);
+        if(_state != State.Landed) controller.Move(moveDirection * Time.deltaTime);
     }
 }

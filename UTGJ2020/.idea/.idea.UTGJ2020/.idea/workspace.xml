@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bb072cd-8936-4cef-a522-2b1ac8f3aa19" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UTGJ2020/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UTGJ2020/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprites/Player/Sprite.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprites/Player/Sprite.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1 Whiteboxing.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1 Whiteboxing.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Pl_Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Pl_Movement.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,19 +15,24 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/Pl_Movement.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="623">
-              <caret line="57" column="24" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
+            <state relative-caret-position="188">
+              <caret line="60" column="9" lean-forward="true" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
               <folding>
-                <marker date="1600569764846" expanded="true" signature="6:92" ph="..." />
-                <marker date="1600569764846" expanded="true" signature="134:2983" ph="{...}" />
-                <marker date="1600569764846" expanded="true" signature="748:815" ph="{...}" />
-                <marker date="1600569764846" expanded="true" signature="873:1133" ph="{...}" />
-                <marker date="1600569764846" expanded="true" signature="1160:2032" ph="{...}" />
-                <marker date="1600569764846" expanded="true" signature="1233:1583" ph="{...}" />
-                <marker date="1600569764846" expanded="true" signature="2064:2981" ph="{...}" />
-                <marker date="1600569764846" expanded="true" signature="2106:2254" ph="{...}" />
-                <marker date="1600569764846" expanded="true" signature="2183:2244" ph="{...}" />
-                <marker date="1600569764846" expanded="true" signature="2579:2640" ph="{...}" />
+                <marker date="1600571646244" expanded="true" signature="6:92" ph="..." />
+                <marker date="1600571646244" expanded="true" signature="134:3837" ph="{...}" />
+                <marker date="1600571646244" expanded="true" signature="752:818" ph="{...}" />
+                <marker date="1600571646244" expanded="true" signature="870:953" ph="{...}" />
+                <marker date="1600571646244" expanded="true" signature="1011:1299" ph="{...}" />
+                <marker date="1600571646244" expanded="true" signature="1326:2735" ph="{...}" />
+                <marker date="1600571646244" expanded="true" signature="1382:1508" ph="{...}" />
+                <marker date="1600571646244" expanded="true" signature="1565:1696" ph="{...}" />
+                <marker date="1600571646244" expanded="true" signature="1764:2114" ph="{...}" />
+                <marker date="1600571646244" expanded="true" signature="2529:2729" ph="/* if (lastState == State.Fall &amp;&amp; controller.isGrounded) ... */" />
+                <marker date="1600571646244" expanded="true" signature="2771:2859" ph="{...}" />
+                <marker date="1600571646244" expanded="true" signature="2891:3835" ph="{...}" />
+                <marker date="1600571646244" expanded="true" signature="2933:3081" ph="{...}" />
+                <marker date="1600571646244" expanded="true" signature="3010:3071" ph="{...}" />
+                <marker date="1600571646244" expanded="true" signature="3406:3467" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -283,7 +284,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29286000" />
+    <option name="totallyTimeSpent" value="31164000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -515,19 +516,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/Pl_Movement.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
-          <caret line="57" column="24" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
+        <state relative-caret-position="188">
+          <caret line="60" column="9" lean-forward="true" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
           <folding>
-            <marker date="1600569764846" expanded="true" signature="6:92" ph="..." />
-            <marker date="1600569764846" expanded="true" signature="134:2983" ph="{...}" />
-            <marker date="1600569764846" expanded="true" signature="748:815" ph="{...}" />
-            <marker date="1600569764846" expanded="true" signature="873:1133" ph="{...}" />
-            <marker date="1600569764846" expanded="true" signature="1160:2032" ph="{...}" />
-            <marker date="1600569764846" expanded="true" signature="1233:1583" ph="{...}" />
-            <marker date="1600569764846" expanded="true" signature="2064:2981" ph="{...}" />
-            <marker date="1600569764846" expanded="true" signature="2106:2254" ph="{...}" />
-            <marker date="1600569764846" expanded="true" signature="2183:2244" ph="{...}" />
-            <marker date="1600569764846" expanded="true" signature="2579:2640" ph="{...}" />
+            <marker date="1600571646244" expanded="true" signature="6:92" ph="..." />
+            <marker date="1600571646244" expanded="true" signature="134:3837" ph="{...}" />
+            <marker date="1600571646244" expanded="true" signature="752:818" ph="{...}" />
+            <marker date="1600571646244" expanded="true" signature="870:953" ph="{...}" />
+            <marker date="1600571646244" expanded="true" signature="1011:1299" ph="{...}" />
+            <marker date="1600571646244" expanded="true" signature="1326:2735" ph="{...}" />
+            <marker date="1600571646244" expanded="true" signature="1382:1508" ph="{...}" />
+            <marker date="1600571646244" expanded="true" signature="1565:1696" ph="{...}" />
+            <marker date="1600571646244" expanded="true" signature="1764:2114" ph="{...}" />
+            <marker date="1600571646244" expanded="true" signature="2529:2729" ph="/* if (lastState == State.Fall &amp;&amp; controller.isGrounded) ... */" />
+            <marker date="1600571646244" expanded="true" signature="2771:2859" ph="{...}" />
+            <marker date="1600571646244" expanded="true" signature="2891:3835" ph="{...}" />
+            <marker date="1600571646244" expanded="true" signature="2933:3081" ph="{...}" />
+            <marker date="1600571646244" expanded="true" signature="3010:3071" ph="{...}" />
+            <marker date="1600571646244" expanded="true" signature="3406:3467" ph="{...}" />
           </folding>
         </state>
       </provider>
