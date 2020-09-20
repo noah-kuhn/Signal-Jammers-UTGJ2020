@@ -9,6 +9,7 @@ public class UIManager : MonoBehaviour
     //here's our property: now we can say UIManager.Instance to get the instance
     //without worrying about making multiple UIManagers.
     public static UIManager Instance { get; private set; }
+    //private AudioManager _audioManager;
 
     void Awake() {
         //basic singleton stuff-- make sure there's only one instance, and it's this one!
@@ -19,6 +20,7 @@ public class UIManager : MonoBehaviour
         } else {
             Destroy(gameObject); //ok there's already a UIManager. so die
         }
+        
         MakeUI();
     }
 
@@ -42,6 +44,7 @@ public class UIManager : MonoBehaviour
         }
         fadeUI.FadeOut(fadeOutSpeed);
         yield return new WaitUntil(() => fadeImage.color.a == 1);
+        
         SceneManager.LoadScene(s);
     }
 

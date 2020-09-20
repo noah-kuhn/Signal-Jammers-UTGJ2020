@@ -162,3 +162,4 @@ MonoBehaviour:
   offMaterial: {fileID: 2100000, guid: 4bd7441d722c0c249b970fda6426eb19, type: 2}
   platformColor: 2
   active: 0
+  duration: 3
