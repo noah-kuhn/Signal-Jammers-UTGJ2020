@@ -44,6 +44,8 @@ public class AudioManager : MonoBehaviour
             {
                 musicSource.clip = s.Clip;
                 musicSource.volume = s.Volume;
+                musicSource.Play();
+                break;
             }
         }
     }

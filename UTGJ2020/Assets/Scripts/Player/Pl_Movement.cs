@@ -48,6 +48,7 @@ public class Pl_Movement : MonoBehaviour
         _state = State.Idle;
         _audioManager = FindObjectOfType<AudioManager>();
         dir = Direction.Up;
+        if(!_audioManager.musicSource.isPlaying) _audioManager.PlayMusic(AudioManager.SoundIDs.MAIN_MUSIC);
     }
 
     private void Update()

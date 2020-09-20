@@ -17,12 +17,6 @@ public class MainMenu : MonoBehaviour
         fadeImage = fadeUI.gameObject.GetComponent<Image>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void RunFirstScene() {
         StartCoroutine(FadeOut());
     }
@@ -30,6 +24,6 @@ public class MainMenu : MonoBehaviour
     IEnumerator FadeOut() {
         fadeUI.FadeOut(fadeOutSpeed);
         yield return new WaitUntil(() => fadeImage.color.a == 1);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Scene 1");
     }
 }
