@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Checkpoint : MonoBehaviour
 {
-    
     void OnTriggerEnter(Collider c){
-        if(c.gameObject.tag == "Death"){
-            LevelManager.Instance.RestartScene();
+        if(c.gameObject.tag == "Player"){
+            PlayerManager.SaveCurrentInfoAsLSD();
         }
     }
 }

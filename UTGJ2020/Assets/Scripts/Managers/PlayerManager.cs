@@ -47,11 +47,13 @@ public class PlayerManager : MonoBehaviour
                 AvailableColors.Add(c);
             }
             index = lsd.saved_index;
+            player.SetActive(false);
+            UpdatePlayerPos();
+            player.SetActive(true);
         }else{
             //ok either we have no LoadSceneData or its sceneName is different
             //from our last one-- save current info as our new LoadSceneData
-            lsd = new LoadSceneData(LevelManager.CurrentSceneName,
-                        CurrentColor, AvailableColors, index, player.GetComponent<Player>().spawnPosition);
+            SaveCurrentInfoAsLSD();
         }
         //a quick note on the else block: we could add an UpdateData() function to the
         //LoadSceneData class if so desired (would maybe save some space)
@@ -111,9 +113,17 @@ public class PlayerManager : MonoBehaviour
             case ColorIDs.Colors.Red:
                 return Color.red;
             default:
-                Debug.Log("bad color argument-- commence panic");
                 return Color.gray;
         }
+    }
+
+    public static void SaveCurrentInfoAsLSD(){
+        lsd = new LoadSceneData(LevelManager.CurrentSceneName,
+                        CurrentColor, AvailableColors, index, player.transform.position);
+    }
+
+    public static void UpdatePlayerPos(){
+        player.transform.position = lsd.saved_StartPos;
     }
 
     //this is a private class because we really only need it inside the PlayerManager
@@ -122,15 +132,15 @@ public class PlayerManager : MonoBehaviour
         public ColorIDs.Colors saved_CurrentColor;
         public List<ColorIDs.Colors> saved_AvailableColors;
         public int saved_index;
+        public Vector3 saved_StartPos;
 
         //in most cases we should pass in our scene number, current color, available colors, and index
         public LoadSceneData(string _s, ColorIDs.Colors _currC, List<ColorIDs.Colors> _avC, int _i, Vector3 pos)
         {
-            print(pos);
             sceneName = _s;
             saved_CurrentColor = _currC;
             saved_AvailableColors = new List<ColorIDs.Colors>();
-            //player.transform.position = pos;
+            saved_StartPos = new Vector3(pos.x, pos.y, pos.z);
             foreach(ColorIDs.Colors c in _avC){
                 saved_AvailableColors.Add(c);
             }

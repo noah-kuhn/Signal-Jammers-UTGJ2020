@@ -4862,7 +4862,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 515ccbd09fe93ea4f8fcd767eef0fe97, type: 2}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -5223,7 +5223,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6721741928649732390}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!114 &6721741928649732386
 MonoBehaviour:
   m_ObjectHideFlags: 0
