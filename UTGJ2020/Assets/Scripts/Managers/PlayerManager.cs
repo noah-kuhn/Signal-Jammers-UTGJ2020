@@ -23,7 +23,6 @@ public class PlayerManager : MonoBehaviour
             AvailableColors.Add(ColorIDs.Colors.NONE);
             CurrentColor = AvailableColors[index];
             //for testing color switching: give us all colors
-            AddColor(ColorIDs.Colors.Blue);
             if (giveDebugColors) {
                 AddColor(ColorIDs.Colors.Green);
                 AddColor(ColorIDs.Colors.Blue);
