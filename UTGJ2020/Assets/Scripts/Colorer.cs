@@ -80,7 +80,6 @@ public class Colorer : MonoBehaviour
     //from it with full opacity to full transparency, and set that Gradient to the particle system's
     //official "color over lifetime" value for the particles
     public void UpdateColor(ColorIDs.Colors c){
-        Debug.Log($"UpdateColor called with {c}!");
         Color newColor = PlayerManager.MakeColor(c);
         Gradient grad = new Gradient();
         //what's with this indenting, you ask? yeah, it's weird, but there's a reason
