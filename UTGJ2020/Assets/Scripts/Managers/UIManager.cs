@@ -44,8 +44,8 @@ public class UIManager : MonoBehaviour
         }
         fadeUI.FadeOut(fadeOutSpeed);
         yield return new WaitUntil(() => fadeImage.color.a == 1);
-        
         SceneManager.LoadScene(s);
+        PlayerManager.UpdatePlayerPos();
     }
 
 }
