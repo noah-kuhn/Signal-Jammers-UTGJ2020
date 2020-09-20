@@ -15,7 +15,7 @@ public class Platform : MonoBehaviour
     public bool active;
     
     // Start is called before the first frame update
-    private void Awake()
+    public void Awake()
     {
         // Make sure color is actually assigned
         if (platformColor == ColorIDs.Colors.NONE) {
@@ -31,7 +31,7 @@ public class Platform : MonoBehaviour
         _renderer.material = active ? onMaterial : offMaterial;
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
         if (other.transform.CompareTag("Burst") && PlayerManager.CurrentColor == platformColor) 
         {
