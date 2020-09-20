@@ -58,5 +58,18 @@ public class AudioManager : MonoBehaviour
             }
         }
     }
+
+    public void StopSound(SoundIDs id)
+    {
+        foreach (var s in sounds)
+        {
+            if (s.Id == id)
+            {
+                s.Source.Stop();
+                break;
+            }
+        }
+    }
+    
     
 }
