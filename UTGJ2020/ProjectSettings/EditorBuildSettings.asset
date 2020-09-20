@@ -9,12 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Main menu.unity
     guid: 691f5ec94a9651e409dabf70325fb7a8
   - enabled: 1
-    path: Assets/Scenes/MoveTest.unity
-    guid: dc5054b6094e4834eaa6583378a5d8cc
-  - enabled: 1
     path: Assets/Scenes/Scene 1.unity
     guid: 5c14ec54da3e9624f90386ea44f7d2cf
   - enabled: 1
+    path: Assets/Scenes/Scene 2.unity
+    guid: 50c9303a5b402784a8f4f8967509ae49
+  - enabled: 0
+    path: Assets/Scenes/MoveTest.unity
+    guid: dc5054b6094e4834eaa6583378a5d8cc
+  - enabled: 0
     path: Assets/Scenes/Noah's Attempt At Level Design.unity
     guid: b3ccd7c13c95ee049ae8ff23a79121b7
   m_configObjects:

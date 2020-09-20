@@ -43,6 +43,7 @@ public class Colorer : MonoBehaviour
     //this coroutine brought to you by Grant Ross. Thanks Grant! -Noah
     private IEnumerator DoBurst()
     {
+        AudioManager.Instance.PlaySound(AudioManager.SoundIDs.BURST);
         const float START_DIAM = 0.1f;
         Color originalSphereColor = _material.color;
         //_collider.radius = START_DIAM / 2;

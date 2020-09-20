@@ -80,19 +80,16 @@ public class Pl_Movement : MonoBehaviour
         _anim.SetBool("vertical", dir == Direction.Up || dir == Direction.Down);
         _anim.SetBool("left", dir == Direction.Left);
         _anim.SetBool("up", dir == Direction.Up);
-/*        if (lastState == State.Fall && controller.isGrounded)
+        
+        
+        
+        if (lastState == State.Fall && controller.isGrounded)
         {
-            _anim.SetTrigger("landed");
-            _state = State.Landed;
-            StartCoroutine(LandTime());
-        }*/
+        AudioManager.Instance.PlaySound(AudioManager.SoundIDs.LAND);
+        }
     }
 
-    private IEnumerator LandTime()
-    {
-        yield return new WaitForSeconds(.25f);
-        _state = State.Idle;
-    }
+
 
     private void FixedUpdate()
     {
@@ -115,6 +112,6 @@ public class Pl_Movement : MonoBehaviour
         moveDirection = moveVector.normalized * moveSpeed;
         moveDirection.y += verticalVelocity;
         moveDirection = transform.TransformDirection(moveDirection);
-        if(_state != State.Landed) controller.Move(moveDirection * Time.deltaTime);
+        controller.Move(moveDirection * Time.deltaTime);
     }
 }
