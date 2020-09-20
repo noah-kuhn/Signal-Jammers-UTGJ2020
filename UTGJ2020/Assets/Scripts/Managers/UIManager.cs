@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
@@ -23,7 +24,6 @@ public class UIManager : MonoBehaviour
     public float fadeOutSpeed = 1f;
     public Image fadeImage;
     private Fade fadeUI;
-    //public Image currentColorIndicator;
 
     void Start()
     {
@@ -40,18 +40,14 @@ public class UIManager : MonoBehaviour
         yield return new WaitUntil(() => fadeImage.color.a == 1);
     }
 
-    // public void setCurrentColorIndicator(ColorIDs.Colors c){
-    //     switch(c){
-    //         case ColorIDs.Colors.Green:
-    //             //set the currentColorIndicator
-    //         case ColorIDs.Colors.Blue:
-                
-    //         case ColorIDs.Colors.Red:
-                
-    //         default:
-    //             Debug.Log("bad color argument-- commence panic");
-                
-    //     }
-    // }
+    public void FadeOutToScene(string scene){
+        StartCoroutine(DoFadeOutToScene(scene));
+    }
+
+    IEnumerator DoFadeOutToScene(string s) {
+        fadeUI.FadeOut(fadeOutSpeed);
+        yield return new WaitUntil(() => fadeImage.color.a == 1);
+        SceneManager.LoadScene(s);
+    }
 
 }
