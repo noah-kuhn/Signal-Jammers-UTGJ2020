@@ -9,9 +9,8 @@ public class Pl_Movement : MonoBehaviour
     [Tooltip("Changes the speed at which the player falls. Consequence of using CharacterController and not Rigidbody")]
     public float gravityScale = 3;
     public float jumpForce = 15f;
-
+    private bool _jumping;
     private float verticalVelocity;
-    private bool jumping;
     private CharacterController controller;
     private Vector3 moveVector;
     private Vector3 moveDirection;
@@ -19,16 +18,34 @@ public class Pl_Movement : MonoBehaviour
     private Animator _anim;
     [SerializeField] private float _coyoteTime = 0.1f;
     private float timeLeftPlatform;
+
+    private enum State
+    {
+        Idle,
+        Walk,
+        Jump,
+        Fall
+    }
+
+    private State _state;
     
     private void Awake() {
         controller = GetComponent<CharacterController>();
         terminalVel = Physics.gravity.y * gravityScale;
         _anim = GetComponentInChildren<Animator>();
+        _state = State.Idle;
     }
 
     private void Update()
     {
-        _anim.SetBool("walk", !(moveDirection.x + moveDirection.z).Equals(0));
+        if (controller.isGrounded)
+        {
+            _state = (moveDirection.x + moveDirection.z).Equals(0) ? State.Idle : State.Walk;
+        }
+        else _state = moveDirection.y > 0 ? State.Jump : State.Fall;
+        
+        _anim.SetBool("walk", _state == State.Walk);
+        _anim.SetBool("jump", _state == State.Jump);
         _anim.SetBool("vertical", !Input.GetAxis("Vertical").Equals(0));
         _anim.SetBool("left", moveVector.x < 0);
         _anim.SetBool("up", moveVector.z > 0);

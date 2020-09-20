@@ -6,6 +6,15 @@
     <e p="C:\Users\Grant\Documents\GitHub\Signal-Jammers-UTGJ2020\UTGJ2020" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Art" t="Include">
+          <e p="3D art" t="Include">
+            <e p="Good Models" t="Include">
+              <e p="Evan's testing modles" t="Include">
+                <e p="FallingWater.shader" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
         <e p="Materials n Shaders" t="Include">
           <e p="SolidScenery.shader" t="Include" />
         </e>
@@ -30,6 +39,7 @@
           <e p="UI" t="Include">
             <e p="Fade.cs" t="Include" />
             <e p="MainMenu.cs" t="Include" />
+            <e p="PaletteIcon.cs" t="Include" />
             <e p="PauseMenu.cs" t="Include" />
           </e>
         </e>
