@@ -10,7 +10,7 @@ public class Platform : MonoBehaviour
     public Material offMaterial;
     public ColorIDs.Colors platformColor;
     private MeshFilter _meshFilter;
-    private MeshCollider _meshCollider;
+    public MeshCollider _meshCollider;
     public MeshRenderer _renderer;
     public bool active;
     

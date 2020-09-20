@@ -7198,6 +7198,7 @@ MonoBehaviour:
   onMaterial: {fileID: 2100000, guid: 4737105ea23658c4491d2213de06e997, type: 2}
   offMaterial: {fileID: 2100000, guid: 5b648f13fbeb4004f8dfd55717c9efe8, type: 2}
   platformColor: 2
+  _meshCollider: {fileID: 0}
   _renderer: {fileID: 0}
   active: 1
 --- !u!64 &2020683946
