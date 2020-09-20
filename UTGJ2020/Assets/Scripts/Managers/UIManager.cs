@@ -27,8 +27,8 @@ public class UIManager : MonoBehaviour
 
     void Start()
     {
-        fadeUI = Fade.Instance;
-        fadeImage = fadeUI.gameObject.GetComponent<Image>();
+        fadeUI = FadeCanvas.Instance.GetComponentInChildren<Fade>();
+        fadeImage = fadeUI.GetComponent<Image>();
     }
 
     public void FadeOut(){
