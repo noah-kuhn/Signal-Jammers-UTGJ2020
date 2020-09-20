@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Puddle : Platform
 {
+    bool timerRunning;
     new void Awake(){
         base.Awake();
         base.platformColor = ColorIDs.Colors.Blue;
@@ -19,18 +20,19 @@ public class Puddle : Platform
 
     void OnTriggerExit(Collider c){
         if(c.gameObject.tag == "Player"){
+            timerRunning = false;
             StopCoroutine(SinkThroughTimer());
-            var meshColor = gameObject.GetComponent<MeshRenderer>().material/*.color*/;
-            meshColor = this.active ? onMaterial : offMaterial;
+            _renderer.material = active ? onMaterial : offMaterial;
             //meshColor.a = 1.0f;
             gameObject.GetComponent<MeshCollider>().enabled = true;
         }
     }
 
     IEnumerator SinkThroughTimer(){
+        timerRunning = true;
         float duration = 3f;
         float timeElapsed = 0;
-        while(timeElapsed <= duration){
+        while(timeElapsed <= duration && timerRunning){
             timeElapsed += Time.deltaTime;
             if(timeElapsed > 1.5 && timeElapsed < 1.6 ||
                 timeElapsed > 1.7 && timeElapsed < 1.8 ||
@@ -50,6 +52,8 @@ public class Puddle : Platform
             }
             yield return null;
         }
+        yield return new WaitUntil(() => timeElapsed >= duration);
         gameObject.GetComponent<MeshCollider>().enabled = false;
+        this.active = false;
     }
 }
