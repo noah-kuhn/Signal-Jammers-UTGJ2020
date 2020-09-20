@@ -1174,6 +1174,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41ed2a8e03550094da8ceaf2b9167db1, type: 3}
+--- !u!1 &341560639 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5106478722637790031, guid: 96e67142c2bdbb140b7339860b8de45a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1097235989}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &341560640
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341560639}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 3
+  m_Center: {x: 1.32, y: 0, z: 0.79}
+--- !u!114 &341560641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341560639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca5be46322fb013468f651afc830b908, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &345172701 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9115405248682191994, guid: 74d7cafa77d82c048b65b6169047c571,
@@ -4480,7 +4511,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Picnic
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4514362806948357202, guid: 96e67142c2bdbb140b7339860b8de45a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 96e67142c2bdbb140b7339860b8de45a, type: 3}
 --- !u!1001 &1099421823
 PrefabInstance:
