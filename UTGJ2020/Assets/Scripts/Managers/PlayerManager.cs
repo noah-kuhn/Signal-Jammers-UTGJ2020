@@ -11,7 +11,7 @@ public class PlayerManager : MonoBehaviour
     //and stuff inside of this script are also static, so PlayerManager.<func name> is
     //typically also valid.
     public static PlayerManager Instance { get; private set; }
-    public static bool giveDebugColors;
+    public bool giveDebugColors;
     void Awake() {
         //basic singleton stuff-- make sure there's only one instance, and it's this one!
         if (Instance == null)
@@ -24,9 +24,9 @@ public class PlayerManager : MonoBehaviour
             CurrentColor = AvailableColors[index];
             //for testing color switching: give us all colors
             if (giveDebugColors) {
-                // AddColor(ColorIDs.Colors.Green);
-                // AddColor(ColorIDs.Colors.Blue);
-                // AddColor(ColorIDs.Colors.Red);
+                AddColor(ColorIDs.Colors.Green);
+                AddColor(ColorIDs.Colors.Blue);
+                AddColor(ColorIDs.Colors.Red);
             }
         } else {
             Destroy(gameObject); //ok there's already a PlayerManager. so die
