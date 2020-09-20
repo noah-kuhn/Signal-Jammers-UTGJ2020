@@ -9,8 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2579842951619682810}
-  - component: {fileID: 3572802762738507444}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: puddle_1
   m_TagString: Platform
   m_Icon: {fileID: 0}
@@ -32,20 +31,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 112.619, z: 0}
---- !u!64 &3572802762738507444
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2920199333475679040}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2432090755550338912, guid: adb20ea8bb1218c42a548c45b1db41cc, type: 3}
 --- !u!1 &6128108481498383257
 GameObject:
   m_ObjectHideFlags: 0
@@ -57,9 +42,12 @@ GameObject:
   - component: {fileID: 3151751508108447906}
   - component: {fileID: 246125747104197096}
   - component: {fileID: 3625345134072827260}
-  m_Layer: 0
+  - component: {fileID: 2944880047850940282}
+  - component: {fileID: 6929941045489817520}
+  - component: {fileID: 4218439762316642693}
+  m_Layer: 8
   m_Name: puddle
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -125,3 +113,52 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!54 &2944880047850940282
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6128108481498383257}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &6929941045489817520
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6128108481498383257}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: e91168b737f7577438491da3c562bf8d, type: 3}
+--- !u!114 &4218439762316642693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6128108481498383257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 979e7b354e4f24840b0a8b0fdade2c6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onMesh: {fileID: -2432090755550338912, guid: adb20ea8bb1218c42a548c45b1db41cc, type: 3}
+  offMesh: {fileID: -2432090755550338912, guid: adb20ea8bb1218c42a548c45b1db41cc,
+    type: 3}
+  onMaterial: {fileID: 2100000, guid: 7fc4aa8bce28d054b8635fdf9beac79d, type: 2}
+  offMaterial: {fileID: 2100000, guid: 4bd7441d722c0c249b970fda6426eb19, type: 2}
+  platformColor: 2
+  active: 0
