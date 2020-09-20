@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bb072cd-8936-4cef-a522-2b1ac8f3aa19" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/UIManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/AudioManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Pl_Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Pl_Movement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UTGJ2020/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UTGJ2020/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/main_theme.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/main_theme.wav.meta" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +18,7 @@
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/Pl_Movement.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+              <caret line="65" selection-start-line="65" selection-end-line="65" />
               <folding>
                 <marker date="1600590747413" expanded="true" signature="6:92" ph="..." />
                 <marker date="1600590747413" expanded="true" signature="134:3989" ph="{...}" />
@@ -164,7 +164,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-12" />
     <option name="y" value="-12" />
     <option name="width" value="2800" />
@@ -235,7 +235,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39652000" />
+    <option name="totallyTimeSpent" value="40249000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -247,7 +247,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1513" height="973" extended-state="7" />
+    <frame x="-6" y="-6" width="1513" height="973" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
@@ -447,12 +447,12 @@
         <state relative-caret-position="375">
           <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
           <folding>
-            <marker date="1600580494484" expanded="false" signature="6:78" ph="..." />
-            <marker date="1600580494484" expanded="true" signature="117:1411" ph="{...}" />
-            <marker date="1600580494484" expanded="true" signature="493:1029" ph="{...}" />
-            <marker date="1600580494484" expanded="true" signature="599:673" ph="{...}" />
-            <marker date="1600580494484" expanded="true" signature="1077:1409" ph="{...}" />
-            <marker date="1600580494484" expanded="true" signature="1180:1403" ph="{...}" />
+            <marker date="1600592684365" expanded="false" signature="6:78" ph="..." />
+            <marker date="1600592684365" expanded="true" signature="117:1410" ph="{...}" />
+            <marker date="1600592684365" expanded="true" signature="492:1028" ph="{...}" />
+            <marker date="1600592684365" expanded="true" signature="598:672" ph="{...}" />
+            <marker date="1600592684365" expanded="true" signature="1076:1408" ph="{...}" />
+            <marker date="1600592684365" expanded="true" signature="1179:1402" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -462,15 +462,15 @@
         <state relative-caret-position="60">
           <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
           <folding>
-            <marker date="1600590274883" expanded="false" signature="6:78" ph="..." />
-            <marker date="1600590274883" expanded="true" signature="110:1383" ph="{...}" />
-            <marker date="1600590274883" expanded="true" signature="133:213" ph="{...}" />
-            <marker date="1600590274883" expanded="true" signature="258:482" ph="{...}" />
-            <marker date="1600590274883" expanded="true" signature="417:476" ph="{...}" />
-            <marker date="1600590274883" expanded="true" signature="518:533" ph="{...}" />
-            <marker date="1600590274883" expanded="true" signature="563:805" ph="{...}" />
-            <marker date="1600590274883" expanded="true" signature="1236:1381" ph="{...}" />
-            <marker date="1600590274883" expanded="true" signature="1236:1310" ph="{...}" />
+            <marker date="1600592684382" expanded="false" signature="6:78" ph="..." />
+            <marker date="1600592684382" expanded="true" signature="110:2005" ph="{...}" />
+            <marker date="1600592684382" expanded="true" signature="133:213" ph="{...}" />
+            <marker date="1600592684382" expanded="true" signature="258:482" ph="{...}" />
+            <marker date="1600592684382" expanded="true" signature="417:476" ph="{...}" />
+            <marker date="1600592684382" expanded="true" signature="518:533" ph="{...}" />
+            <marker date="1600592684382" expanded="true" signature="563:805" ph="{...}" />
+            <marker date="1600592684382" expanded="true" signature="1891:2003" ph="{...}" />
+            <marker date="1600592684382" expanded="true" signature="1891:1932" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -578,7 +578,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/Pl_Movement.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
           <folding>
             <marker date="1600590747413" expanded="true" signature="6:92" ph="..." />
             <marker date="1600590747413" expanded="true" signature="134:3989" ph="{...}" />
