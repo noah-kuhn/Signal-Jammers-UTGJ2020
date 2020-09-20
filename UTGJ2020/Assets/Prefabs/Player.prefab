@@ -4922,7 +4922,7 @@ MonoBehaviour:
   partSys: {fileID: 4401918215135068086}
   partSysReady: 0
   sphereTransparency: 0.151
-  burstSize: 12
+  burstSize: 14
 --- !u!1 &5874240326234763115
 GameObject:
   m_ObjectHideFlags: 0

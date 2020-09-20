@@ -55,6 +55,7 @@ public class Pl_Movement : MonoBehaviour
         _anim.SetBool("vertical", !Input.GetAxis("Vertical").Equals(0));
         _anim.SetBool("left", moveVector.x < 0);
         _anim.SetBool("up", moveVector.z > 0);
+        if (lastState == State.Fall && controller.isGrounded) _anim.SetTrigger("landed");
     }
 
     private void FixedUpdate()
