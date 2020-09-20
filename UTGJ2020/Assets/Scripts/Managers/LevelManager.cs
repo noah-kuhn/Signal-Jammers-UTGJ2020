@@ -26,7 +26,7 @@ public class LevelManager : MonoBehaviour
     public static string CurrentSceneName{ get; set; }
 
     public void RestartScene(){
-        ProgressToScene(SceneManager.GetActiveScene().name);
+        ProgressToScene(CurrentSceneName);
     }
 
     //uncomment when UIManager is ready to be used
