@@ -41,7 +41,6 @@
           <e p="Teleporter.cs" t="Include" />
           <e p="UI" t="Include">
             <e p="Fade.cs" t="Include" />
-            <e p="FadeCanvas.cs" t="Include" />
             <e p="MainMenu.cs" t="Include" />
             <e p="PaletteIcon.cs" t="Include" />
             <e p="PauseMenu.cs" t="Include" />
