@@ -25,8 +25,6 @@ public class Colorer : MonoBehaviour
         UpdateColor(PlayerManager.CurrentColor); //set to whatever the manager says it should be
     }
 
-    
-
     void Update(){
         //if our particle system is not active and we're not paused, then our particle system is ready
         partSysReady = !partSys.IsAlive() && !PlayerManager.isPaused && !_renderer.enabled;

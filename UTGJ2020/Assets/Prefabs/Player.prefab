@@ -5239,8 +5239,8 @@ MonoBehaviour:
   distance: 5
   xSpeed: 60
   ySpeed: 60
-  yMinLimit: -10
-  yMaxLimit: 25
+  yMinLimit: -20
+  yMaxLimit: 50
   distanceMin: 0.5
   distanceMax: 7.5
   yOffset: 1

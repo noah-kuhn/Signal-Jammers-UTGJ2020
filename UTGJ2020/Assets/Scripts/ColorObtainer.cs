@@ -10,7 +10,11 @@ public class ColorObtainer : MonoBehaviour
     private void OnTriggerEnter(Collider other) {
         if (other.transform.CompareTag("Player")) 
         {
+            Debug.Log($"calling AddColor with {color}...");
             PlayerManager.AddColor(color);
+            Debug.Log($"calling UpdateColor with {color}...");
+            //the child in index 1 should be the particle system
+            PlayerManager.player.transform.GetChild(1).gameObject.GetComponent<Colorer>().UpdateColor(color);
         }
     }
 
