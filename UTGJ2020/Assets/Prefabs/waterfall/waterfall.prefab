@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 48561313162680287}
   - component: {fileID: 9052434601682866044}
   - component: {fileID: 836857556548622859}
+  - component: {fileID: 1029722048707989979}
+  - component: {fileID: 6862914278859941776}
   m_Layer: 0
   m_Name: Plane.005
   m_TagString: Untagged
@@ -79,6 +81,45 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!54 &1029722048707989979
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434058917410362903}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &6862914278859941776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434058917410362903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66e557ec9432d5d4b83b4c0809beb0c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onMesh: {fileID: -8302102485596996044, guid: 71a0053c1cbd3f44dae56101f20789d4, type: 3}
+  offMesh: {fileID: -8302102485596996044, guid: 71a0053c1cbd3f44dae56101f20789d4,
+    type: 3}
+  onMaterial: {fileID: 2100000, guid: 8e53d4b57ec2eeb4eb94ba1dd95e1389, type: 2}
+  offMaterial: {fileID: 2100000, guid: 1577790f184bbaa418bc98193b3a4f96, type: 2}
+  sister1: {fileID: 6302755369669203026}
+  sister2: {fileID: 4218388768182341386}
+  platformColor: 2
+  _renderer: {fileID: 0}
+  active: 0
+  isSwitching: 0
 --- !u!1 &3480418286482546524
 GameObject:
   m_ObjectHideFlags: 0
@@ -90,6 +131,9 @@ GameObject:
   - component: {fileID: 8014663647440195861}
   - component: {fileID: 3155355933059705881}
   - component: {fileID: 8864592941547135758}
+  - component: {fileID: 4218388768182341386}
+  - component: {fileID: 4394555587250839706}
+  - component: {fileID: 4481172153116219949}
   m_Layer: 0
   m_Name: Plane.001
   m_TagString: Untagged
@@ -158,6 +202,58 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &4218388768182341386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3480418286482546524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66e557ec9432d5d4b83b4c0809beb0c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onMesh: {fileID: 4579454407841743219, guid: 71a0053c1cbd3f44dae56101f20789d4, type: 3}
+  offMesh: {fileID: 4579454407841743219, guid: 71a0053c1cbd3f44dae56101f20789d4, type: 3}
+  onMaterial: {fileID: 2100000, guid: 0df6b0b52b488014f8dccf10d2c99926, type: 2}
+  offMaterial: {fileID: 2100000, guid: 7f8ec8a7520db154db73bf6fc4056938, type: 2}
+  sister1: {fileID: 6302755369669203026}
+  sister2: {fileID: 6862914278859941776}
+  platformColor: 2
+  _renderer: {fileID: 0}
+  active: 1
+  isSwitching: 0
+--- !u!64 &4394555587250839706
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3480418286482546524}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4579454407841743219, guid: 71a0053c1cbd3f44dae56101f20789d4, type: 3}
+--- !u!54 &4481172153116219949
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3480418286482546524}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &3824010628844859384
 GameObject:
   m_ObjectHideFlags: 0
@@ -266,6 +362,7 @@ GameObject:
   - component: {fileID: 8590801018386738293}
   - component: {fileID: 8590801018386738294}
   - component: {fileID: 8590801018386738249}
+  - component: {fileID: 6302755369669203026}
   m_Layer: 8
   m_Name: Plane
   m_TagString: Platform
@@ -381,7 +478,30 @@ MonoBehaviour:
   onMaterial: {fileID: 2100000, guid: 4737105ea23658c4491d2213de06e997, type: 2}
   offMaterial: {fileID: 2100000, guid: 5b648f13fbeb4004f8dfd55717c9efe8, type: 2}
   platformColor: 2
+  _renderer: {fileID: 0}
   active: 1
+--- !u!114 &6302755369669203026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7586369523861594417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66e557ec9432d5d4b83b4c0809beb0c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onMesh: {fileID: -462981019419857548, guid: 71a0053c1cbd3f44dae56101f20789d4, type: 3}
+  offMesh: {fileID: -462981019419857548, guid: 71a0053c1cbd3f44dae56101f20789d4, type: 3}
+  onMaterial: {fileID: 2100000, guid: 4737105ea23658c4491d2213de06e997, type: 2}
+  offMaterial: {fileID: 2100000, guid: 5b648f13fbeb4004f8dfd55717c9efe8, type: 2}
+  sister1: {fileID: 4218388768182341386}
+  sister2: {fileID: 6862914278859941776}
+  platformColor: 2
+  _renderer: {fileID: 0}
+  active: 1
+  isSwitching: 0
 --- !u!1 &8933384447854297370
 GameObject:
   m_ObjectHideFlags: 0
