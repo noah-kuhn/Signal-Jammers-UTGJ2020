@@ -15,6 +15,7 @@ public class MainMenu : MonoBehaviour
     {
         fadeUI = FindObjectOfType<Fade>();
         fadeImage = fadeUI.gameObject.GetComponent<Image>();
+        AudioManager.Instance.PlaySound(AudioManager.SoundIDs.TITLE);
     }
 
     public void RunFirstScene() {
@@ -24,6 +25,7 @@ public class MainMenu : MonoBehaviour
     IEnumerator FadeOut() {
         fadeUI.FadeOut(fadeOutSpeed);
         yield return new WaitUntil(() => fadeImage.color.a == 1);
+        AudioManager.Instance.FadeSound(AudioManager.SoundIDs.TITLE);
         SceneManager.LoadScene("Scene 1");
     }
 }

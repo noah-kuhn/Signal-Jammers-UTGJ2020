@@ -10,7 +10,8 @@ public class AudioManager : MonoBehaviour
         MAIN_MUSIC,
         BURST,
         WALK,
-        LAND
+        LAND,
+        TITLE
         
     }
 

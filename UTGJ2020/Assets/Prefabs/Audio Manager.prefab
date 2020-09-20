@@ -48,7 +48,7 @@ MonoBehaviour:
   masterVolume: 0
   sounds:
   - Clip: {fileID: 8300000, guid: bb1977551af161d42bdee2e220148d8a, type: 3}
-    Volume: 1
+    Volume: 0.8
     Loop: 1
     Id: 0
     Source: {fileID: 0}
@@ -71,6 +71,12 @@ MonoBehaviour:
     Id: 3
     Source: {fileID: 0}
     fading: 0
+  - Clip: {fileID: 8300000, guid: adc3d77171a6f59479139a3f9e7f3f35, type: 3}
+    Volume: 1
+    Loop: 1
+    Id: 4
+    Source: {fileID: 0}
+    fading: 0
   musicSource: {fileID: 4163414078156961919}
 --- !u!82 &4163414078156961919
 AudioSource:
@@ -82,7 +88,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: bb1977551af161d42bdee2e220148d8a, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
