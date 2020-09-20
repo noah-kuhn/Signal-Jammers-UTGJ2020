@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 3625345134072827260}
   - component: {fileID: 2944880047850940282}
   - component: {fileID: 6929941045489817520}
-  - component: {fileID: 4218439762316642693}
+  - component: {fileID: 7025427790597223030}
   m_Layer: 8
   m_Name: puddle
   m_TagString: Platform
@@ -127,7 +127,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!64 &6929941045489817520
 MeshCollider:
@@ -140,10 +140,10 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: -2432090755550338912, guid: e91168b737f7577438491da3c562bf8d, type: 3}
---- !u!114 &4218439762316642693
+  m_Mesh: {fileID: -2432090755550338912, guid: adb20ea8bb1218c42a548c45b1db41cc, type: 3}
+--- !u!114 &7025427790597223030
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -152,7 +152,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6128108481498383257}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 979e7b354e4f24840b0a8b0fdade2c6a, type: 3}
+  m_Script: {fileID: 11500000, guid: 081f2a977d32c7c47a750a020aabeb60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   onMesh: {fileID: -2432090755550338912, guid: adb20ea8bb1218c42a548c45b1db41cc, type: 3}

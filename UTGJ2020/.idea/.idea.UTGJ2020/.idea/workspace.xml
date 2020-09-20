@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bb072cd-8936-4cef-a522-2b1ac8f3aa19" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/UIManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Fade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Fade.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Environment/Blue Bonnet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Environment/Blue Bonnet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Generic Color Platforms/puddle_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Generic Color Platforms/puddle_1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1 Whiteboxing.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1 Whiteboxing.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Puddle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Puddle.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,22 +71,59 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/UIManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="29" column="68" selection-start-line="29" selection-start-column="68" selection-end-line="29" selection-end-column="68" />
+            <state relative-caret-position="353">
+              <caret line="30" column="49" lean-forward="true" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
               <folding>
-                <marker date="1600580265407" expanded="false" signature="6:135" ph="..." />
-                <marker date="1600580265407" expanded="true" signature="175:1532" ph="{...}" />
-                <marker date="1600580265407" expanded="true" signature="182:315" ph="/* here's our property: now we can say UIManager.Instance to get the instance ... */" />
-                <marker date="1600580265407" expanded="true" signature="393:774" ph="{...}" />
-                <marker date="1600580265407" expanded="true" signature="514:677" ph="{...}" />
-                <marker date="1600580265407" expanded="true" signature="882:1024" ph="{...}" />
-                <marker date="1600580265407" expanded="true" signature="1051:1095" ph="{...}" />
-                <marker date="1600580265407" expanded="true" signature="1125:1236" ph="{...}" />
-                <marker date="1600580265407" expanded="true" signature="1282:1338" ph="{...}" />
-                <marker date="1600580265407" expanded="true" signature="1383:1529" ph="{...}" />
+                <marker date="1600580446134" expanded="false" signature="6:135" ph="..." />
+                <marker date="1600580446134" expanded="true" signature="175:1521" ph="{...}" />
+                <marker date="1600580446134" expanded="true" signature="182:315" ph="/* here's our property: now we can say UIManager.Instance to get the instance ... */" />
+                <marker date="1600580446134" expanded="true" signature="393:774" ph="{...}" />
+                <marker date="1600580446134" expanded="true" signature="514:677" ph="{...}" />
+                <marker date="1600580446134" expanded="true" signature="882:1013" ph="{...}" />
+                <marker date="1600580446134" expanded="true" signature="1040:1084" ph="{...}" />
+                <marker date="1600580446134" expanded="true" signature="1114:1225" ph="{...}" />
+                <marker date="1600580446134" expanded="true" signature="1271:1327" ph="{...}" />
+                <marker date="1600580446134" expanded="true" signature="1372:1518" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Platform.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="27" column="42" lean-forward="true" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+              <folding>
+                <marker date="1600580494484" expanded="false" signature="6:78" ph="..." />
+                <marker date="1600580494484" expanded="true" signature="117:1411" ph="{...}" />
+                <marker date="1600580494484" expanded="true" signature="493:1029" ph="{...}" />
+                <marker date="1600580494484" expanded="true" signature="599:673" ph="{...}" />
+                <marker date="1600580494484" expanded="true" signature="1077:1409" ph="{...}" />
+                <marker date="1600580494484" expanded="true" signature="1180:1403" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Puddle.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+              <folding>
+                <marker date="1600581189042" expanded="false" signature="6:78" ph="..." />
+                <marker date="1600581189042" expanded="true" signature="110:1235" ph="{...}" />
+                <marker date="1600581189042" expanded="true" signature="133:213" ph="{...}" />
+                <marker date="1600581189042" expanded="true" signature="258:482" ph="{...}" />
+                <marker date="1600581189042" expanded="true" signature="417:476" ph="{...}" />
+                <marker date="1600581189042" expanded="true" signature="518:811" ph="{...}" />
+                <marker date="1600581189042" expanded="true" signature="563:805" ph="{...}" />
+                <marker date="1600581189042" expanded="true" signature="847:1233" ph="{...}" />
+                <marker date="1600581189042" expanded="true" signature="947:1162" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -109,32 +148,32 @@
             <state relative-caret-position="502">
               <caret line="130" column="14" selection-start-line="130" selection-start-column="14" selection-end-line="130" selection-end-column="14" />
               <folding>
-                <marker date="1600579733106" expanded="false" signature="6:166" ph="..." />
-                <marker date="1600579733106" expanded="true" signature="210:5906" ph="{...}" />
-                <marker date="1600579733106" expanded="true" signature="217:503" ph="/* here's our property: now we can say PlayerManager.Instance to get the instance ... */" />
-                <marker date="1600579733106" expanded="true" signature="589:2596" ph="{...}" />
-                <marker date="1600579733106" expanded="true" signature="710:1268" ph="{...}" />
-                <marker date="1600579733106" expanded="true" signature="1068:1258" ph="/* for testing color switching: give us all colors ... */" />
-                <marker date="1600579733106" expanded="true" signature="1461:1612" ph="/* The following block is for loading a scene's data when restarting it ... */" />
-                <marker date="1600579733106" expanded="true" signature="1686:2083" ph="{...}" />
-                <marker date="1600579733106" expanded="true" signature="1700:1825" ph="/* so we must be reloading this scene-- let's set all this data back ... */" />
-                <marker date="1600579733106" expanded="true" signature="1981:2036" ph="{...}" />
-                <marker date="1600579733106" expanded="true" signature="2101:2244" ph="/* ok either we have no LoadSceneData or its sceneName is different ... */" />
-                <marker date="1600579733106" expanded="true" signature="2438:2590" ph="/* a quick note on the else block: we could add an UpdateData() function to the ... */" />
-                <marker date="1600579733106" expanded="true" signature="2602:2697" ph="/* okay let's list the data we need to transfer between scenes! ... */" />
-                <marker date="1600579733106" expanded="true" signature="3218:3397" ph="/* and this LSD is not for tripping, but rather for loading in the data from the beginning ... */" />
-                <marker date="1600579733106" expanded="true" signature="3570:4031" ph="{...}" />
-                <marker date="1600579733106" expanded="true" signature="3612:3686" ph="{...}" />
-                <marker date="1600579733106" expanded="true" signature="3745:4025" ph="{...}" />
-                <marker date="1600579733106" expanded="true" signature="3759:3934" ph="/* special case: for the first color added, remove NONE from the available colors ... */" />
-                <marker date="1600579733106" expanded="true" signature="4037:4176" ph="/* this one is easy: if we have multiple colors, switch to the next one in the list, wrapping ... */" />
-                <marker date="1600579733106" expanded="true" signature="4213:4480" ph="{...}" />
-                <marker date="1600579733106" expanded="true" signature="4252:4474" ph="{...}" />
-                <marker date="1600579733106" expanded="true" signature="4632:5012" ph="{...}" />
-                <marker date="1600579733106" expanded="true" signature="4651:5006" ph="{...}" />
-                <marker date="1600579733106" expanded="true" signature="5131:5903" ph="{...}" />
-                <marker date="1600579733106" expanded="true" signature="5525:5888" ph="{...}" />
-                <marker date="1600579733106" expanded="true" signature="5787:5848" ph="{...}" />
+                <marker date="1600580494471" expanded="false" signature="6:166" ph="..." />
+                <marker date="1600580494471" expanded="true" signature="210:5903" ph="{...}" />
+                <marker date="1600580494471" expanded="true" signature="217:503" ph="/* here's our property: now we can say PlayerManager.Instance to get the instance ... */" />
+                <marker date="1600580494471" expanded="true" signature="589:2593" ph="{...}" />
+                <marker date="1600580494471" expanded="true" signature="710:1265" ph="{...}" />
+                <marker date="1600580494471" expanded="true" signature="1068:1255" ph="/* for testing color switching: give us all colors ... */" />
+                <marker date="1600580494471" expanded="true" signature="1458:1609" ph="/* The following block is for loading a scene's data when restarting it ... */" />
+                <marker date="1600580494471" expanded="true" signature="1683:2080" ph="{...}" />
+                <marker date="1600580494471" expanded="true" signature="1697:1822" ph="/* so we must be reloading this scene-- let's set all this data back ... */" />
+                <marker date="1600580494471" expanded="true" signature="1978:2033" ph="{...}" />
+                <marker date="1600580494471" expanded="true" signature="2098:2241" ph="/* ok either we have no LoadSceneData or its sceneName is different ... */" />
+                <marker date="1600580494471" expanded="true" signature="2435:2587" ph="/* a quick note on the else block: we could add an UpdateData() function to the ... */" />
+                <marker date="1600580494471" expanded="true" signature="2599:2694" ph="/* okay let's list the data we need to transfer between scenes! ... */" />
+                <marker date="1600580494471" expanded="true" signature="3215:3394" ph="/* and this LSD is not for tripping, but rather for loading in the data from the beginning ... */" />
+                <marker date="1600580494471" expanded="true" signature="3567:4028" ph="{...}" />
+                <marker date="1600580494471" expanded="true" signature="3609:3683" ph="{...}" />
+                <marker date="1600580494471" expanded="true" signature="3742:4022" ph="{...}" />
+                <marker date="1600580494471" expanded="true" signature="3756:3931" ph="/* special case: for the first color added, remove NONE from the available colors ... */" />
+                <marker date="1600580494471" expanded="true" signature="4034:4173" ph="/* this one is easy: if we have multiple colors, switch to the next one in the list, wrapping ... */" />
+                <marker date="1600580494471" expanded="true" signature="4210:4477" ph="{...}" />
+                <marker date="1600580494471" expanded="true" signature="4249:4471" ph="{...}" />
+                <marker date="1600580494471" expanded="true" signature="4629:5009" ph="{...}" />
+                <marker date="1600580494471" expanded="true" signature="4648:5003" ph="{...}" />
+                <marker date="1600580494471" expanded="true" signature="5128:5900" ph="{...}" />
+                <marker date="1600580494471" expanded="true" signature="5522:5885" ph="{...}" />
+                <marker date="1600580494471" expanded="true" signature="5784:5845" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -170,6 +209,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Sound.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ColorIDs.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Puddle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/PauseMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Fade.cs" root0="FORCE_HIGHLIGHTING" />
@@ -201,10 +241,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/FadeCanvas.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Fade.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/UIManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Puddle.cs" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-12" />
     <option name="y" value="-12" />
     <option name="width" value="2800" />
@@ -275,7 +316,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35914000" />
+    <option name="totallyTimeSpent" value="37033000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -396,21 +437,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Platform.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="35" column="96" selection-start-line="35" selection-start-column="96" selection-end-line="35" selection-end-column="96" />
-          <folding>
-            <marker date="1600552372136" expanded="false" signature="6:78" ph="..." />
-            <marker date="1600552372136" expanded="true" signature="117:1413" ph="{...}" />
-            <marker date="1600552372136" expanded="true" signature="494:1030" ph="{...}" />
-            <marker date="1600552372136" expanded="true" signature="600:674" ph="{...}" />
-            <marker date="1600552372136" expanded="true" signature="1079:1411" ph="{...}" />
-            <marker date="1600552372136" expanded="true" signature="1182:1405" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/ColorObtainer.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -494,50 +520,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/Player.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-          <folding>
-            <marker date="1600578537675" expanded="false" signature="6:78" ph="..." />
-            <marker date="1600578537675" expanded="true" signature="115:302" ph="{...}" />
-            <marker date="1600578537675" expanded="true" signature="192:300" ph="{...}" />
-            <marker date="1600578537675" expanded="true" signature="233:294" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/PlayerManager.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="502">
           <caret line="130" column="14" selection-start-line="130" selection-start-column="14" selection-end-line="130" selection-end-column="14" />
           <folding>
-            <marker date="1600579733106" expanded="false" signature="6:166" ph="..." />
-            <marker date="1600579733106" expanded="true" signature="210:5906" ph="{...}" />
-            <marker date="1600579733106" expanded="true" signature="217:503" ph="/* here's our property: now we can say PlayerManager.Instance to get the instance ... */" />
-            <marker date="1600579733106" expanded="true" signature="589:2596" ph="{...}" />
-            <marker date="1600579733106" expanded="true" signature="710:1268" ph="{...}" />
-            <marker date="1600579733106" expanded="true" signature="1068:1258" ph="/* for testing color switching: give us all colors ... */" />
-            <marker date="1600579733106" expanded="true" signature="1461:1612" ph="/* The following block is for loading a scene's data when restarting it ... */" />
-            <marker date="1600579733106" expanded="true" signature="1686:2083" ph="{...}" />
-            <marker date="1600579733106" expanded="true" signature="1700:1825" ph="/* so we must be reloading this scene-- let's set all this data back ... */" />
-            <marker date="1600579733106" expanded="true" signature="1981:2036" ph="{...}" />
-            <marker date="1600579733106" expanded="true" signature="2101:2244" ph="/* ok either we have no LoadSceneData or its sceneName is different ... */" />
-            <marker date="1600579733106" expanded="true" signature="2438:2590" ph="/* a quick note on the else block: we could add an UpdateData() function to the ... */" />
-            <marker date="1600579733106" expanded="true" signature="2602:2697" ph="/* okay let's list the data we need to transfer between scenes! ... */" />
-            <marker date="1600579733106" expanded="true" signature="3218:3397" ph="/* and this LSD is not for tripping, but rather for loading in the data from the beginning ... */" />
-            <marker date="1600579733106" expanded="true" signature="3570:4031" ph="{...}" />
-            <marker date="1600579733106" expanded="true" signature="3612:3686" ph="{...}" />
-            <marker date="1600579733106" expanded="true" signature="3745:4025" ph="{...}" />
-            <marker date="1600579733106" expanded="true" signature="3759:3934" ph="/* special case: for the first color added, remove NONE from the available colors ... */" />
-            <marker date="1600579733106" expanded="true" signature="4037:4176" ph="/* this one is easy: if we have multiple colors, switch to the next one in the list, wrapping ... */" />
-            <marker date="1600579733106" expanded="true" signature="4213:4480" ph="{...}" />
-            <marker date="1600579733106" expanded="true" signature="4252:4474" ph="{...}" />
-            <marker date="1600579733106" expanded="true" signature="4632:5012" ph="{...}" />
-            <marker date="1600579733106" expanded="true" signature="4651:5006" ph="{...}" />
-            <marker date="1600579733106" expanded="true" signature="5131:5903" ph="{...}" />
-            <marker date="1600579733106" expanded="true" signature="5525:5888" ph="{...}" />
-            <marker date="1600579733106" expanded="true" signature="5787:5848" ph="{...}" />
+            <marker date="1600580494471" expanded="false" signature="6:166" ph="..." />
+            <marker date="1600580494471" expanded="true" signature="210:5903" ph="{...}" />
+            <marker date="1600580494471" expanded="true" signature="217:503" ph="/* here's our property: now we can say PlayerManager.Instance to get the instance ... */" />
+            <marker date="1600580494471" expanded="true" signature="589:2593" ph="{...}" />
+            <marker date="1600580494471" expanded="true" signature="710:1265" ph="{...}" />
+            <marker date="1600580494471" expanded="true" signature="1068:1255" ph="/* for testing color switching: give us all colors ... */" />
+            <marker date="1600580494471" expanded="true" signature="1458:1609" ph="/* The following block is for loading a scene's data when restarting it ... */" />
+            <marker date="1600580494471" expanded="true" signature="1683:2080" ph="{...}" />
+            <marker date="1600580494471" expanded="true" signature="1697:1822" ph="/* so we must be reloading this scene-- let's set all this data back ... */" />
+            <marker date="1600580494471" expanded="true" signature="1978:2033" ph="{...}" />
+            <marker date="1600580494471" expanded="true" signature="2098:2241" ph="/* ok either we have no LoadSceneData or its sceneName is different ... */" />
+            <marker date="1600580494471" expanded="true" signature="2435:2587" ph="/* a quick note on the else block: we could add an UpdateData() function to the ... */" />
+            <marker date="1600580494471" expanded="true" signature="2599:2694" ph="/* okay let's list the data we need to transfer between scenes! ... */" />
+            <marker date="1600580494471" expanded="true" signature="3215:3394" ph="/* and this LSD is not for tripping, but rather for loading in the data from the beginning ... */" />
+            <marker date="1600580494471" expanded="true" signature="3567:4028" ph="{...}" />
+            <marker date="1600580494471" expanded="true" signature="3609:3683" ph="{...}" />
+            <marker date="1600580494471" expanded="true" signature="3742:4022" ph="{...}" />
+            <marker date="1600580494471" expanded="true" signature="3756:3931" ph="/* special case: for the first color added, remove NONE from the available colors ... */" />
+            <marker date="1600580494471" expanded="true" signature="4034:4173" ph="/* this one is easy: if we have multiple colors, switch to the next one in the list, wrapping ... */" />
+            <marker date="1600580494471" expanded="true" signature="4210:4477" ph="{...}" />
+            <marker date="1600580494471" expanded="true" signature="4249:4471" ph="{...}" />
+            <marker date="1600580494471" expanded="true" signature="4629:5009" ph="{...}" />
+            <marker date="1600580494471" expanded="true" signature="4648:5003" ph="{...}" />
+            <marker date="1600580494471" expanded="true" signature="5128:5900" ph="{...}" />
+            <marker date="1600580494471" expanded="true" signature="5522:5885" ph="{...}" />
+            <marker date="1600580494471" expanded="true" signature="5784:5845" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -549,19 +562,6 @@
           <folding>
             <marker date="1600567245428" expanded="false" signature="6:78" ph="..." />
             <marker date="1600567245428" expanded="true" signature="121:407" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/FadeCanvas.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="8" column="59" lean-forward="true" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
-          <folding>
-            <marker date="1600580265368" expanded="false" signature="6:128" ph="..." />
-            <marker date="1600580265368" expanded="true" signature="168:606" ph="{...}" />
-            <marker date="1600580265368" expanded="true" signature="308:604" ph="{...}" />
-            <marker date="1600580265368" expanded="true" signature="344:507" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -579,21 +579,80 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/FadeCanvas.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" column="59" lean-forward="true" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
+          <folding>
+            <marker date="1600580265368" expanded="false" signature="6:128" ph="..." />
+            <marker date="1600580265368" expanded="true" signature="168:606" ph="{...}" />
+            <marker date="1600580265368" expanded="true" signature="308:604" ph="{...}" />
+            <marker date="1600580265368" expanded="true" signature="344:507" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/UIManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="29" column="68" selection-start-line="29" selection-start-column="68" selection-end-line="29" selection-end-column="68" />
+        <state relative-caret-position="353">
+          <caret line="30" column="49" lean-forward="true" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
           <folding>
-            <marker date="1600580265407" expanded="false" signature="6:135" ph="..." />
-            <marker date="1600580265407" expanded="true" signature="175:1532" ph="{...}" />
-            <marker date="1600580265407" expanded="true" signature="182:315" ph="/* here's our property: now we can say UIManager.Instance to get the instance ... */" />
-            <marker date="1600580265407" expanded="true" signature="393:774" ph="{...}" />
-            <marker date="1600580265407" expanded="true" signature="514:677" ph="{...}" />
-            <marker date="1600580265407" expanded="true" signature="882:1024" ph="{...}" />
-            <marker date="1600580265407" expanded="true" signature="1051:1095" ph="{...}" />
-            <marker date="1600580265407" expanded="true" signature="1125:1236" ph="{...}" />
-            <marker date="1600580265407" expanded="true" signature="1282:1338" ph="{...}" />
-            <marker date="1600580265407" expanded="true" signature="1383:1529" ph="{...}" />
+            <marker date="1600580446134" expanded="false" signature="6:135" ph="..." />
+            <marker date="1600580446134" expanded="true" signature="175:1521" ph="{...}" />
+            <marker date="1600580446134" expanded="true" signature="182:315" ph="/* here's our property: now we can say UIManager.Instance to get the instance ... */" />
+            <marker date="1600580446134" expanded="true" signature="393:774" ph="{...}" />
+            <marker date="1600580446134" expanded="true" signature="514:677" ph="{...}" />
+            <marker date="1600580446134" expanded="true" signature="882:1013" ph="{...}" />
+            <marker date="1600580446134" expanded="true" signature="1040:1084" ph="{...}" />
+            <marker date="1600580446134" expanded="true" signature="1114:1225" ph="{...}" />
+            <marker date="1600580446134" expanded="true" signature="1271:1327" ph="{...}" />
+            <marker date="1600580446134" expanded="true" signature="1372:1518" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/Player.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+          <folding>
+            <marker date="1600578537675" expanded="false" signature="6:78" ph="..." />
+            <marker date="1600578537675" expanded="true" signature="115:302" ph="{...}" />
+            <marker date="1600578537675" expanded="true" signature="192:300" ph="{...}" />
+            <marker date="1600578537675" expanded="true" signature="233:294" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Platform.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="27" column="42" lean-forward="true" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+          <folding>
+            <marker date="1600580494484" expanded="false" signature="6:78" ph="..." />
+            <marker date="1600580494484" expanded="true" signature="117:1411" ph="{...}" />
+            <marker date="1600580494484" expanded="true" signature="493:1029" ph="{...}" />
+            <marker date="1600580494484" expanded="true" signature="599:673" ph="{...}" />
+            <marker date="1600580494484" expanded="true" signature="1077:1409" ph="{...}" />
+            <marker date="1600580494484" expanded="true" signature="1180:1403" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Puddle.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+          <folding>
+            <marker date="1600581189042" expanded="false" signature="6:78" ph="..." />
+            <marker date="1600581189042" expanded="true" signature="110:1235" ph="{...}" />
+            <marker date="1600581189042" expanded="true" signature="133:213" ph="{...}" />
+            <marker date="1600581189042" expanded="true" signature="258:482" ph="{...}" />
+            <marker date="1600581189042" expanded="true" signature="417:476" ph="{...}" />
+            <marker date="1600581189042" expanded="true" signature="518:811" ph="{...}" />
+            <marker date="1600581189042" expanded="true" signature="563:805" ph="{...}" />
+            <marker date="1600581189042" expanded="true" signature="847:1233" ph="{...}" />
+            <marker date="1600581189042" expanded="true" signature="947:1162" ph="{...}" />
           </folding>
         </state>
       </provider>

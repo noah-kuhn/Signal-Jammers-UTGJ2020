@@ -12,16 +12,19 @@ public class Puddle : Platform
     new void OnTriggerEnter(Collider c){
         base.OnTriggerEnter(c);
         //if the puddle is active and our player is on (or *in*) the puddle
-        if(this.active){
+        if(c.CompareTag("Player") && this.active){
             StartCoroutine(SinkThroughTimer());
         }
     }
 
     void OnTriggerExit(Collider c){
-        StopCoroutine(SinkThroughTimer());
-        var meshColor = gameObject.GetComponent<MeshRenderer>().material.color;
-        meshColor.a = 1.0f;
-        gameObject.GetComponent<MeshCollider>().enabled = true;
+        if(c.CompareTag("Player")
+        ){
+            StopCoroutine(SinkThroughTimer());
+            var meshColor = gameObject.GetComponent<MeshRenderer>().material.color;
+            meshColor.a = 1.0f;
+            gameObject.GetComponent<MeshCollider>().enabled = true;
+        }
     }
 
     IEnumerator SinkThroughTimer(){
