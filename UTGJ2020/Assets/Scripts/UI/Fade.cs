@@ -11,10 +11,9 @@ public class Fade : MonoBehaviour {
     
     
     private void Awake() {
+        anim = GetComponent<Animator>();
         anim.speed = fadeInSpeed;
-        
     }
-    // Update is called once per frame
 
     public void FadeOut(float speed) {
         anim.speed = speed;

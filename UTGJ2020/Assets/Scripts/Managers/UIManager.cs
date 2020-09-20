@@ -19,25 +19,17 @@ public class UIManager : MonoBehaviour
         } else {
             Destroy(gameObject); //ok there's already a UIManager. so die
         }
+        MakeUI();
     }
 
     public float fadeOutSpeed = 1f;
     public Image fadeImage;
     private Fade fadeUI;
 
-    void Start()
+    void MakeUI()
     {
-        fadeUI = FadeCanvas.Instance.GetComponentInChildren<Fade>();
-        fadeImage = fadeUI.GetComponent<Image>();
-    }
-
-    public void FadeOut(){
-        StartCoroutine(DoFadeOut());
-    }
-
-    IEnumerator DoFadeOut() {
-        fadeUI.FadeOut(fadeOutSpeed);
-        yield return new WaitUntil(() => fadeImage.color.a == 1);
+        fadeUI = FindObjectOfType<Fade>();
+        fadeImage = fadeUI.gameObject.GetComponent<Image>();
     }
 
     public void FadeOutToScene(string scene){
@@ -45,6 +37,9 @@ public class UIManager : MonoBehaviour
     }
 
     IEnumerator DoFadeOutToScene(string s) {
+        if(fadeUI == null){
+            MakeUI();
+        }
         fadeUI.FadeOut(fadeOutSpeed);
         yield return new WaitUntil(() => fadeImage.color.a == 1);
         SceneManager.LoadScene(s);
