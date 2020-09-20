@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bb072cd-8936-4cef-a522-2b1ac8f3aa19" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UTGJ2020/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UTGJ2020/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Fade Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Fade Canvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Grant_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Grant_Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Fade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Fade.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,7 +14,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/Pl_Movement.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="533">
@@ -33,6 +35,22 @@
                 <marker date="1600571730237" expanded="true" signature="2941:3089" ph="{...}" />
                 <marker date="1600571730237" expanded="true" signature="3018:3079" ph="{...}" />
                 <marker date="1600571730237" expanded="true" signature="3414:3475" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/Fade.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="10" column="53" lean-forward="true" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
+              <folding>
+                <marker date="1600576832089" expanded="false" signature="6:139" ph="..." />
+                <marker date="1600576832089" expanded="true" signature="175:841" ph="{...}" />
+                <marker date="1600576832089" expanded="true" signature="354:688" ph="{...}" />
+                <marker date="1600576832089" expanded="true" signature="419:582" ph="{...}" />
+                <marker date="1600576832089" expanded="true" signature="766:837" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -86,90 +104,21 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/BillBoard.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/UIManager.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="19" column="68" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
+              <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
               <folding>
-                <marker date="1600539061029" expanded="false" signature="6:78" ph="..." />
-                <marker date="1600539061029" expanded="true" signature="118:1177" ph="{...}" />
-                <marker date="1600539061029" expanded="true" signature="398:586" ph="{...}" />
-                <marker date="1600539061029" expanded="true" signature="613:1175" ph="{...}" />
-                <marker date="1600539061029" expanded="true" signature="766:1169" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/ColorObtainer.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <marker date="1600564365259" expanded="false" signature="6:78" ph="..." />
-                <marker date="1600564365259" expanded="true" signature="122:859" ph="{...}" />
-                <marker date="1600564365259" expanded="true" signature="274:693" ph="{...}" />
-                <marker date="1600564365259" expanded="true" signature="326:687" ph="{...}" />
-                <marker date="1600564365259" expanded="true" signature="699:856" ph="/* TODO: When color is obtained, add color UI element to pallete UI. ... */" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/PauseMenu.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <marker date="1600495488504" expanded="false" signature="6:12" ph="..." />
-                <marker date="1600495488504" expanded="true" signature="1497:1505" ph="{...}" />
-                <marker date="1600495488504" expanded="true" signature="1497:1571" ph="{...}" />
-                <marker date="1600495488504" expanded="true" signature="1533:1568" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Colorer.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="547">
-              <caret line="65" column="34" selection-start-line="65" selection-start-column="34" selection-end-line="65" selection-end-column="34" />
-              <folding>
-                <marker date="1600564365267" expanded="false" signature="6:78" ph="..." />
-                <marker date="1600564365267" expanded="true" signature="116:4605" ph="{...}" />
-                <marker date="1600564365267" expanded="true" signature="462:1147" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Platform.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="35" column="96" selection-start-line="35" selection-start-column="96" selection-end-line="35" selection-end-column="96" />
-              <folding>
-                <marker date="1600552372136" expanded="false" signature="6:78" ph="..." />
-                <marker date="1600552372136" expanded="true" signature="117:1413" ph="{...}" />
-                <marker date="1600552372136" expanded="true" signature="494:1030" ph="{...}" />
-                <marker date="1600552372136" expanded="true" signature="600:674" ph="{...}" />
-                <marker date="1600552372136" expanded="true" signature="1079:1411" ph="{...}" />
-                <marker date="1600552372136" expanded="true" signature="1182:1405" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/ColorIDs.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-              <folding>
-                <marker date="1600495449693" expanded="true" signature="6:92" ph="..." />
-                <marker date="1600495449693" expanded="true" signature="131:225" ph="{...}" />
-                <marker date="1600495449693" expanded="true" signature="156:223" ph="{...}" />
+                <marker date="1600572975824" expanded="false" signature="6:135" ph="..." />
+                <marker date="1600572975824" expanded="true" signature="175:1506" ph="{...}" />
+                <marker date="1600572975824" expanded="true" signature="182:315" ph="/* here's our property: now we can say UIManager.Instance to get the instance ... */" />
+                <marker date="1600572975824" expanded="true" signature="393:774" ph="{...}" />
+                <marker date="1600572975824" expanded="true" signature="514:677" ph="{...}" />
+                <marker date="1600572975824" expanded="true" signature="882:998" ph="{...}" />
+                <marker date="1600572975824" expanded="true" signature="1025:1069" ph="{...}" />
+                <marker date="1600572975824" expanded="true" signature="1099:1210" ph="{...}" />
+                <marker date="1600572975824" expanded="true" signature="1256:1312" ph="{...}" />
+                <marker date="1600572975824" expanded="true" signature="1357:1503" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -187,16 +136,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Sound.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ColorIDs.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/PauseMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Fade.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ColorObtainer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Colorer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/PlayerManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Platform.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/PauseMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/MouseOrbit.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BillBoard.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Pl_Movement.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -210,6 +161,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Sound.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Pl_Movement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Fade.cs" />
       </list>
     </option>
   </component>
@@ -284,7 +236,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32211000" />
+    <option name="totallyTimeSpent" value="33025000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -357,18 +309,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/PauseMenu.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <marker date="1600495488504" expanded="false" signature="6:12" ph="..." />
-            <marker date="1600495488504" expanded="true" signature="1497:1505" ph="{...}" />
-            <marker date="1600495488504" expanded="true" signature="1497:1571" ph="{...}" />
-            <marker date="1600495488504" expanded="true" signature="1533:1568" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/MouseOrbit.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="412">
@@ -417,48 +357,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/BillBoard.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="68" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
-          <folding>
-            <marker date="1600539061029" expanded="false" signature="6:78" ph="..." />
-            <marker date="1600539061029" expanded="true" signature="118:1177" ph="{...}" />
-            <marker date="1600539061029" expanded="true" signature="398:586" ph="{...}" />
-            <marker date="1600539061029" expanded="true" signature="613:1175" ph="{...}" />
-            <marker date="1600539061029" expanded="true" signature="766:1169" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ColorObtainer.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <marker date="1600564365259" expanded="false" signature="6:78" ph="..." />
-            <marker date="1600564365259" expanded="true" signature="122:859" ph="{...}" />
-            <marker date="1600564365259" expanded="true" signature="274:693" ph="{...}" />
-            <marker date="1600564365259" expanded="true" signature="326:687" ph="{...}" />
-            <marker date="1600564365259" expanded="true" signature="699:856" ph="/* TODO: When color is obtained, add color UI element to pallete UI. ... */" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Platform.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="35" column="96" selection-start-line="35" selection-start-column="96" selection-end-line="35" selection-end-column="96" />
-          <folding>
-            <marker date="1600552372136" expanded="false" signature="6:78" ph="..." />
-            <marker date="1600552372136" expanded="true" signature="117:1413" ph="{...}" />
-            <marker date="1600552372136" expanded="true" signature="494:1030" ph="{...}" />
-            <marker date="1600552372136" expanded="true" signature="600:674" ph="{...}" />
-            <marker date="1600552372136" expanded="true" signature="1079:1411" ph="{...}" />
-            <marker date="1600552372136" expanded="true" signature="1182:1405" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Colorer.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="547">
@@ -467,17 +365,6 @@
             <marker date="1600564365267" expanded="false" signature="6:78" ph="..." />
             <marker date="1600564365267" expanded="true" signature="116:4605" ph="{...}" />
             <marker date="1600564365267" expanded="true" signature="462:1147" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/Sound.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-          <folding>
-            <marker date="1600567245428" expanded="false" signature="6:78" ph="..." />
-            <marker date="1600567245428" expanded="true" signature="121:407" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -534,6 +421,111 @@
             <marker date="1600571730237" expanded="true" signature="2941:3089" ph="{...}" />
             <marker date="1600571730237" expanded="true" signature="3018:3079" ph="{...}" />
             <marker date="1600571730237" expanded="true" signature="3414:3475" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/PauseMenu.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1600495488504" expanded="true" signature="6:127" ph="..." />
+            <marker date="1600495488504" expanded="true" signature="168:1571" ph="{...}" />
+            <marker date="1600495488504" expanded="true" signature="284:326" ph="{...}" />
+            <marker date="1600495488504" expanded="true" signature="385:569" ph="{...}" />
+            <marker date="1600495488504" expanded="true" signature="428:563" ph="{...}" />
+            <marker date="1600495488504" expanded="true" signature="454:495" ph="{...}" />
+            <marker date="1600495488504" expanded="true" signature="495:553" ph="{...}" />
+            <marker date="1600495488504" expanded="true" signature="596:968" ph="{...}" />
+            <marker date="1600495488504" expanded="true" signature="987:1351" ph="{...}" />
+            <marker date="1600495488504" expanded="true" signature="1382:1505" ph="{...}" />
+            <marker date="1600495488504" expanded="true" signature="1533:1568" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Platform.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="35" column="96" selection-start-line="35" selection-start-column="96" selection-end-line="35" selection-end-column="96" />
+          <folding>
+            <marker date="1600552372136" expanded="false" signature="6:78" ph="..." />
+            <marker date="1600552372136" expanded="true" signature="117:1413" ph="{...}" />
+            <marker date="1600552372136" expanded="true" signature="494:1030" ph="{...}" />
+            <marker date="1600552372136" expanded="true" signature="600:674" ph="{...}" />
+            <marker date="1600552372136" expanded="true" signature="1079:1411" ph="{...}" />
+            <marker date="1600552372136" expanded="true" signature="1182:1405" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ColorObtainer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1600564365259" expanded="false" signature="6:78" ph="..." />
+            <marker date="1600564365259" expanded="true" signature="122:859" ph="{...}" />
+            <marker date="1600564365259" expanded="true" signature="274:693" ph="{...}" />
+            <marker date="1600564365259" expanded="true" signature="326:687" ph="{...}" />
+            <marker date="1600564365259" expanded="true" signature="699:856" ph="/* TODO: When color is obtained, add color UI element to pallete UI. ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/BillBoard.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="68" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
+          <folding>
+            <marker date="1600539061029" expanded="false" signature="6:78" ph="..." />
+            <marker date="1600539061029" expanded="true" signature="118:1177" ph="{...}" />
+            <marker date="1600539061029" expanded="true" signature="398:586" ph="{...}" />
+            <marker date="1600539061029" expanded="true" signature="613:1175" ph="{...}" />
+            <marker date="1600539061029" expanded="true" signature="766:1169" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/Sound.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <folding>
+            <marker date="1600567245428" expanded="false" signature="6:78" ph="..." />
+            <marker date="1600567245428" expanded="true" signature="121:407" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/UIManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <marker date="1600572975824" expanded="false" signature="6:135" ph="..." />
+            <marker date="1600572975824" expanded="true" signature="175:1506" ph="{...}" />
+            <marker date="1600572975824" expanded="true" signature="182:315" ph="/* here's our property: now we can say UIManager.Instance to get the instance ... */" />
+            <marker date="1600572975824" expanded="true" signature="393:774" ph="{...}" />
+            <marker date="1600572975824" expanded="true" signature="514:677" ph="{...}" />
+            <marker date="1600572975824" expanded="true" signature="882:998" ph="{...}" />
+            <marker date="1600572975824" expanded="true" signature="1025:1069" ph="{...}" />
+            <marker date="1600572975824" expanded="true" signature="1099:1210" ph="{...}" />
+            <marker date="1600572975824" expanded="true" signature="1256:1312" ph="{...}" />
+            <marker date="1600572975824" expanded="true" signature="1357:1503" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/Fade.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" column="53" lean-forward="true" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
+          <folding>
+            <marker date="1600576832089" expanded="false" signature="6:139" ph="..." />
+            <marker date="1600576832089" expanded="true" signature="175:841" ph="{...}" />
+            <marker date="1600576832089" expanded="true" signature="354:688" ph="{...}" />
+            <marker date="1600576832089" expanded="true" signature="419:582" ph="{...}" />
+            <marker date="1600576832089" expanded="true" signature="766:837" ph="{...}" />
           </folding>
         </state>
       </provider>
