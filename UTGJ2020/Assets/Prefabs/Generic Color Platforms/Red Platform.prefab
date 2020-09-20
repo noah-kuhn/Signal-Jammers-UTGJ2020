@@ -129,7 +129,7 @@ MonoBehaviour:
   offMesh: {fileID: -2432090755550338912, guid: 0ea8234137a1a1d409cefb9512762df0,
     type: 3}
   onMaterial: {fileID: 2100000, guid: 96a16267dfbc816438c00a6a4768b8d6, type: 2}
-  offMaterial: {fileID: 2100000, guid: 1ee07efbb93313a4aa675ec8ee9634d5, type: 2}
+  offMaterial: {fileID: 2100000, guid: 03c89941a2c467c4a955d1aa5656c598, type: 2}
   platformColor: 3
   _renderer: {fileID: 0}
   active: 0
