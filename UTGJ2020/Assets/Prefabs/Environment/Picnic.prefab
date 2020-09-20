@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5106478722637789361}
   - component: {fileID: 5106478722637790030}
   - component: {fileID: 8224484484874495677}
-  - component: {fileID: 4514362806948357202}
+  - component: {fileID: 5604135920355823606}
   m_Layer: 0
   m_Name: Picnic
   m_TagString: Untagged
@@ -100,7 +100,7 @@ MonoBehaviour:
   leftSprite: {fileID: 21300000, guid: c4df48a95848bee49a8109668f3fba72, type: 3}
   rightSprite: {fileID: 21300000, guid: 0921a37b31475714ea8875063dd2d6c1, type: 3}
   backSprite: {fileID: 21300000, guid: 0c9c2d4f25fa2b44f9a802913f63e846, type: 3}
---- !u!114 &4514362806948357202
+--- !u!114 &5604135920355823606
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -109,7 +109,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 5106478722637790031}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03b2646cd1b41594abc3218c0bd81fc0, type: 3}
+  m_Script: {fileID: 11500000, guid: ca5be46322fb013468f651afc830b908, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: 1
