@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,7 +11,7 @@ public class PlayerManager : MonoBehaviour
     //and stuff inside of this script are also static, so PlayerManager.<func name> is
     //typically also valid.
     public static PlayerManager Instance { get; private set; }
-
+    
     void Awake() {
         //basic singleton stuff-- make sure there's only one instance, and it's this one!
         if (Instance == null)
@@ -48,7 +49,7 @@ public class PlayerManager : MonoBehaviour
             //ok either we have no LoadSceneData or its sceneName is different
             //from our last one-- save current info as our new LoadSceneData
             lsd = new LoadSceneData(LevelManager.CurrentSceneName,
-                        CurrentColor, AvailableColors, index);
+                        CurrentColor, AvailableColors, index, player.GetComponent<Player>().spawnPosition);
         }
         //a quick note on the else block: we could add an UpdateData() function to the
         //LoadSceneData class if so desired (would maybe save some space)
@@ -121,10 +122,13 @@ public class PlayerManager : MonoBehaviour
         public int saved_index;
 
         //in most cases we should pass in our scene number, current color, available colors, and index
-        public LoadSceneData(string _s, ColorIDs.Colors _currC, List<ColorIDs.Colors> _avC, int _i){
+        public LoadSceneData(string _s, ColorIDs.Colors _currC, List<ColorIDs.Colors> _avC, int _i, Vector3 pos)
+        {
+            print(pos);
             sceneName = _s;
             saved_CurrentColor = _currC;
             saved_AvailableColors = new List<ColorIDs.Colors>();
+            //player.transform.position = pos;
             foreach(ColorIDs.Colors c in _avC){
                 saved_AvailableColors.Add(c);
             }
