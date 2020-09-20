@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9bb072cd-8936-4cef-a522-2b1ac8f3aa19" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UTGJ2020/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UTGJ2020/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UTGJ2020/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UTGJ2020/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9bb072cd-8936-4cef-a522-2b1ac8f3aa19" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +54,7 @@
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Fire.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+              <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
               <folding>
                 <marker date="1600616753960" expanded="false" signature="6:78" ph="..." />
                 <marker date="1600616753960" expanded="true" signature="113:1035" ph="{...}" />
@@ -342,12 +339,12 @@
       <option name="presentableId" value="Default" />
       <updated>1600460291983</updated>
       <workItem from="1600460303637" duration="13657000" />
-      <workItem from="1600613758324" duration="2307000" />
+      <workItem from="1600613758324" duration="2893000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43438000" />
+    <option name="totallyTimeSpent" value="44024000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -719,7 +716,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Fire.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
           <folding>
             <marker date="1600616753960" expanded="false" signature="6:78" ph="..." />
             <marker date="1600616753960" expanded="true" signature="113:1035" ph="{...}" />

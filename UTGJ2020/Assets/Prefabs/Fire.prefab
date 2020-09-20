@@ -277,7 +277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   death: {fileID: 0}
-  active: 0
+  active: 1
 --- !u!54 &6166892943845036124
 Rigidbody:
   m_ObjectHideFlags: 0
