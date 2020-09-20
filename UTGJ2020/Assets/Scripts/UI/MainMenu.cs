@@ -24,12 +24,12 @@ public class MainMenu : MonoBehaviour
     }
 
     public void RunFirstScene() {
-        StartCoroutine(FadeOut("MoveTest"));
+        StartCoroutine(FadeOut());
     }
 
-    IEnumerator FadeOut(string scene) {
+    IEnumerator FadeOut() {
         fadeUI.FadeOut(fadeOutSpeed);
         yield return new WaitUntil(() => fadeImage.color.a == 1);
-        SceneManager.LoadScene(scene);
+        SceneManager.LoadScene(1);
     }
 }
