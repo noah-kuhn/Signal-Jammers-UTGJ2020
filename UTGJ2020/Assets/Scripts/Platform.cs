@@ -11,7 +11,7 @@ public class Platform : MonoBehaviour
     public ColorIDs.Colors platformColor;
     private MeshFilter _meshFilter;
     private MeshCollider _meshCollider;
-    private MeshRenderer _renderer;
+    public MeshRenderer _renderer;
     public bool active;
     
     // Start is called before the first frame update
