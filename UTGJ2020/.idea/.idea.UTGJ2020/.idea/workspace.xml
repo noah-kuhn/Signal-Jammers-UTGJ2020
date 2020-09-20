@@ -55,7 +55,7 @@
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/FadeCanvas.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="8" column="59" lean-forward="true" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
+              <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
               <folding>
                 <marker date="1600580265368" expanded="false" signature="6:128" ph="..." />
                 <marker date="1600580265368" expanded="true" signature="168:606" ph="{...}" />
@@ -70,7 +70,7 @@
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/UIManager.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="353">
-              <caret line="30" column="49" lean-forward="true" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
+              <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
               <folding>
                 <marker date="1600580446134" expanded="false" signature="6:135" ph="..." />
                 <marker date="1600580446134" expanded="true" signature="175:1521" ph="{...}" />
@@ -91,7 +91,7 @@
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Platform.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
-              <caret line="27" column="42" lean-forward="true" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+              <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
               <folding>
                 <marker date="1600580494484" expanded="false" signature="6:78" ph="..." />
                 <marker date="1600580494484" expanded="true" signature="117:1411" ph="{...}" />
@@ -577,7 +577,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/FadeCanvas.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="8" column="59" lean-forward="true" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
+          <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
           <folding>
             <marker date="1600580265368" expanded="false" signature="6:128" ph="..." />
             <marker date="1600580265368" expanded="true" signature="168:606" ph="{...}" />
@@ -590,7 +590,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/UIManager.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
-          <caret line="30" column="49" lean-forward="true" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
+          <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
           <folding>
             <marker date="1600580446134" expanded="false" signature="6:135" ph="..." />
             <marker date="1600580446134" expanded="true" signature="175:1521" ph="{...}" />
@@ -622,7 +622,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Platform.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
-          <caret line="27" column="42" lean-forward="true" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+          <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
           <folding>
             <marker date="1600580494484" expanded="false" signature="6:78" ph="..." />
             <marker date="1600580494484" expanded="true" signature="117:1411" ph="{...}" />
