@@ -11,7 +11,9 @@ GameObject:
   - component: {fileID: 5106478722637789361}
   - component: {fileID: 5106478722637790030}
   - component: {fileID: 8224484484874495677}
-  - component: {fileID: 4514362806948357202}
+  - component: {fileID: 4977060554974481424}
+  - component: {fileID: 1612906943834094084}
+  - component: {fileID: 3094309250598013837}
   m_Layer: 9
   m_Name: Plant
   m_TagString: Untagged
@@ -72,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 67fde020144a30842ba1363a0a4bab21, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 702c222405162824aa038cec3c7daa95, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -90,17 +92,17 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5106478722637790031}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 22d26c5677407c74fadc52f83fa70b4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   hasRotation: 1
-  frontSprite: {fileID: 21300000, guid: 67fde020144a30842ba1363a0a4bab21, type: 3}
-  leftSprite: {fileID: 21300000, guid: be9e93de3b20c02439b385c9e6b5c7c1, type: 3}
-  rightSprite: {fileID: 21300000, guid: f332b0565b614584bac3e6c6a511a35e, type: 3}
-  backSprite: {fileID: 21300000, guid: 1d0c84d3e2ef9454a999765774c9739e, type: 3}
---- !u!114 &4514362806948357202
+  frontSprite: {fileID: 21300000, guid: 702c222405162824aa038cec3c7daa95, type: 3}
+  leftSprite: {fileID: 21300000, guid: ab63248415e44be42af939f397e44c28, type: 3}
+  rightSprite: {fileID: 21300000, guid: ec88e4c00a2e41143ab79579644ee42c, type: 3}
+  backSprite: {fileID: 21300000, guid: 90f5f9661c077f24083ece9d59e1201f, type: 3}
+--- !u!114 &4977060554974481424
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -109,7 +111,47 @@ MonoBehaviour:
   m_GameObject: {fileID: 5106478722637790031}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03b2646cd1b41594abc3218c0bd81fc0, type: 3}
+  m_Script: {fileID: 11500000, guid: 6710726338541be4e8e876a60aadf69d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: 1
+  hasRotation: 1
+  frontSprite: {fileID: 21300000, guid: 702c222405162824aa038cec3c7daa95, type: 3}
+  leftSprite: {fileID: 21300000, guid: ab63248415e44be42af939f397e44c28, type: 3}
+  rightSprite: {fileID: 21300000, guid: ec88e4c00a2e41143ab79579644ee42c, type: 3}
+  backSprite: {fileID: 21300000, guid: 90f5f9661c077f24083ece9d59e1201f, type: 3}
+  frontColoredSprite: {fileID: 21300000, guid: 14af4bbc74dd0564b94f51cd8bd1bfac, type: 3}
+  leftColoredSprite: {fileID: 21300000, guid: 315b3572f5765f34b903893dee8b5869, type: 3}
+  rightColoredSprite: {fileID: 21300000, guid: c23898295a1cced4a80d7a98e33b3296, type: 3}
+  backColoredSprite: {fileID: 21300000, guid: aef6b102b7a27dd429a1585e01693a00, type: 3}
+  objectColor: 2
+  active: 0
+--- !u!136 &1612906943834094084
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5106478722637790031}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.38753113
+  m_Height: 1.7578125
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &3094309250598013837
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5106478722637790031}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0

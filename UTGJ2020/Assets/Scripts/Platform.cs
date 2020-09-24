@@ -33,8 +33,10 @@ public class Platform : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
+        print("collided with " + other);
         if (other.transform.CompareTag("Burst") && PlayerManager.CurrentColor == platformColor) 
         {
+            print(this + "is turning " + PlayerManager.CurrentColor);
             active = !active;
             _meshCollider.isTrigger = !active;
             _meshFilter.mesh = active ? onMesh : offMesh;

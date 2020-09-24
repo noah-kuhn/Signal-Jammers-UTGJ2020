@@ -24,9 +24,9 @@ public class PlayerManager : MonoBehaviour
             CurrentColor = AvailableColors[index];
             //for testing color switching: give us all colors
             if (giveDebugColors) {
-                // AddColor(ColorIDs.Colors.Green);
-                // AddColor(ColorIDs.Colors.Blue);
-                // AddColor(ColorIDs.Colors.Red);
+                 AddColor(ColorIDs.Colors.Green);
+                 AddColor(ColorIDs.Colors.Blue);
+                 AddColor(ColorIDs.Colors.Red);
             }
         } else {
             Destroy(gameObject); //ok there's already a PlayerManager. so die
